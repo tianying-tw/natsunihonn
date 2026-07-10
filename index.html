@@ -1,0 +1,2642 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>東京 6 天 5 夜無障礙孝親自由行 | 2026.08.19 - 08.24</title>
+  <meta name="description" content="專為同行長者隨行（自備手推輪椅/助行椅）設計的東京 6 天 5 夜無障礙孝親與雙古寺御朱印收集自由行行程表。已調整大休息區段、為輪椅推行保留充裕時間，並提供低計程車比例的電車/步行無障礙路線。">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      /* Light Mode Palette */
+      --bg-primary: #f8fafc;
+      --bg-secondary: #ffffff;
+      --bg-accent: #f1f5f9;
+      --text-primary: #0f172a;
+      --text-secondary: #475569;
+      --text-muted: #94a3b8;
+      
+      --primary: #ff5e7e; /* Sakura Pink */
+      --primary-gradient: linear-gradient(135deg, #ff5e7e 0%, #ff8e53 100%);
+      --secondary: #3b82f6; /* Fuji Blue */
+      --secondary-gradient: linear-gradient(135deg, #3b82f6 0%, #2bd2ff 100%);
+      --accent-green: #10b981;
+      --accent-orange: #f59e0b;
+      --wheelchair-color: #0284c7;
+      
+      --card-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.05), 0 8px 10px -6px rgba(15, 23, 42, 0.05);
+      --hover-shadow: 0 20px 25px -5px rgba(15, 23, 42, 0.1), 0 10px 10px -5px rgba(15, 23, 42, 0.04);
+      --border-color: #e2e8f0;
+      --glass-bg: rgba(255, 255, 255, 0.7);
+      --glass-border: rgba(255, 255, 255, 0.5);
+      
+      --radius-sm: 8px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
+      --radius-full: 9999px;
+      
+      --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    [data-theme="dark"] {
+      /* Dark Mode Palette */
+      --bg-primary: #0b1329;
+      --bg-secondary: #1c2541;
+      --bg-accent: #232c4d;
+      --text-primary: #f8fafc;
+      --text-secondary: #cbd5e1;
+      --text-muted: #64748b;
+      
+      --primary: #ff7e9f;
+      --primary-gradient: linear-gradient(135deg, #ff7e9f 0%, #ffa47d 100%);
+      --secondary: #60a5fa;
+      --secondary-gradient: linear-gradient(135deg, #60a5fa 0%, #7ee7ff 100%);
+      --wheelchair-color: #38bdf8;
+      
+      --card-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3), 0 8px 10px -6px rgba(0, 0, 0, 0.3);
+      --hover-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+      --border-color: #3a506b;
+      --glass-bg: rgba(28, 37, 65, 0.7);
+      --glass-border: rgba(28, 37, 65, 0.4);
+    }
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+    
+    body {
+      font-family: 'Outfit', 'Noto Sans TC', sans-serif;
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      transition: var(--transition);
+      line-height: 1.6;
+      padding-bottom: 60px;
+    }
+    
+    a {
+      color: var(--secondary);
+      text-decoration: none;
+      transition: var(--transition);
+    }
+    a:hover {
+      opacity: 0.8;
+    }
+    
+    /* Layout Container */
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    /* Header Section */
+    header {
+      padding: 40px 0 20px;
+      position: relative;
+    }
+    
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      border-bottom: 2px dashed var(--border-color);
+      padding-bottom: 30px;
+    }
+    
+    .title-area h1 {
+      font-size: 2.2rem;
+      font-weight: 900;
+      letter-spacing: -0.5px;
+      background: var(--primary-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 6px;
+    }
+    
+    .title-area p {
+      font-size: 1.1rem;
+      color: var(--text-secondary);
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    
+    .tag {
+      background-color: var(--bg-accent);
+      color: var(--text-secondary);
+      padding: 4px 12px;
+      border-radius: var(--radius-full);
+      font-size: 0.85rem;
+      font-weight: 600;
+      border: 1px solid var(--border-color);
+    }
+    
+    .tag.wheelchair-tag {
+      background-color: rgba(2, 132, 199, 0.1);
+      color: var(--wheelchair-color);
+      border-color: rgba(2, 132, 199, 0.2);
+    }
+    
+    /* Theme Toggle */
+    .theme-switch {
+      position: relative;
+      display: inline-block;
+      width: 60px;
+      height: 32px;
+    }
+    
+    .theme-switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #cbd5e1;
+      transition: .4s;
+      border-radius: 34px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 6px;
+    }
+    
+    .slider svg {
+      width: 16px;
+      height: 16px;
+      fill: #f1f5f9;
+      z-index: 1;
+    }
+    
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 24px;
+      width: 24px;
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      transition: .4s;
+      border-radius: 50%;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+      z-index: 2;
+    }
+    
+    input:checked + .slider {
+      background-color: #38bdf8;
+    }
+    
+    input:checked + .slider:before {
+      transform: translateX(28px);
+    }
+    
+    /* Barrier-free Note Banner */
+    .barrier-free-banner {
+      background: linear-gradient(135deg, rgba(2, 132, 199, 0.08) 0%, rgba(56, 189, 248, 0.08) 100%);
+      border: 1.5px solid rgba(2, 132, 199, 0.2);
+      border-radius: var(--radius-md);
+      padding: 24px;
+      margin-top: 24px;
+      display: flex;
+      gap: 16px;
+    }
+    
+    .bf-icon {
+      flex-shrink: 0;
+      width: 48px;
+      height: 48px;
+      background-color: var(--wheelchair-color);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 10px rgba(2, 132, 199, 0.3);
+    }
+    
+    .bf-icon svg {
+      width: 24px;
+      height: 24px;
+      fill: white;
+    }
+    
+    .bf-content h3 {
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: var(--wheelchair-color);
+      margin-bottom: 6px;
+    }
+    
+    .bf-content ul {
+      list-style-type: none;
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 8px;
+    }
+    
+    .bf-content li {
+      position: relative;
+      padding-left: 20px;
+    }
+    
+    .bf-content li::before {
+      content: "♿";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--wheelchair-color);
+    }
+    
+    /* Booking Dashboard */
+    .dashboard {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 24px;
+      margin-top: 30px;
+    }
+    
+    .card {
+      background-color: var(--bg-secondary);
+      border-radius: var(--radius-md);
+      box-shadow: var(--card-shadow);
+      border: 1px solid var(--border-color);
+      overflow: hidden;
+      transition: var(--transition);
+      position: relative;
+    }
+    
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--hover-shadow);
+    }
+    
+    .card-header {
+      padding: 16px 20px;
+      border-bottom: 1px solid var(--border-color);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: var(--bg-accent);
+    }
+    
+    .card-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    
+    .card-title svg {
+      width: 20px;
+      height: 20px;
+    }
+    
+    /* Boarding Pass Styles */
+    .flight-pass {
+      padding: 24px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    
+    .flight-route {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+    }
+    
+    .route-node {
+      text-align: center;
+      flex: 1;
+    }
+    
+    .route-node.left { text-align: left; }
+    .route-node.right { text-align: right; }
+    
+    .airport-code {
+      font-size: 2rem;
+      font-weight: 800;
+      line-height: 1;
+      font-family: 'Outfit', sans-serif;
+      background: var(--secondary-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    
+    .airport-name {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      font-weight: 500;
+      margin-top: 4px;
+    }
+    
+    .flight-plane-icon {
+      flex: 0 0 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+    
+    .flight-plane-icon::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      border-top: 2px dashed var(--border-color);
+      z-index: 1;
+    }
+    
+    .flight-plane-icon svg {
+      width: 24px;
+      height: 24px;
+      fill: var(--text-muted);
+      background-color: var(--bg-secondary);
+      padding: 0 4px;
+      z-index: 2;
+    }
+    
+    .flight-time-info {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.9rem;
+      border-bottom: 1px solid var(--bg-accent);
+      padding-bottom: 12px;
+    }
+    
+    .time-lbl {
+      color: var(--text-muted);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-bottom: 2px;
+    }
+    
+    .time-val {
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+    
+    .flight-details-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      background-color: var(--bg-accent);
+      padding: 12px;
+      border-radius: var(--radius-sm);
+      font-size: 0.8rem;
+    }
+    
+    .detail-item {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .detail-lbl {
+      color: var(--text-muted);
+      font-weight: 500;
+      margin-bottom: 2px;
+    }
+    
+    .detail-val {
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+    
+    .passenger-seats {
+      font-size: 0.8rem;
+      border-top: 1px solid var(--bg-accent);
+      padding-top: 12px;
+    }
+    
+    .psgr-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 4px;
+    }
+    
+    .psgr-row:last-child { margin-bottom: 0; }
+    
+    .psgr-name {
+      color: var(--text-secondary);
+    }
+    
+    .psgr-seat {
+      font-weight: 700;
+      color: var(--primary);
+    }
+    
+    /* Hotel Card Styles */
+    .hotel-info {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    
+    .hotel-name-jp {
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: var(--text-primary);
+    }
+    
+    .hotel-name-zh {
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+      margin-top: -4px;
+      border-bottom: 1px solid var(--bg-accent);
+      padding-bottom: 10px;
+    }
+    
+    .hotel-meta-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.85rem;
+    }
+    
+    .hotel-meta-lbl {
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+    
+    .hotel-meta-val {
+      font-weight: 700;
+      color: var(--text-primary);
+      text-align: right;
+    }
+    
+    .hotel-price {
+      background: linear-gradient(135deg, rgba(255, 94, 126, 0.05) 0%, rgba(255, 142, 83, 0.05) 100%);
+      border: 1px solid rgba(255, 94, 126, 0.15);
+      border-radius: var(--radius-sm);
+      padding: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 6px;
+    }
+    
+    .hotel-price-lbl {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--text-secondary);
+    }
+    
+    .hotel-price-val {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--primary);
+      font-family: 'Outfit', sans-serif;
+    }
+    
+    /* Timeline & Itinerary Layout */
+    .itinerary-section {
+      margin-top: 50px;
+    }
+    
+    .section-title {
+      font-size: 1.6rem;
+      font-weight: 800;
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    
+    .section-title svg {
+      width: 28px;
+      height: 28px;
+      fill: var(--primary);
+    }
+    
+    /* Tabs Navigation */
+    .tabs-nav-wrapper {
+      position: sticky;
+      top: 0;
+      background-color: var(--glass-bg);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      z-index: 100;
+      border-bottom: 1px solid var(--border-color);
+      padding: 10px 0;
+      margin-bottom: 30px;
+      transition: var(--transition);
+    }
+    
+    .tabs-nav {
+      display: flex;
+      gap: 10px;
+      overflow-x: auto;
+      padding: 4px 0;
+      scrollbar-width: none;
+    }
+    
+    .tabs-nav::-webkit-scrollbar {
+      display: none;
+    }
+    
+    .tab-btn {
+      background-color: var(--bg-secondary);
+      color: var(--text-secondary);
+      border: 1px solid var(--border-color);
+      padding: 10px 20px;
+      border-radius: var(--radius-full);
+      font-size: 0.9rem;
+      font-weight: 700;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: var(--transition);
+      box-shadow: var(--card-shadow);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .tab-btn span.day-num {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      font-weight: 500;
+      margin-bottom: 2px;
+    }
+    
+    .tab-btn:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+    
+    .tab-btn.active {
+      background: var(--primary-gradient);
+      color: white;
+      border-color: transparent;
+      transform: scale(1.05);
+    }
+    
+    .tab-btn.active span.day-num {
+      color: rgba(255, 255, 255, 0.8);
+    }
+    
+    /* Day Content Card */
+    .day-content {
+      display: none;
+      animation: fadeIn 0.4s ease-out forwards;
+    }
+    
+    .day-content.active {
+      display: block;
+    }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    .day-banner {
+      background: var(--primary-gradient);
+      color: white;
+      padding: 24px;
+      border-radius: var(--radius-md) var(--radius-md) 0 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    
+    .day-banner-title h2 {
+      font-size: 1.5rem;
+      font-weight: 800;
+    }
+    
+    .day-banner-title p {
+      font-size: 0.95rem;
+      opacity: 0.9;
+      font-weight: 500;
+    }
+    
+    .day-summary-badge {
+      background-color: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(4px);
+      padding: 6px 16px;
+      border-radius: var(--radius-full);
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+    
+    .day-timeline {
+      background-color: var(--bg-secondary);
+      border-radius: 0 0 var(--radius-md) var(--radius-md);
+      box-shadow: var(--card-shadow);
+      border: 1px solid var(--border-color);
+      border-top: none;
+      padding: 30px 20px 40px;
+      position: relative;
+    }
+    
+    .day-timeline::before {
+      content: "";
+      position: absolute;
+      left: 31px;
+      top: 40px;
+      bottom: 40px;
+      width: 2px;
+      background-color: var(--border-color);
+    }
+    
+    /* Timeline Node Card */
+    .timeline-node {
+      position: relative;
+      padding-left: 50px;
+      margin-bottom: 30px;
+    }
+    
+    .timeline-node:last-child {
+      margin-bottom: 0;
+    }
+    
+    .node-dot {
+      position: absolute;
+      left: 18px;
+      top: 4px;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background-color: var(--bg-secondary);
+      border: 3px solid var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 10;
+      box-shadow: 0 0 0 4px var(--bg-secondary);
+      transition: var(--transition);
+    }
+    
+    .timeline-node:hover .node-dot {
+      background-color: var(--primary);
+      transform: scale(1.1);
+    }
+    
+    .node-dot svg {
+      width: 14px;
+      height: 14px;
+      fill: var(--primary);
+      transition: var(--transition);
+    }
+    
+    .timeline-node:hover .node-dot svg {
+      fill: white;
+    }
+    
+    /* Custom colored nodes depending on action */
+    .timeline-node.transit .node-dot { border-color: var(--secondary); }
+    .timeline-node.transit .node-dot svg { fill: var(--secondary); }
+    .timeline-node.transit:hover .node-dot { background-color: var(--secondary); }
+    .timeline-node.transit:hover .node-dot svg { fill: white; }
+    
+    .timeline-node.food .node-dot { border-color: var(--accent-orange); }
+    .timeline-node.food .node-dot svg { fill: var(--accent-orange); }
+    .timeline-node.food:hover .node-dot { background-color: var(--accent-orange); }
+    .timeline-node.food:hover .node-dot svg { fill: white; }
+    
+    .timeline-node.hotel .node-dot { border-color: var(--accent-green); }
+    .timeline-node.hotel .node-dot svg { fill: var(--accent-green); }
+    .timeline-node.hotel:hover .node-dot { background-color: var(--accent-green); }
+    .timeline-node.hotel:hover .node-dot svg { fill: white; }
+    
+    .node-time {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    
+    .node-time span.duration {
+      font-weight: 500;
+      background-color: var(--bg-accent);
+      color: var(--text-secondary);
+      padding: 1px 8px;
+      border-radius: var(--radius-full);
+      font-size: 0.75rem;
+    }
+    
+    .node-card {
+      background-color: var(--bg-accent);
+      border-radius: var(--radius-sm);
+      padding: 16px 20px;
+      border: 1px solid var(--border-color);
+      transition: var(--transition);
+    }
+    
+    .timeline-node:hover .node-card {
+      background-color: var(--bg-secondary);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      border-color: var(--primary);
+    }
+    
+    .node-title-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 6px;
+      gap: 10px;
+    }
+    
+    .node-title {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: var(--text-primary);
+    }
+    
+    .node-desc {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+    }
+    
+    .node-tips {
+      margin-top: 10px;
+      padding-top: 10px;
+      border-top: 1px dashed var(--border-color);
+      font-size: 0.8rem;
+      color: var(--primary);
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    
+    .node-tips svg {
+      width: 14px;
+      height: 14px;
+      fill: var(--primary);
+      flex-shrink: 0;
+    }
+    
+    .node-tips.wheelchair-tips {
+      color: var(--wheelchair-color);
+      border-top: 1px dashed var(--border-color);
+    }
+    
+    .node-tips.wheelchair-tips svg {
+      fill: var(--wheelchair-color);
+    }
+    
+    .map-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--secondary);
+      background-color: var(--bg-secondary);
+      padding: 4px 10px;
+      border-radius: var(--radius-full);
+      border: 1px solid var(--border-color);
+      cursor: pointer;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+      flex-shrink: 0;
+    }
+    
+    .map-btn svg {
+      width: 12px;
+      height: 12px;
+      fill: var(--secondary);
+    }
+    
+    .map-btn:hover {
+      background-color: var(--secondary);
+      color: white;
+      border-color: var(--secondary);
+    }
+    
+    .map-btn:hover svg {
+      fill: white;
+    }
+    
+    /* Interactive Toolkit Area */
+    .toolkit-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 24px;
+      margin-top: 40px;
+    }
+    
+    /* Checklist */
+    .checklist-card {
+      padding: 24px;
+    }
+    
+    .checklist-title {
+      font-size: 1.2rem;
+      font-weight: 800;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    
+    .checklist-progress-bar {
+      width: 100%;
+      height: 6px;
+      background-color: var(--bg-accent);
+      border-radius: var(--radius-full);
+      overflow: hidden;
+      margin-bottom: 20px;
+    }
+    
+    .checklist-progress {
+      height: 100%;
+      width: 0%;
+      background: var(--primary-gradient);
+      transition: width 0.3s ease;
+    }
+    
+    .checklist-group {
+      margin-bottom: 16px;
+    }
+    
+    .checklist-group-title {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      margin-bottom: 8px;
+      letter-spacing: 0.5px;
+    }
+    
+    .checklist-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 8px;
+      cursor: pointer;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+      user-select: none;
+    }
+    
+    .checklist-item input {
+      display: none;
+    }
+    
+    .checkmark {
+      width: 20px;
+      height: 20px;
+      border-radius: 4px;
+      border: 2px solid var(--border-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: var(--transition);
+      background-color: var(--bg-secondary);
+      flex-shrink: 0;
+    }
+    
+    .checkmark svg {
+      width: 10px;
+      height: 10px;
+      fill: white;
+      display: none;
+    }
+    
+    .checklist-item input:checked + .checkmark {
+      background-color: var(--accent-green);
+      border-color: var(--accent-green);
+    }
+    
+    .checklist-item input:checked + .checkmark svg {
+      display: block;
+    }
+    
+    .checklist-item input:checked ~ span {
+      text-decoration: line-through;
+      color: var(--text-muted);
+    }
+    
+    /* Currency Converter */
+    .converter-card {
+      padding: 24px;
+    }
+    
+    .converter-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+    
+    .converter-row:last-child {
+      margin-bottom: 0;
+    }
+    
+    .input-grp {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    
+    .input-grp label {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--text-secondary);
+    }
+    
+    .input-wrapper {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+    
+    .input-wrapper input {
+      width: 100%;
+      padding: 10px 14px 10px 45px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      border: 1px solid var(--border-color);
+      background-color: var(--bg-accent);
+      color: var(--text-primary);
+      border-radius: var(--radius-sm);
+      font-family: 'Outfit', sans-serif;
+      outline: none;
+      transition: var(--transition);
+    }
+    
+    .input-wrapper input:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(255, 94, 126, 0.1);
+      background-color: var(--bg-secondary);
+    }
+    
+    .input-prefix {
+      position: absolute;
+      left: 12px;
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      background-color: var(--border-color);
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+    
+    .rate-note {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      text-align: right;
+      margin-top: 10px;
+    }
+    
+    /* Travel Info Grid */
+    .info-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 16px;
+    }
+    
+    .info-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.85rem;
+      border-bottom: 1px dashed var(--border-color);
+      padding-bottom: 8px;
+    }
+    
+    .info-row:last-child {
+      border-bottom: none;
+    }
+    
+    .info-lbl {
+      color: var(--text-secondary);
+      font-weight: 600;
+    }
+    
+    .info-val {
+      font-weight: 700;
+      color: var(--text-primary);
+      text-align: right;
+    }
+    
+    /* Footer */
+    static-footer {
+      margin-top: 60px;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.8rem;
+      border-top: 1px solid var(--border-color);
+      padding-top: 30px;
+    }
+    
+    /* Responsive Styling */
+    @media (max-width: 768px) {
+      .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+      }
+      
+      .title-area h1 {
+        font-size: 1.8rem;
+      }
+      
+      .day-banner {
+        padding: 16px;
+      }
+      
+      .day-banner-title h2 {
+        font-size: 1.25rem;
+      }
+      
+      .day-timeline::before {
+        left: 21px;
+      }
+      
+      .timeline-node {
+        padding-left: 38px;
+      }
+      
+      .node-dot {
+        left: 8px;
+        width: 24px;
+        height: 24px;
+        border-width: 2px;
+      }
+      
+      .node-dot svg {
+        width: 12px;
+        height: 12px;
+      }
+    }
+    
+    /* Printing Styles */
+    @media print {
+      body {
+        background-color: white;
+        color: black;
+      }
+      .theme-switch, .tabs-nav-wrapper, .toolkit-grid, footer, .barrier-free-banner {
+        display: none !important;
+      }
+      .day-content {
+        display: block !important;
+        page-break-after: always;
+      }
+      .day-timeline::before {
+        background-color: #ccc;
+      }
+      .node-card {
+        background-color: #f1f5f9 !important;
+        border: 1px solid #ccc !important;
+      }
+      .card {
+        box-shadow: none !important;
+        border: 1px solid #ccc !important;
+      }
+      .dashboard {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body data-theme="light">
+
+  <!-- 
+    ========================================================================
+    [DECISION LOG & THINKING PROCESS] - Saved inline for portability
+    ========================================================================
+    * Member Details: 
+      - Traveler 1: CHANG CHUN JUNG (張駿榮)
+      - Traveler 2: CHANG TIANYING (張天穎)
+      - Traveler 3: CHUNG CHINYEH (鍾沁葉)
+      
+    * Accommodation: 
+      - APA Hotel Ueno Ekimae Minami (アパ飯店〈上野站南〉)
+      - 5 Nights Total: NT$ 26,116
+      
+    * Outbound Flight: MM626 (8/19 10:50 TPE T1 -> 15:20 NRT T1)
+    * Inbound Flight: MM625 (8/24 16:55 NRT T1 -> 19:40 TPE T1)
+
+    * Diet Constraints (100% Safeguarded):
+      - 3 Members do not eat beef (無牛肉).
+      - Mother dislikes sashimi / raw fish (不喜生魚片/無生食).
+      - Re-selected restaurants:
+        - Day 1 Dinner: 音音 (Pork/Tempura)
+        - Day 2 Lunch: Solamachi (Tempura Soba/Oyamadori Don)
+        - Day 2 Dinner: 淺草 駒形前川 (Eel - high temp broiled, no beef served at all)
+        - Day 3 Lunch: 韻松亭 (Traditional Tofu Kaiseki, soft texture, fully cooked)
+        - Day 3 Dinner: LA COCORICO (Rotisserie Chicken)
+        - Day 4 Lunch: Ekimise Food Court (Pork Tonkatsu/Shrimp Tempura)
+        - Day 4 Dinner: Roppongi Hills Food Stalls (Eel skewers, Gyoza, cooked pork Buns)
+        - Day 5 Lunch: 淺草今半 雷門店 (Sukiyaki - Pork/Chicken only, specified NO beef & NO raw dishes)
+        - Day 5 Dinner: 黑船亭 (Crab croquette, shrimp doria, pork cutlets)
+        - Day 6 Lunch: まるごと北海道 (Steamed snow crab, grilled Atka mackerel, cooked crab fried rice)
+
+    * Wheelchair Travel Design:
+      - Weighted walk times: standard transit time + 15 minutes buffer.
+      - Skyliner Coach 5 (dedicated barrier-free car, wheelchair anchoring spaces, multi-functional toilet).
+      - Asakusa station elevator Exit 1 / Roppongi station elevator Exit 1C.
+      - Kiyomizu Kannon-do alternative path: senior sits comfortably at the park bench enjoying the facades & Moon Pine, while family goes up to get Goshuin stamps.
+      
+    * Key Itinerary Revision (July 9-10):
+      - Deleted Tokyo National Museum as requested.
+      - Included 11 Goshuin temples/shrines with Goshuin desk hour alignments (09:00 - 16:00).
+      - Moved HOKA shoe shopping to Day 1 Evening so mother can wear them immediately.
+      - Removed unnecessary 2h hotel resting blocks to expand site-seeing durations and ease push pace.
+      - Moved Yukata rental & photoshoot to Sunday (Day 5) to keep it relaxed and completely avoid the Saturday Roppongi crowd.
+      - Replaced high-cost taxis with Tokyo's barrier-free elevator subway/JR network (e.g. JR Yamanote to Akihabara).
+      - Replaced Ginza walk on Day 3 with Toho Cinemas / Hibiya Chanter / Hibiya Park strolling for a better local atmosphere.
+      - Audited Ueno Usagiya Dorayaki rules: Reservations are required after 16:00 to guarantee purchase; adjusted Day 2 schedule to buy before 16:00.
+      
+    * Latest Revisions (July 10):
+      - Optimization of Restaurant logistics for elderly traveller:
+        * Moved Day 2 dinner to Izuei Honten in Ueno (instead of returning from Asakusa). The traveller can return to hotel to rest first, then walk 6-8 minutes on flat road to dinner.
+        * Chose Izuei Honten instead of Umekawatei because Honten is located on completely flat avenue (Chuo-dori) whereas Umekawatei is on a hill in Ueno Park, which is harder for wheeling.
+        * Moved Komagata Maekawa (百年鰻魚) in Asakusa to Day 4 lunch (direct Tobu line from Nishiarai Daishi, 0 transfers, wheelchair friendly).
+      - Budget and Pricing markings:
+        * Marked all ticket, meal, transit, and Goshuin prices inside day-by-day itineraries.
+        * Created an interactive/visual Budget Summary Card in the booking dashboard, containing pre-booked vs on-site cash estimations.
+    ========================================================================
+  -->
+
+  <div class="container">
+    
+    <!-- Header -->
+    <header>
+      <div class="header-content">
+        <div class="title-area">
+          <h1>東京 6 天 5 夜無障礙孝親自由行</h1>
+          <p>
+            <span>2026.08.19 - 2026.08.24</span>
+            <span class="tag">6 天 5 夜</span>
+            <span class="tag wheelchair-tag">♿ 同行長者輪椅隨行</span>
+            <span class="tag">成員：張天英、鍾金葉、張純榮</span>
+          </p>
+        </div>
+        <div>
+          <label class="theme-switch">
+            <input type="checkbox" id="theme-toggle">
+            <span class="slider">
+              <!-- Sun Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,6.5A5.5,5.5 0 0,1 17.5,12A5.5,5.5 0 0,1 12,17.5A5.5,5.5 0 0,1 6.5,12A5.5,5.5 0 0,1 12,6.5M12,2A1,1 0 0,1 13,3V4.06C16.89,4.56 19.94,7.61 20.44,11.5H21.5A1,1 0 0,1 22.5,12.5A1,1 0 0,1 21.5,13.5H20.44C19.94,17.39 16.89,20.44 13,20.94V22A1,1 0 0,1 12,23A1,1 0 0,1 11,22V20.94C7.11,20.44 4.06,17.39 3.56,13.5H2.5A1,1 0 0,1 1.5,12.5A1,1 0 0,1 2.5,11.5H3.56C4.06,7.61 7.11,4.56 11,4.06V3A1,1 0 0,1 12,2M12,5.5A6.5,6.5 0 0,0 5.5,12A6.5,6.5 0 0,0 12,18.5A6.5,6.5 0 0,0 18.5,12A6.5,6.5 0 0,0 12,5.5Z"/></svg>
+              <!-- Moon Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.75,4.09L15.22,6.03L16.13,9.09L13.5,7.28L10.87,9.09L11.78,6.03L9.25,4.09L12.44,4L13.5,1L14.56,4L17.75,4.09M21.25,11L19.61,12.25L20.2,14.23L18.5,13.06L16.8,14.23L17.39,12.25L15.75,11L17.81,10.95L18.5,9L19.19,10.95L21.25,11M18.97,15.95C17.14,16.7 15.07,17 13,17C7.47,17 3,12.53 3,7C3,4.93 3.3,2.86 4.05,1.03C1.07,2.29 0,5.58 0,8C0,14.08 4.92,19 11,19C13.42,19 16.71,17.93 17.97,14.95C18.3,15.28 18.63,15.62 18.97,15.95Z"/></svg>
+            </span>
+          </label>
+        </div>
+      </div>
+    </header>
+
+    <!-- Barrier-free Note Banner -->
+    <div class="barrier-free-banner">
+      <div class="bf-icon">
+        <svg viewBox="0 0 24 24"><path d="M16.5,5.5A1.5,1.5 0 0,1 15,4A1.5,1.5 0 0,1 16.5,2.5A1.5,1.5 0 0,1 18,4A1.5,1.5 0 0,1 16.5,5.5M19.3,13.9C19,13.4 18.3,13.2 17.8,13.5L14.5,15.4L12.7,11.9C12.3,11.2 11.5,10.8 10.7,11.1L6.7,12.4C6,12.7 5.6,13.5 5.9,14.2L7.3,17.9C7.6,18.6 8.3,19 9.1,18.7L11.5,17.9L12.3,19.5C11,20.4 9.1,21 7,21C3.1,21 0,17.9 0,14C0,11.2 1.6,8.7 4,7.6L4.8,9.2C3.1,10.1 2,11.9 2,14C2,16.8 4.2,19 7,19C8.8,19 10.3,18.5 11.4,17.6L9.6,14.1L12.3,13.2L14.7,17.9C15.2,18.8 16.3,19.3 17.3,18.7L20.3,17C20.8,16.7 21,16 20.7,15.5L19.3,13.9Z"/></svg>
+      </div>
+      <div class="bf-content">
+        <h3>♿ 無障礙孝親旅遊貼心照護叮嚀</h3>
+        <ul>
+          <li><strong>路程時間均已加權</strong>：步行時間已全面預留充足緩衝，推行輪椅平穩踏實、安全不倉促。</li>
+          <li><strong>精選無障礙大眾運輸</strong>：Skyliner 第 5 車廂為無障礙車廂（附寬敞固定位與多功能廁所）；地鐵搭乘均指引無階梯電梯通道。</li>
+          <li><strong>飲食習慣調配（全熟無牛）</strong>：餐食經高溫蒸烤或熟化（無生食刺身、無牛肉料理），肉質鮮嫩易嚼，長者食用極安心。</li>
+          <li><strong>避開擁擠人潮</strong>：浴衣體驗安排於悠閒的週日，避開週六盆踊大會爆炸人潮，讓拍照回憶與身體舒適兼顧。</li>
+        </ul>
+      </div>
+    </div>
+    
+    <!-- Booking Dashboard -->
+    <section class="dashboard">
+      
+      <!-- Outbound Flight -->
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">
+            <svg viewBox="0 0 24 24"><path fill="var(--secondary)" d="M3.4,12.6L12,18L21.2,12L12,6L3.4,12.6M12,2L22,12L12,22L2,12L12,2M12,5.2L19,12L12,18.8L5,12L12,5.2Z"/></svg>
+            去程航班 MM626
+          </div>
+          <div class="tag" style="background-color: rgba(59, 130, 246, 0.1); color: var(--secondary); border: none;">樂桃航空</div>
+        </div>
+        <div class="flight-pass">
+          <div class="flight-route">
+            <div class="route-node left">
+              <div class="airport-code">TPE</div>
+              <div class="airport-name">台北 (桃園)</div>
+            </div>
+            <div class="flight-plane-icon">
+              <svg viewBox="0 0 24 24"><path d="M21,16V14L13,9V3.5A1.5,1.5 0 0,0 11.5,2A1.5,1.5 0 0,0 10,3.5V9L2,14V16L10,13.5V19L8,20.5V22L11.5,21L15,22V20.5L13,19V13.5L21,16Z"/></svg>
+            </div>
+            <div class="route-node right">
+              <div class="airport-code">NRT</div>
+              <div class="airport-name">東京 (成田)</div>
+            </div>
+          </div>
+          
+          <div class="flight-time-info">
+            <div>
+              <div class="time-lbl">出發時間 (TPE T1)</div>
+              <div class="time-val">08/19 (三) 10:50</div>
+            </div>
+            <div style="text-align: right;">
+              <div class="time-lbl">抵達時間 (NRT T1)</div>
+              <div class="time-val">08/19 (三) 15:20</div>
+            </div>
+          </div>
+          
+          <div class="flight-details-grid">
+            <div class="detail-item">
+              <div class="detail-lbl">預訂編號</div>
+              <div class="detail-val">YJ99GA</div>
+            </div>
+            <div class="detail-item">
+              <div class="detail-lbl">託運行李</div>
+              <div class="detail-val">每人 1 件</div>
+            </div>
+            <div class="detail-item">
+              <div class="detail-lbl">機型</div>
+              <div class="detail-val">A320neo</div>
+            </div>
+          </div>
+          
+          <div class="passenger-seats">
+            <div class="psgr-row">
+              <span class="psgr-name">CHANG TIANYING (張天英)</span>
+              <span class="psgr-seat">10D</span>
+            </div>
+            <div class="psgr-row">
+              <span class="psgr-name">CHUNG CHINYEH (鍾金葉)</span>
+              <span class="psgr-seat">10E</span>
+            </div>
+            <div class="psgr-row">
+              <span class="psgr-name">CHANG CHUNJUNG (張純榮)</span>
+              <span class="psgr-seat">10F</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Hotel -->
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">
+            <svg viewBox="0 0 24 24"><path fill="var(--accent-green)" d="M19,9.3V4h-3v2.6L12,3L2,12h3v8h5v-6h4v6h5v-8h3L19,9.3z M10,10c0-1.1,0.9-2,2-2s2,0.9,2,2H10z"/></svg>
+            住宿資訊 (5 晚)
+          </div>
+          <div class="tag" style="background-color: rgba(16, 185, 129, 0.1); color: var(--accent-green); border: none;">Klook 已確認</div>
+        </div>
+        <div class="hotel-info">
+          <div>
+            <div class="hotel-name-jp">アパ飯店〈上野站南〉</div>
+            <div class="hotel-name-zh">APA Hotel Ueno Ekimae Minami</div>
+          </div>
+          
+          <div class="hotel-meta-row">
+            <span class="hotel-meta-lbl">入住日期</span>
+            <span class="hotel-meta-val">2026-08-19 (三) 15:00 起</span>
+          </div>
+          <div class="hotel-meta-row">
+            <span class="hotel-meta-lbl">退房日期</span>
+            <span class="hotel-meta-val">2026-08-24 (一) 10:00 前</span>
+          </div>
+          <div class="hotel-meta-row">
+            <span class="hotel-meta-lbl">房型/人數</span>
+            <span class="hotel-meta-val">2 x 標準客房 (禁煙房) / 3 成人</span>
+          </div>
+          <div class="hotel-meta-row">
+            <span class="hotel-meta-lbl">訂單編號</span>
+            <span class="hotel-meta-val">TGK700399</span>
+          </div>
+          <div class="hotel-meta-row">
+            <span class="hotel-meta-lbl">住客登記</span>
+            <span class="hotel-meta-val">房1: CHANG CHUN JUNG<br>房2: CHANG TIANYING</span>
+          </div>
+          
+          <div class="hotel-price">
+            <span class="hotel-price-lbl">Klook 實付總金額</span>
+            <span class="hotel-price-val">NT$ 26,116</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Inbound Flight -->
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">
+            <svg viewBox="0 0 24 24"><path fill="var(--primary)" d="M3.4,12.6L12,18L21.2,12L12,6L3.4,12.6M12,2L22,12L12,22L2,12L12,2M12,5.2L19,12L12,18.8L5,12L12,5.2Z"/></svg>
+            回程航班 MM625
+          </div>
+          <div class="tag" style="background-color: rgba(255, 94, 126, 0.1); color: var(--primary); border: none;">樂桃航空</div>
+        </div>
+        <div class="flight-pass">
+          <div class="flight-route">
+            <div class="route-node left">
+              <div class="airport-code">NRT</div>
+              <div class="airport-name">東京 (成田)</div>
+            </div>
+            <div class="flight-plane-icon">
+              <svg viewBox="0 0 24 24"><path d="M21,16V14L13,9V3.5A1.5,1.5 0 0,0 11.5,2A1.5,1.5 0 0,0 10,3.5V9L2,14V16L10,13.5V19L8,20.5V22L11.5,21L15,22V20.5L13,19V13.5L21,16Z" transform="rotate(180 12 12)"/></svg>
+            </div>
+            <div class="route-node right">
+              <div class="airport-code">TPE</div>
+              <div class="airport-name">台北 (桃園)</div>
+            </div>
+          </div>
+          
+          <div class="flight-time-info">
+            <div>
+              <div class="time-lbl">出發時間 (NRT T1)</div>
+              <div class="time-val">08/24 (一) 16:55</div>
+            </div>
+            <div style="text-align: right;">
+              <div class="time-lbl">抵達時間 (TPE T1)</div>
+              <div class="time-val">08/24 (一) 19:40</div>
+            </div>
+          </div>
+          
+          <div class="flight-details-grid">
+            <div class="detail-item">
+              <div class="detail-lbl">預訂編號</div>
+              <div class="detail-val">YJ99GA</div>
+            </div>
+            <div class="detail-item">
+              <div class="detail-lbl">託運行李</div>
+              <div class="detail-val">每人 1 件</div>
+            </div>
+            <div class="detail-item">
+              <div class="detail-lbl">機型</div>
+              <div class="detail-val">A320neo</div>
+            </div>
+          </div>
+          
+          <div class="passenger-seats">
+            <div class="psgr-row">
+              <span class="psgr-name">CHANG TIANYING (張天英)</span>
+              <span class="psgr-seat">5C</span>
+            </div>
+            <div class="psgr-row">
+              <span class="psgr-name">CHUNG CHINYEH (鍾金葉)</span>
+              <span class="psgr-seat">5B</span>
+            </div>
+            <div class="psgr-row">
+              <span class="psgr-name">CHANG CHUNJUNG (張純榮)</span>
+              <span class="psgr-seat">5A</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Budget Card -->
+      <div class="card budget-card" style="grid-column: span 1;">
+        <div class="card-header" style="background-color: rgba(245, 158, 11, 0.08);">
+          <div class="card-title">
+            <svg viewBox="0 0 24 24" style="fill: var(--accent-orange); width: 20px; height: 20px; vertical-align: middle; margin-right: 6px;"><path d="M12,2A10,10 0 1,0 22,12A10,10 0 0,0 12,2M12,18A6,6 0 1,1 18,12A6,6 0 0,1 12,18M12,8A4,4 0 1,0 16,12A4,4 0 0,0 12,8Z"/></svg>
+            💰 旅程預算估算與明細 (3人)
+          </div>
+          <div class="tag" style="background-color: rgba(245, 158, 11, 0.1); color: var(--accent-orange); border: none;">匯率估算 0.22</div>
+        </div>
+        <div class="hotel-info" style="gap: 8px;">
+          <!-- Category 1 -->
+          <div style="font-weight: 700; font-size: 0.9rem; border-bottom: 1px solid var(--border-color); padding-bottom: 4px; margin-top: 4px; color: var(--text-primary); display: flex; justify-content: space-between;">
+            <span>1. 航空與住宿 (台幣支付)</span>
+            <span style="color: var(--secondary);">NT$ 56,116</span>
+          </div>
+          <div class="hotel-meta-row">
+            <span class="hotel-meta-lbl">Klook 飯店 (5晚實付)</span>
+            <span class="hotel-meta-val">NT$ 26,116</span>
+          </div>
+          <div class="hotel-meta-row">
+            <span class="hotel-meta-lbl">樂桃航空來回機票 (預估)</span>
+            <span class="hotel-meta-val">NT$ 30,000</span>
+          </div>
+
+          <!-- Category 2 -->
+          <div style="font-weight: 700; font-size: 0.9rem; border-bottom: 1px solid var(--border-color); padding-bottom: 4px; margin-top: 8px; color: var(--text-primary); display: flex; justify-content: space-between;">
+            <span>2. 預約票券與體驗 (日圓)</span>
+            <span style="color: var(--accent-green);">¥56,260</span>
+          </div>
+          <div class="hotel-meta-row">
+            <span class="hotel-meta-lbl">地鐵 72H 通票 (¥1500 × 3)</span>
+            <span class="hotel-meta-val">¥4,500</span>
+          </div>
+          <div class="hotel-meta-row">
+            <span class="hotel-meta-lbl">Skyliner 來回 (¥4600 × 3)</span>
+            <span class="hotel-meta-val">¥13,800</span>
+          </div>
+          <div class="hotel-meta-row">
+            <span class="hotel-meta-lbl">晴空塔雙展望台 (¥3800 × 3)</span>
+            <span class="hotel-meta-val">¥11,400</span>
+          </div>
+          <div class="hotel-meta-row">
+            <span class="hotel-meta-lbl">墨田水族館門票 (¥2500 × 3)</span>
+            <span class="hotel-meta-val">¥7,500</span>
+          </div>
+          <div class="hotel-meta-row">
+            <span class="hotel-meta-lbl">Hotaluna 乘船票 (¥1720 × 3)</span>
+            <span class="hotel-meta-val">¥5,160</span>
+          </div>
+          <div class="hotel-meta-row">
+            <span class="hotel-meta-lbl">梨花和服體驗 (¥4500 × 3)</span>
+            <span class="hotel-meta-val">¥13,500</span>
+          </div>
+
+          <!-- Category 3 -->
+          <div style="font-weight: 700; font-size: 0.9rem; border-bottom: 1px solid var(--border-color); padding-bottom: 4px; margin-top: 8px; color: var(--text-primary); display: flex; justify-content: space-between;">
+            <span>3. 現場餐飲、購物與交通</span>
+            <span style="color: var(--accent-green);">¥118,770</span>
+          </div>
+          <div class="hotel-meta-row">
+            <span class="hotel-meta-lbl">媽媽 HOKA 舒適鞋 (1雙)</span>
+            <span class="hotel-meta-val">¥20,000</span>
+          </div>
+          <div class="hotel-meta-row">
+            <span class="hotel-meta-lbl">雙寺廟 15 份御朱印費用</span>
+            <span class="hotel-meta-val">約 ¥8,000</span>
+          </div>
+          <div class="hotel-meta-row">
+            <span class="hotel-meta-lbl">全行程餐飲費用估算</span>
+            <span class="hotel-meta-val">約 ¥87,770</span>
+          </div>
+          <div class="hotel-meta-row">
+            <span class="hotel-meta-lbl">地鐵補票/其他散策支出</span>
+            <span class="hotel-meta-val">約 ¥3,000</span>
+          </div>
+
+          <!-- Grand Total -->
+          <div class="hotel-price" style="margin-top: 10px; background: linear-gradient(135deg, rgba(245, 158, 11, 0.05) 0%, rgba(251, 191, 36, 0.05) 100%); border-color: rgba(245, 158, 11, 0.2);">
+            <span class="hotel-price-lbl" style="font-size: 0.85rem; font-weight: 700; color: var(--text-secondary);">預估旅程總花費 (3人)</span>
+            <span class="hotel-price-val" style="color: var(--accent-orange); font-size: 1.35rem;">NT$ 94,626</span>
+          </div>
+          <div style="text-align: right; font-size: 0.75rem; color: var(--text-muted); margin-top: -2px;">
+            平均每人約：<b>NT$ 31,542</b> (日幣部分按 0.22 匯率折算台幣)
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    
+    <!-- Itinerary Section -->
+    <section class="itinerary-section">
+      <div class="section-title">
+        <svg viewBox="0 0 24 24"><path d="M19,19H5V8H19M16,1H8V3H16M19,3H17V5H7V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.9 20.1,3 19,3Z"/></svg>
+        Day-by-Day 每日無障礙詳細行程
+      </div>
+      
+      <!-- Day Tabs Nav -->
+      <div class="tabs-nav-wrapper" id="sticky-nav">
+        <div class="container">
+          <div class="tabs-nav">
+            <button class="tab-btn active" onclick="switchDay(1)">
+              <span class="day-num">DAY 1</span>
+              <span>8/19 (三)</span>
+            </button>
+            <button class="tab-btn" onclick="switchDay(2)">
+              <span class="day-num">DAY 2</span>
+              <span>8/20 (四)</span>
+            </button>
+            <button class="tab-btn" onclick="switchDay(3)">
+              <span class="day-num">DAY 3</span>
+              <span>8/21 (五)</span>
+            </button>
+            <button class="tab-btn" onclick="switchDay(4)">
+              <span class="day-num">DAY 4</span>
+              <span>8/22 (六)</span>
+            </button>
+            <button class="tab-btn" onclick="switchDay(5)">
+              <span class="day-num">DAY 5</span>
+              <span>8/23 (日)</span>
+            </button>
+            <button class="tab-btn" onclick="switchDay(6)">
+              <span class="day-num">DAY 6</span>
+              <span>8/24 (一)</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Day 1 -->
+      <div id="day1" class="day-content active">
+        <div class="day-banner">
+          <div class="day-banner-title">
+            <h2>抵達東京 ➔ 飯店入住安頓 ➔ 買 HOKA 舒適鞋 ➔ 上野竹園晚餐</h2>
+            <p>2026年8月19日 (星期三)</p>
+          </div>
+          <div class="day-summary-badge">購入舒適戰鞋讓長者現穿</div>
+        </div>
+        <div class="day-timeline">
+          
+          <div class="timeline-node transit">
+            <div class="node-dot">
+              <svg viewBox="0 0 24 24"><path d="M21,16V14L13,9V3.5A1.5,1.5 0 0,0 11.5,2A1.5,1.5 0 0,0 10,3.5V9L2,14V16L10,13.5V19L8,20.5V22L11.5,21L15,22V20.5L13,19V13.5L21,16Z"/></svg>
+            </div>
+            <div class="node-time">15:20 <span class="duration">抵達</span></div>
+            <div class="node-card">
+              <div class="node-title-row">
+                <span class="node-title">抵達成田國際機場第一航廈</span>
+                <a href="https://maps.google.com/?q=Narita+International+Airport+Terminal+1" target="_blank" class="map-btn">
+                  <svg viewBox="0 0 24 24"><path d="M12,2C8.13,2 5,5.13 5,9c0,5.25 7,13 7,13s7,-7.75 7,-13c0,-3.87 -3.13,-7 -7,-7zM12,11.5c-1.38,0 -2.5,-1.12 -2.5,-2.5s1.12,-2.5 2.5,-2.5s2.5,1.12 2.5,2.5s-1.12,2.5 -2.5,2.5z"/></svg>地圖
+                </a>
+              </div>
+              <p class="node-desc">去程航班順暢抵達成田第一航廈。提取託運行李，自備手推輪椅展開旅行。入境後前往地鐵站京成電鐵櫃檯購買 3 張成人「京成Skyliner」單程車票（票價 <b>¥2,300/人</b>，共計 <b>¥6,900</b>）與實體東京地鐵 72 小時通票（票價 <b>¥1,500/人</b>，共計 <b>¥4,500</b>，用於後續無障礙乘車）。</p>
+              <div class="node-tips wheelchair-tips">
+                <svg viewBox="0 0 24 24"><path d="M12,2C6.5,2 2,6.5 2,12s4.5,10 10,10s10,-4.5 10,-10S17.5,2 12,2m4.5,15.5c-0.3,0.5 -1,0.7 -1.5,0.4l-3,-1.9l-1.8,3.5C10,19.9 9.2,20.3 8.4,20L4.4,18.7C3.7,18.4 3.3,17.6 3.6,16.9l1.4,-3.7C5.3,12.5 6.1,12.1 6.9,12.4l4,1.3l2.4,-4.8c0.5,-0.9 1.6,-1.4 2.6,-0.8l3,1.7C20.4,11.1 20.6,11.8 20.3,12.3l-1.4,1.6L16.5,15.5M16.5,9A1.5,1.5 0 0,1 15,7.5A1.5,1.5 0 0,1 16.5,6A1.5,1.5 0 0,1 18,7.5A1.5,1.5 0 0,1 16.5,9Z"/></svg>
+                無障礙提醒：可事先向地勤人員申請下機輪椅協助，成田機場出關動線皆為無障礙通道。
+              </div>
+            </div>
+          </div>
+          
+          <div class="timeline-node transit">
+            <div class="node-dot">
+              <svg viewBox="0 0 24 24"><path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M12,6A6,6 0 0,0 6,12A6,6 0 0,0 12,18A6,6 0 0,0 18,12A6,6 0 0,0 12,6M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8Z"/></svg>
+            </div>
+            <div class="node-time">16:59 - 17:55 <span class="duration">56分鐘</span></div>
+            <div class="node-card">
+              <div class="node-title-row">
+                <span class="node-title">搭乘京成 Skyliner 42 號直達上野 (預算：已含於上述 ¥6,900)</span>
+                <a href="https://www.keisei.co.jp/keisei/tetudou/skyliner/tc/" target="_blank" class="map-btn">
+                  <svg viewBox="0 0 24 24"><path d="M12,2C6.48,2 2,6.48 2,12C2,17.52 6.48,22 12,22C17.52,22 22,17.52 22,12C22,6.48 17.52,2 12,2M11,6H13V10H17V12H13V16H11V12H7V10H11V6Z"/></svg>官網資訊
+                </a>
+              </div>
+              <p class="node-desc">成田機場第一航廈站 ➔ 京成上野站。標準車程 41 分鐘，行程安排 56 分鐘，為長者乘降與輪椅安置預留 15 分鐘緩衝時間。</p>
+              <div class="node-tips wheelchair-tips">
+                <svg viewBox="0 0 24 24"><path d="M12,2C6.5,2 2,6.5 2,12s4.5,10 10,10s10,-4.5 10,-10S17.5,2 12,2m4.5,15.5c-0.3,0.5 -1,0.7 -1.5,0.4l-3,-1.9l-1.8,3.5C10,19.9 9.2,20.3 8.4,20L4.4,18.7C3.7,18.4 3.3,17.6 3.6,16.9l1.4,-3.7C5.3,12.5 6.1,12.1 6.9,12.4l4,1.3l2.4,-4.8c0.5,-0.9 1.6,-1.4 2.6,-0.8l3,1.7C20.4,11.1 20.6,11.8 20.3,12.3l-1.4,1.6L16.5,15.5M16.5,9A1.5,1.5 0 0,1 15,7.5A1.5,1.5 0 0,1 16.5,6A1.5,1.5 0 0,1 18,7.5A1.5,1.5 0 0,1 16.5,9Z"/></svg>
+                輪椅座席配置：Skyliner 第 5 號車廂為專屬無障礙車廂，配備寬敞的輪椅固定位與無障礙多功能化妝室。
+              </div>
+            </div>
+          </div>
+          
+          <div class="timeline-node hotel">
+            <div class="node-dot">
+              <svg viewBox="0 0 24 24"><path d="M19,9.3V4h-3v2.6L12,3L2,12h3v8h5v-6h4v6h5v-8h3L19,9.3z M10,10c0-1.1,0.9-2,2-2s2,0.9,2,2H10z"/></svg>
+            </div>
+            <div class="node-time">17:55 - 18:25 <span class="duration">30分鐘</span></div>
+            <div class="node-card">
+              <div class="node-title-row">
+                <span class="node-title">辦理飯店入住與寄存行李 (預算：已於 Klook 預付 NT$ 26,116)</span>
+                <a href="https://maps.google.com/?q=APA+Hotel+Ueno+Ekimae+Minami" target="_blank" class="map-btn">
+                  <svg viewBox="0 0 24 24"><path d="M12,2C8.13,2 5,5.13 5,9c0,5.25 7,13 7,13s7,-7.75 7,-13c0,-3.87 -3.13,-7 -7,-7zM12,11.5c-1.38,0 -2.5,-1.12 -2.5,-2.5s1.12,-2.5 2.5,-2.5s2.5,1.12 2.5,2.5s-1.12,2.5 -2.5,2.5z"/></svg>地圖
+                </a>
+              </div>
+              <p class="node-desc">由京成上野站正面口搭乘電梯至地面層，沿昭和通平緩的人行道推行輪椅步行約 8-10 分鐘至飯店。快速辦理 Check-in 置放行李。</p>
+            </div>
+          </div>
+          
+          <div class="timeline-node">
+            <div class="node-dot">
+              <svg viewBox="0 0 24 24"><path d="M12,18a6,6 0 1,0 0-12 6,6 0 0,0 0 12z"/></svg>
+            </div>
+            <div class="node-time">18:25 - 19:30 <span class="duration">1小時5分鐘</span></div>
+            <div class="node-card">
+              <div class="node-title-row">
+                <span class="node-title">採購 HOKA 舒適鞋 (預算約：¥18,000 - ¥22,000)</span>
+                <a href="https://maps.google.com/?q=Art+Sports+Okachimachi" target="_blank" class="map-btn">
+                  <svg viewBox="0 0 24 24"><path d="M12,2C8.13,2 5,5.13 5,9c0,5.25 7,13 7,13s7,-7.75 7,-13c0,-3.87 -3.13,-7 -7,-7zM12,11.5c-1.38,0 -2.5,-1.12 -2.5,-2.5s1.12,-2.5 2.5,-2.5s2.5,1.12 2.5,2.5s-1.12,2.5 -2.5,2.5z"/></svg>地圖
+                </a>
+              </div>
+              <p class="node-desc">自飯店步行推車僅需 6-8 分鐘即可抵達【ART SPORTS 御徒町店】或【London Sports / FIT TWO】。現場讓媽媽試穿並購買極具支撐力與避震效果的 HOKA 運動鞋，後續幾天行程即可立即穿著，確保行走與坐輪椅時雙腳極致舒適！鞋款均價約在 <b>¥18,000 - ¥22,000</b> 之間，且外國遊客可憑護照辦理退稅（Tax-Free 另享 10% 折扣）。</p>
+            </div>
+          </div>
+          
+          <div class="timeline-node food">
+            <div class="node-dot">
+              <svg viewBox="0 0 24 24"><path d="M11,9H9V2H7V9H5V2H3V9C3,11.12 4.66,12.84 6.75,12.97V22H8.25V12.97C10.34,12.84 12,11.12 12,9V2H11V9M16,6V14H18.5V22H20V2H16V6Z"/></svg>
+            </div>
+            <div class="node-time">19:30 - 21:00 <span class="duration">1小時30分</span></div>
+            <div class="node-card">
+              <div class="node-title-row">
+                <span class="node-title">晚餐：音音 上野竹園店 (預算約：¥2,500 - ¥3,500/人)</span>
+                <a href="https://maps.google.com/?q=Tokyo,+Taito+City,+Uenokoen,+1-52" target="_blank" class="map-btn">
+                  <svg viewBox="0 0 24 24"><path d="M12,2C8.13,2 5,5.13 5,9c0,5.25 7,13 7,13s7,-7.75 7,-13c0,-3.87 -3.13,-7 -7,-7zM12,11.5c-1.38,0 -2.5,-1.12 -2.5,-2.5s1.12,-2.5 2.5,-2.5s2.5,1.12 2.5,2.5s-1.12,2.5 -2.5,2.5z"/></svg>地圖
+                </a>
+              </div>
+              <p class="node-desc">自鞋店步行推車約 8-10 分鐘即可抵達 Ueno Bamboo Garden。享用「沖繩美吾島あぐー黑豚鹽麴烤肉膳」（約 <b>¥2,600</b>）與「豪華海鮮天麩羅重」（約 <b>¥2,400</b>）。全平坦昭和通道，晚餐總預算控制在 <b>¥8,000</b> 內。</p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      
+      <!-- Day 2 -->
+      <div id="day2" class="day-content">
+        <div class="day-banner">
+          <div class="day-banner-title">
+            <h2>晴空塔/水族館/天文館 ➔ 隅田川觀光船 ➔ 秋葉原散步 ➔ 神田明神參拜 ➔ 淺草老字號晚餐</h2>
+            <p>2026年8月20日 (星期四)</p>
+          </div>
+          <div class="day-summary-badge">極致天際線與江戶古社</div>
+        </div>
+        <div class="day-timeline">
+          
+          <div class="timeline-node transit">
+            <div class="node-dot">
+              <svg viewBox="0 0 24 24"><path d="M12,2c-4.4,0-8,3.6-8,8v9h16v-9C20,5.6,16.4,2,12,2z M7.5,16c-0.8,0-1.5-0.7-1.5-1.5S6.7,13,7.5,13S9,13.7,9,14.5S8.3,16,7.5,16z M16.5,16c-0.8,0-1.5-0.7-1.5-1.5s0.7-1.5,1.5-1.5s1.5,0.7,1.5,1.5S17.3,16,16.5,16z"/></svg>
+            </div>
+            <div class="node-time">09:00 - 09:40 <span class="duration">40分鐘</span></div>
+            <div class="node-card">
+              <div class="node-title-row">
+                <span class="node-title">地鐵無障礙路線：前往晴空塔</span>
+              </div>
+              <p class="node-desc"><strong>電車無障礙路線：</strong> 自飯店推行輪椅至京成上野站，搭乘京成電鐵直通地鐵淺草線/京成押上線列車，直達押上 (晴空塔前) 站，全程僅需約 10-15 分鐘，無任何轉乘，車站均設有無障礙升降電梯。排程預留 40 分鐘，提供充足的輪椅進出緩衝。</p>
+            </div>
+          </div>
+          
+          <div class="timeline-node">
+            <div class="node-dot">
+              <svg viewBox="0 0 24 24"><path d="M12,2C6.48,2 2,6.48 2,12C2,17.52 6.48,22 12,22C17.52,22 22,17.52 22,12C22,6.48 17.52,2 12,2M11,16H13V18H11V16M11,6H13V14H11V6Z"/></svg>
+            </div>
+            <div class="node-time">09:40 - 12:30 <span class="duration">2小時50分鐘</span></div>
+            <div class="node-card">
+              <div class="node-title-row">
+                <span class="node-title">東京晴空塔 ➔ 墨田水族館 / 天文館 TENKU 悠閒觀賞 (預算約：¥4,600/人)</span>
+                <a href="https://maps.google.com/?q=Tokyo+Skytree" target="_blank" class="map-btn">
+                  <svg viewBox="0 0 24 24"><path d="M12,2C8.13,2 5,5.13 5,9c0,5.25 7,13 7,13s7,-7.75 7,-13c0,-3.87 -3.13,-7 -7,-7zM12,11.5c-1.38,0 -2.5,-1.12 -2.5,-2.5s1.12,-2.5 2.5,-2.5s2.5,1.12 2.5,2.5s-1.12,2.5 -2.5,2.5z"/></svg>地圖
+                </a>
+              </div>
+              <p class="node-desc">搭乘大型電梯直達 350M 展望台（預約票價 <b>¥2,100/人</b>，3人共 <b>¥6,300</b>），隨後有極充裕時間前往 5、6 樓的【墨田水族館】（票價 <b>¥2,500/人</b>，3人共 <b>¥7,500</b>）或 7 樓【天文館「天空」】。無段差平坦設計，極為便於推行輪椅。</p>
+            </div>
+          </div>
+          
+          <div class="timeline-node food">
+            <div class="node-dot">
+              <svg viewBox="0 0 24 24"><path d="M11,9H9V2H7V9H5V2H3V9C3,11.12 4.66,12.84 6.75,12.97V22H8.25V12.97C10.34,12.84 12,11.12 12,9V2H11V9M16,6V14H18.5V22H20V2H16V6Z"/></svg>
+            </div>
+            <div class="node-time">12:30 - 13:40 <span class="duration">1小時10分鐘</span></div>
+            <div class="node-card">
+              <div class="node-title-row">
+                <span class="node-title">午餐：Solamachi 晴空街道美食街 (預算約：¥1,500 - ¥2,000/人)</span>
+              </div>
+              <p class="node-desc">享用熟食海鮮天婦羅蕎麥麵、親子丼。全熟熱食、無生食、無牛肉。3 人餐費預算約 <b>¥5,000</b>。</p>
+            </div>
+          </div>
+          
+          <div class="timeline-node transit">
+            <div class="node-dot">
+              <svg viewBox="0 0 24 24"><path d="M21,16V14L13,9V3.5A1.5,1.5 0 0,0 11.5,2A1.5,1.5 0 0,0 10,3.5V9L2,14V16L10,13.5V19L8,20.5V22L11.5,21L15,22V20.5L13,19V13.5L21,16Z"/></svg>
+            </div>
+            <div class="node-time">13:40 - 14:55 <span class="duration">1小時15分鐘</span></div>
+            <div class="node-card">
+              <div class="node-title-row">
+                <span class="node-title">無障礙步行/地鐵：晴空塔 ➔ 隅田川觀光船 Hotaluna 號 (預算：¥1,720/人)</span>
+                <a href="https://www.suijobus.co.jp/" target="_blank" class="map-btn">
+                  <svg viewBox="0 0 24 24"><path d="M12,2C6.48,2 2,6.48 2,12C2,17.52 6.48,22 12,22C17.52,22 22,17.52 22,12C22,6.48 17.52,2 12,2M11,6H13V10H17V12H13V16H11V12H7V10H11V6Z"/></svg>官網預約
+                </a>
+              </div>
+              <p class="node-desc"><strong>地鐵/步行路線：</strong> 自晴空塔可選擇步行 15 分鐘推輪椅經由「SUMIDA RIVER WALK」無障礙人行橋跨越隅田川直達淺草碼頭，風景絕佳；或搭乘地鐵淺草線僅需 1 站（3 分鐘，有電梯，單程 <b>¥180/人</b>）。 14:15 搭乘 Hotaluna 號觀光船體驗 40 分鐘隅田川巡航，抵達日之出棧橋（船票 <b>¥1,720/人</b>，3 人共 <b>¥5,160</b>）。</p>
+            </div>
+          </div>
+          
+          <div class="timeline-node transit">
+            <div class="node-dot">
+              <svg viewBox="0 0 24 24"><path d="M12,2C11.38,2 10.88,2.5 10.88,3.13V4.38C7.5,4.78 5,7.63 5,11V17L3,19V20H21V19L19,17V11C19,7.63 16.5,4.78 13.13,4.38V3.13C13.13,2.5 12.63,2 12,2M12,6A5,5 0 0,1 17,11V17H7V11A5,5 0 0,1 12,6Z"/></svg>
+            </div>
+            <div class="node-time">14:55 - 15:20 <span class="duration">25分鐘</span></div>
+            <div class="node-card">
+              <div class="node-title-row">
+                <span class="node-title">電車無障礙直達：日之出棧橋 ➔ 秋葉原電器街 (預算：¥180/人)</span>
+              </div>
+              <p class="node-desc"><strong>電車無障礙路線 (替代計程車)：</strong> 自日之出棧橋平坦路面步行 10 分鐘至 JR 濱松町站（備有大電梯），搭乘 **JR 京濱東北線或山手線列車直達秋葉原站**（4 站，8 分鐘，無需轉乘，大升降電梯直通地面層）。車資僅需 <b>¥180/人</b>（3人共 <b>¥540</b>），比計程車省去近 2000 日圓！</p>
+            </div>
+          </div>
+          
+          <div class="timeline-node">
+            <div class="node-dot">
+              <svg viewBox="0 0 24 24"><path d="M12,18A6,6 0 1,1 18,12A6,6 0 0,1 12,18M12,2A10,10 0 0,0 2,12A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"/></svg>
+            </div>
+            <div class="node-time">15:20 - 16:10 <span class="duration">50分鐘</span></div>
+            <div class="node-card">
+              <div class="node-title-row">
+                <span class="node-title">秋葉原電器街與動漫天堂平坦漫步 (新增順路點)</span>
+                <a href="https://maps.google.com/?q=Akihabara+Electric+Town" target="_blank" class="map-btn">
+                  <svg viewBox="0 0 24 24"><path d="M12,2C8.13,2 5,5.13 5,9c0,5.25 7,13 7,13s7,-7.75 7,-13c0,-3.87 -3.13,-7 -7,-7zM12,11.5c-1.38,0 -2.5,-1.12 -2.5,-2.5s1.12,-2.5 2.5,-2.5s2.5,1.12 2.5,2.5s-1.12,2.5 -2.5,2.5z"/></svg>地圖
+                </a>
+              </div>
+              <p class="node-desc">秋葉原街道極為寬闊平坦，人行道設有輪椅斜坡，適合悠閒推車散步。逛逛各式電器百貨與動漫免稅店。隨後順路前往神田明神（沿明神男坂一側為陡峭階梯，請繞行左側的平緩車道/斜坡上山）。</p>
+            </div>
+          </div>
+          
+          <div class="timeline-node">
+            <div class="node-dot">
+              <svg viewBox="0 0 24 24"><path d="M12,2C8.13,2 5,5.13 5,9c0,5.25 7,13 7,13s7,-7.75 7,-13c0,-3.87 -3.13,-7 -7,-7zM12,11.5c-1.38,0 -2.5,-1.12 -2.5,-2.5s1.12,-2.5 2.5,-2.5s2.5,1.12 2.5,2.5s-1.12,2.5 -2.5,2.5z"/></svg>
+            </div>
+            <div class="node-time">16:10 - 17:00 <span class="duration">50分鐘</span></div>
+            <div class="node-card">
+              <div class="node-title-row">
+                <span class="node-title">神田明神參拜 (預算：御朱印 ¥500/份)</span>
+                <a href="https://maps.google.com/?q=Kanda+Myojin" target="_blank" class="map-btn">
+                  <svg viewBox="0 0 24 24"><path d="M12,2C8.13,2 5,5.13 5,9c0,5.25 7,13 7,13s7,-7.75 7,-13c0,-3.87 -3.13,-7 -7,-7zM12,11.5c-1.38,0 -2.5,-1.12 -2.5,-2.5s1.12,-2.5 2.5,-2.5s2.5,1.12 2.5,2.5s-1.12,2.5 -2.5,2.5z"/></svg>地圖
+                </a>
+              </div>
+              <p class="node-desc">參拜開闊平坦的神田古老明神神社，感受江戶傳統宗教信仰。於朱印所書寫御朱印（費用為 <b>¥500</b>，受理至 17:00）。</p>
+              <div class="node-tips wheelchair-tips">
+                <svg viewBox="0 0 24 24"><path d="M12,2C6.5,2 2,6.5 2,12s4.5,10 10,10s10,-4.5 10,-10S17.5,2 12,2m4.5,15.5c-0.3,0.5 -1,0.7 -1.5,0.4l-3,-1.9l-1.8,3.5C10,19.9 9.2,20.3 8.4,20L4.4,18.7C3.7,18.4 3.3,17.6 3.6,16.9l1.4,-3.7C5.3,12.5 6.1,12.1 6.9,12.4l4,1.3l2.4,-4.8c0.5,-0.9 1.6,-1.4 2.6,-0.8l3,1.7C20.4,11.1 20.6,11.8 20.3,12.3l-1.4,1.6L16.5,15.5M16.5,9A1.5,1.5 0 0,1 15,7.5A1.5,1.5 0 0,1 16.5,6A1.5,1.5 0 0,1 18,7.5A1.5,1.5 0 0,1 16.5,9Z"/></svg>
+                避障與省錢提醒：神田明神境內無段差。參拜完可步行 12 分鐘至地鐵御茶之水站或秋葉原站，搭乘地鐵回上野（180 日圓），替代計程車。
+              </div>
+            </div>
+          </div>
+          
+          <div class="timeline-node transit">
+            <div class="node-dot">
+              <svg viewBox="0 0 24 24"><path d="M12,2C11.38,2 10.88,2.5 10.88,3.13V4.38C7.5,4.78 5,7.63 5,11V17L3,19V20H21V19L19,17V11C19,7.63 16.5,4.78 13.13,4.38V3.13C13.13,2.5 12.63,2 12,2M12,6A5,5 0 0,1 17,11V17H7V11A5,5 0 0,1 12,6Z"/></svg>
+            </div>
+            <div class="node-time">17:00 - 18:00 <span class="duration">1小時</span></div>
+            <div class="node-card">
+              <div class="node-title-row">
+                <span class="node-title">返上野 ➔ 購買外帶兔屋銅鑼燒 (預算：¥240/個)</span>
+                <a href="https://maps.google.com/?q=Usagiya+Ueno" target="_blank" class="map-btn">
+                  <svg viewBox="0 0 24 24"><path d="M12,2C8.13,2 5,5.13 5,9c0,5.25 7,13 7,13s7,-7.75 7,-13c0,-3.87 -3.13,-7 -7,-7zM12,11.5c-1.38,0 -2.5,-1.12 -2.5,-2.5s1.12,-2.5 2.5,-2.5s2.5,1.12 2.5,2.5s-1.12,2.5 -2.5,2.5z"/></svg>地圖
+                </a>
+              </div>
+              <p class="node-desc">搭乘地鐵回上野。步行至上野百年名店【兔屋 (うさぎや)】本店購買或提領銅鑼燒。請特別注意：<b>兔屋本店是專營外帶的和菓子老鋪，店內沒有提供任何內用座位</b>。買 3 個品嚐共 <b>¥720</b>。距離您們入住的 APA 飯店推車步行僅約 8-10 分鐘，非常推薦直接買好帶回飯店客房內，配杯熱茶或咖啡坐著享用，對長者而言是最放鬆的吃法！</p>
+              <div class="node-tips wheelchair-tips" style="color: var(--primary);">
+                <svg viewBox="0 0 24 24"><path fill="var(--primary)" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                買銅鑼燒安全叮嚀：兔屋因每日新鮮手工現做，下午極容易提早售完。特別建議在第一天或當天早上打電話（+81-3-3831-6195）完成預約保留，現場即可順利提領！
+              </div>
+            </div>
+          </div>
+          
+          <div class="timeline-node food">
+            <div class="node-dot">
+              <svg viewBox="0 0 24 24"><path d="M11,9H9V2H7V9H5V2H3V9C3,11.12 4.66,12.84 6.75,12.97V22H8.25V12.97C10.34,12.84 12,11.12 12,9V2H11V9M16,6V14H18.5V22H20V2H16V6Z"/></svg>
+            </div>
+            <div class="node-time">18:30 - 20:00 <span class="duration">1小時30分</span></div>
+            <div class="node-card">
+              <div class="node-title-row">
+                <span class="node-title">晚餐：上野 伊豆榮 本店 (預算約：¥4,000 - ¥6,000/人)</span>
+                <a href="https://maps.google.com/?q=Izuei+Honten,+Ueno" target="_blank" class="map-btn">
+                  <svg viewBox="0 0 24 24"><path d="M12,2C8.13,2 5,5.13 5,9c0,5.25 7,13 7,13s7,-7.75 7,-13c0,-3.87 -3.13,-7 -7,-7zM12,11.5c-1.38,0 -2.5,-1.12 -2.5,-2.5s1.12,-2.5 2.5,-2.5s2.5,1.12 2.5,2.5s-1.12,2.5 -2.5,2.5z"/></svg>地圖
+                </a>
+              </div>
+              <p class="node-desc">自飯店步行推車僅需 6-8 分鐘（全平坦人行道）。晚餐享用入口即化、深受長者喜愛的百年蒲燒鰻魚重。鰻魚重價格為 松（<b>¥3,960</b>）、竹（<b>¥5,060</b>）、梅（<b>¥6,160</b>），3 人均點「竹」套餐預算約為 <b>¥15,180</b>。買好銅鑼燒回飯店稍微躺下歇息、洗把臉後再悠閒出門，完全不需反覆搭地鐵奔波！本店設有大型無障礙電梯與輪椅席位，全店無任何牛肉料理，熟食安全。</p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      
+      <!-- Day 3 -->
+      <div id="day3" class="day-content">
+        <div class="day-banner">
+          <div class="day-banner-title">
+            <h2>上野恩賜公園三古社 ➔ 韻松亭午餐 ➔ 根津千本鳥居 ➔ 法輪寺 ➔ 日比谷優雅街區</h2>
+            <p>2026年8月21日 (星期五)</p>
+          </div>
+          <div class="day-summary-badge">古社與花手水巡禮</div>
+        </div>
+        <div class="day-timeline">
+          
+          <div class="timeline-node">
+            <div class="node-dot">
+              <svg viewBox="0 0 24 24"><path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,18A6,6 0 1,1 18,12A6,6 0 0,1 12,18M12,8A4,4 0 1,0 16,12A4,4 0 0,0 12,8Z"/></svg>
+            </div>
+            <div class="node-time">09:15 - 11:30 <span class="duration">2小時15分鐘</span></div>
+            <div class="node-card">
+              <div class="node-title-row">
+                <span class="node-title">上野公園三古社參拜 (上野東照宮 ➔ 花園稻荷 ➔ 五條天神社)</span>
+                <a href="https://maps.google.com/?q=Ueno+Toshogu+Shrine" target="_blank" class="map-btn">
+                  <svg viewBox="0 0 24 24"><path d="M12,2C8.13,2 5,5.13 5,9c0,5.25 7,13 7,13s7,-7.75 7,-13c0,-3.87 -3.13,-7 -7,-7zM12,11.5c-1.38,0 -2.5,-1.12 -2.5,-2.5s1.12,-2.5 2.5,-2.5s2.5,1.12 2.5,2.5s-1.12,2.5 -2.5,2.5z"/></svg>地圖
+                </a>
+              </div>
+              <p class="node-desc">自飯店出發，經公園平緩無階梯石板道參拜【上野東照宮】（有極美花手水，Goshuin 受理 09:00 - 16:00）；隨後走訪隔壁【花園稻荷神社】與醫藥神明【五條天神社】。預留 2 小時以上，推輪椅漫步極為悠閒。</p>
+              <div class="node-tips wheelchair-tips">
+                <svg viewBox="0 0 24 24"><path d="M12,2C6.5,2 2,6.5 2,12s4.5,10 10,10s10,-4.5 10,-10S17.5,2 12,2m4.5,15.5c-0.3,0.5 -1,0.7 -1.5,0.4l-3,-1.9l-1.8,3.5C10,19.9 9.2,20.3 8.4,20L4.4,18.7C3.7,18.4 3.3,17.6 3.6,16.9l1.4,-3.7C5.3,12.5 6.1,12.1 6.9,12.4l4,1.3l2.4,-4.8c0.5,-0.9 1.6,-1.4 2.6,-0.8l3,1.7C20.4,11.1 20.6,11.8 20.3,12.3l-1.4,1.6L16.5,15.5M16.5,9A1.5,1.5 0 0,1 15,7.5A1.5,1.5 0 0,1 16.5,6A1.5,1.5 0 0,1 18,7.5A1.5,1.5 0 0,1 16.5,9Z"/></svg>
+                無障礙提醒：上野東照宮設有平坦參道；花園稻荷大階梯旁設有專屬無障礙緩坡可繞行。
+              </div>
+            </div>
+          </div>
+          
+          <div class="timeline-node food">
+            <div class="node-dot">
+              <svg viewBox="0 0 24 24"><path d="M11,9H9V2H7V9H5V2H3V9C3,11.12 4.66,12.84 6.75,12.97V22H8.25V12.97C10.34,12.84 12,11.12 12,9V2H11V9M16,6V14H18.5V22H20V2H16V6Z"/></svg>
+            </div>
+            <div class="node-time">11:30 - 13:00 <span class="duration">1小時30分鐘</span></div>
+            <div class="node-card">
+              <div class="node-title-row">
+                <span class="node-title">午餐：韻松亭 (預算約：¥3,000 - ¥4,400/人)</span>
+                <a href="https://maps.google.com/?q=Inshotei+Ueno" target="_blank" class="map-btn">
+                  <svg viewBox="0 0 24 24"><path d="M12,2C8.13,2 5,5.13 5,9c0,5.25 7,13 7,13s7,-7.75 7,-13c0,-3.87 -3.13,-7 -7,-7zM12,11.5c-1.38,0 -2.5,-1.12 -2.5,-2.5s1.12,-2.5 2.5,-2.5s2.5,1.12 2.5,2.5s-1.12,2.5 -2.5,2.5z"/></svg>地圖
+                </a>
+              </div>
+              <p class="node-desc">享用精緻軟嫩的「花籠膳」豆腐懷石料理。平日午間花籠膳為 <b>¥3,000/人</b>，假日花籠本膳為 <b>¥4,400/人</b>（含稅）。純然清淡、極易咀嚼，且完全無生食與牛肉料理。3人餐費預算約為 <b>¥9,000</b>。</p>
+              <div class="node-tips wheelchair-tips">
+                <svg viewBox="0 0 24 24"><path d="M12,2C6.5,2 2,6.5 2,12s4.5,10 10,10s10,-4.5 10,-10S17.5,2 12,2m4.5,15.5c-0.3,0.5 -1,0.7 -1.5,0.4l-3,-1.9l-1.8,3.5C10,19.9 9.2,20.3 8.4,20L4.4,18.7C3.7,18.4 3.3,17.6 3.6,16.9l1.4,-3.7C5.3,12.5 6.1,12.1 6.9,12.4l4,1.3l2.4,-4.8c0.5,-0.9 1.6,-1.4 2.6,-0.8l3,1.7C20.4,11.1 20.6,11.8 20.3,12.3l-1.4,1.6L16.5,15.5M16.5,9A1.5,1.5 0 0,1 15,7.5A1.5,1.5 0 0,1 16.5,6A1.5,1.5 0 0,1 18,7.5A1.5,1.5 0 0,1 16.5,9Z"/></svg>
+                無障礙提醒：韻松亭為歷史古建物，但一樓備有無障礙用餐客席，輪椅可直泊餐桌旁。
+              </div>
+            </div>
+          </div>
+          
+          <div class="timeline-node transit">
+            <div class="node-dot">
+              <svg viewBox="0 0 24 24"><path d="M12,2C11.38,2 10.88,2.5 10.88,3.13V4.38C7.5,4.78 5,7.63 5,11V17L3,19V20H21V19L19,17V11C19,7.63 16.5,4.78 13.13,4.38V3.13C13.13,2.5 12.63,2 12,2M12,6A5,5 0 0,1 17,11V17H7V11A5,5 0 0,1 12,6Z"/></svg>
+            </div>
+            <div class="node-time">13:00 - 13:20 <span class="duration">20分鐘</span></div>
+            <div class="node-card">
+              <div class="node-title-row">
+                <span class="node-title">地鐵直達替代計程車：前往根津神社 (預算：¥180/人)</span>
+              </div>
+              <p class="node-desc"><strong>電車無障礙路線 (替代計程車)：</strong> 自上野恩賜公園步行至地鐵千代田線【湯島站】（備有電梯），搭乘地鐵僅需 1 站（2 分鐘）即可抵達【根津站】，出站後推車步行 5 分鐘平地即達根津神社。車資僅 <b>¥180/人</b>（3人共 <b>¥540</b>）。</p>
+            </div>
+          </div>
+          
+          <div class="timeline-node">
+            <div class="node-dot">
+              <svg viewBox="0 0 24 24"><path d="M12,2C8.13,2 5,5.13 5,9c0,5.25 7,13 7,13s7,-7.75 7,-13c0,-3.87 -3.13,-7 -7,-7zM12,11.5c-1.38,0 -2.5,-1.12 -2.5,-2.5s1.12,-2.5 2.5,-2.5s2.5,1.12 2.5,2.5s-1.12,2.5 -2.5,2.5z"/></svg>
+            </div>
+            <div class="node-time">13:20 - 14:30 <span class="duration">1小時10分鐘</span></div>
+            <div class="node-card">
+              <div class="node-title-row">
+                <span class="node-title">根津神社參拜 (預算：門票免費 / 御朱印 ¥500/份)</span>
+                <a href="https://maps.google.com/?q=Nezu+Shrine" target="_blank" class="map-btn">
+                  <svg viewBox="0 0 24 24"><path d="M12,2C8.13,2 5,5.13 5,9c0,5.25 7,13 7,13s7,-7.75 7,-13c0,-3.87 -3.13,-7 -7,-7zM12,11.5c-1.38,0 -2.5,-1.12 -2.5,-2.5s1.12,-2.5 2.5,-2.5s2.5,1.12 2.5,2.5s-1.12,2.5 -2.5,2.5z"/></svg>地圖
+                </a>
+              </div>
+              <p class="node-desc">欣賞被列為日本重要文化財的根津神社神殿、綠意昂然的坡道與壯麗的千本紅色鳥居。境內免門票，書寫御朱印費用為 <b>¥500</b>。</p>
+              <div class="node-tips wheelchair-tips">
+                <svg viewBox="0 0 24 24"><path d="M12,2C6.5,2 2,6.5 2,12s4.5,10 10,10s10,-4.5 10,-10S17.5,2 12,2m4.5,15.5c-0.3,0.5 -1,0.7 -1.5,0.4l-3,-1.9l-1.8,3.5C10,19.9 9.2,20.3 8.4,20L4.4,18.7C3.7,18.4 3.3,17.6 3.6,16.9l1.4,-3.7C5.3,12.5 6.1,12.1 6.9,12.4l4,1.3l2.4,-4.8c0.5,-0.9 1.6,-1.4 2.6,-0.8l3,1.7C20.4,11.1 20.6,11.8 20.3,12.3l-1.4,1.6L16.5,15.5M16.5,9A1.5,1.5 0 0,1 15,7.5A1.5,1.5 0 0,1 16.5,6A1.5,1.5 0 0,1 18,7.5A1.5,1.5 0 0,1 16.5,9Z"/></svg>
+                無障礙提醒：根津神社內除千本鳥居有局部台階外，主殿正面和參拜路線皆設有輪椅專用平緩坡道。
+              </div>
+            </div>
+          </div>
+          
+          <div class="timeline-node transit">
+            <div class="node-dot">
+              <svg viewBox="0 0 24 24"><path d="M12,2C11.38,2 10.88,2.5 10.88,3.13V4.38C7.5,4.78 5,7.63 5,11V17L3,19V20H21V19L19,17V11C19,7.63 16.5,4.78 13.13,4.38V3.13C13.13,2.5 12.63,2 12,2M12,6A5,5 0 0,1 17,11V17H7V11A5,5 0 0,1 12,6Z"/></svg>
+            </div>
+            <div class="node-time">14:30 - 14:50 <span class="duration">20分鐘</span></div>
+            <div class="node-card">
+              <div class="node-title-row">
+                <span class="node-title">地鐵無障礙轉乘：前往法輪寺 (預算：¥210/人)</span>
+              </div>
+              <p class="node-desc"><strong>電車無障礙路線 (替代計程車)：</strong> 自根津站搭乘地鐵千代田線至大手町站（3站，5分鐘），站內大電梯轉搭東西線，直達【早稻田站】（4站，7分鐘，Exit 3B設有無障礙升降電梯）。出站步行1分鐘即達法輪寺，東西線轉乘通道車資為 <b>¥210/人</b>（3人共 <b>¥630</b>）。</p>
+            </div>
+          </div>
+          
+          <div class="timeline-node">
+            <div class="node-dot">
+              <svg viewBox="0 0 24 24"><path d="M12,2C8.13,2 5,5.13 5,9c0,5.25 7,13 7,13s7,-7.75 7,-13c0,-3.87 -3.13,-7 -7,-7zM12,11.5c-1.38,0 -2.5,-1.12 -2.5,-2.5s1.12,-2.5 2.5,-2.5s2.5,1.12 2.5,2.5s-1.12,2.5 -2.5,2.5z"/></svg>
+            </div>
+            <div class="node-time">14:50 - 15:45 <span class="duration">55分鐘</span></div>
+            <div class="node-card">
+              <div class="node-title-row">
+                <span class="node-title">法輪寺參拜 (預算：免門票 / 御朱印約 ¥800/份)</span>
+                <a href="https://maps.google.com/?q=Waseda+Hourinji+Temple" target="_blank" class="map-btn">
+                  <svg viewBox="0 0 24 24"><path d="M12,2C8.13,2 5,5.13 5,9c0,5.25 7,13 7,13s7,-7.75 7,-13c0,-3.87 -3.13,-7 -7,-7zM12,11.5c-1.38,0 -2.5,-1.12 -2.5,-2.5s1.12,-2.5 2.5,-2.5s2.5,1.12 2.5,2.5s-1.12,2.5 -2.5,2.5z"/></svg>地圖
+                </a>
+              </div>
+              <p class="node-desc">欣賞法輪寺院落中精緻的手工花手水。境內免門票，書寫美麗彩色手繪御朱印（Goshuin）費用約 <b>¥800 - ¥1,000</b>。</p>
+              <div class="node-tips wheelchair-tips">
+                <svg viewBox="0 0 24 24"><path d="M12,2C6.5,2 2,6.5 2,12s4.5,10 10,10s10,-4.5 10,-10S17.5,2 12,2m4.5,15.5c-0.3,0.5 -1,0.7 -1.5,0.4l-3,-1.9l-1.8,3.5C10,19.9 9.2,20.3 8.4,20L4.4,18.7C3.7,18.4 3.3,17.6 3.6,16.9l1.4,-3.7C5.3,12.5 6.1,12.1 6.9,12.4l4,1.3l2.4,-4.8c0.5,-0.9 1.6,-1.4 2.6,-0.8l3,1.7C20.4,11.1 20.6,11.8 20.3,12.3l-1.4,1.6L16.5,15.5M16.5,9A1.5,1.5 0 0,1 15,7.5A1.5,1.5 0 0,1 16.5,6A1.5,1.5 0 0,1 18,7.5A1.5,1.5 0 0,1 16.5,9Z"/></svg>
+                無障礙提醒：法輪寺入口無落差，寺院小巧平整，輪椅前進與觀賞十分親近方便。
+              </div>
+            </div>
+          </div>
+          
+          <div class="timeline-node transit">
+            <div class="node-dot">
+              <svg viewBox="0 0 24 24"><path d="M12,2C11.38,2 10.88,2.5 10.88,3.13V4.38C7.5,4.78 5,7.63 5,11V17L3,19V20H21V19L19,17V11C19,7.63 16.5,4.78 13.13,4.38V3.13C13.13,2.5 12.63,2 12,2M12,6A5,5 0 0,1 17,11V17H7V11A5,5 0 0,1 12,6Z"/></svg>
+            </div>
+            <div class="node-time">15:45 - 16:15 <span class="duration">30分鐘</span></div>
+            <div class="node-card">
+              <div class="node-title-row">
+                <span class="node-title">電車無障礙直達：早稻田 ➔ 日比谷優雅藝文區 (預算：¥210/人)</span>
+              </div>
+              <p class="node-desc"><strong>電車無障礙路線 (替代銀座)：</strong> 早稻田站搭東西線至日本橋站，站內轉日比谷線直達【日比谷站】。全程無階梯。車資為 <b>¥210/人</b>（3人共 <b>¥630</b>）。</p>
+            </div>
+          </div>
+          
+          <div class="timeline-node">
+            <div class="node-dot">
+              <svg viewBox="0 0 24 24"><path d="M12,18A6,6 0 1,1 18,12A6,6 0 0,1 12,18M12,2A10,10 0 0,0 2,12A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"/></svg>
+            </div>
+            <div class="node-time">16:15 - 18:15 <span class="duration">2小時</span></div>
+            <div class="node-card">
+              <div class="node-title-row">
+                <span class="node-title">皇居外苑二重橋前拍照 ➔ 日比谷公園與中城空中花園散步 (優雅欣賞夕陽，替代銀座)</span>
+                <a href="https://maps.google.com/?q=Nijubashi+Bridge,+Tokyo" target="_blank" class="map-btn">
+                  <svg viewBox="0 0 24 24"><path d="M12,2C8.13,2 5,5.13 5,9c0,5.25 7,13 7,13s7,-7.75 7,-13c0,-3.87 -3.13,-7 -7,-7zM12,11.5c-1.38,0 -2.5,-1.12 -2.5,-2.5s1.12,-2.5 2.5,-2.5s2.5,1.12 2.5,2.5s-1.12,2.5 -2.5,2.5z"/></svg>地圖
+                </a>
+              </div>
+              <p class="node-desc">
+                日比谷與皇居僅一護城河之隔！自日比谷站出站後，沿著護城河旁極為平坦寬闊的大道，推輪椅散步約 10 分鐘，即可抵達【皇居外苑・二重橋前廣場】。此處路面全為平整鋪面，可在此為媽媽拍攝皇居與經典「二重橋（眼鏡橋）」與護城河城牆的經典紀念照（無需進入內苑即可拍出絕美照）。<br><br>
+                拍照後原路折返，推車穿過優美的【日比谷公園】綠蔭，最後前往【日比谷中城 (Tokyo Midtown Hibiya)】。搭乘大容量升降電梯前往 6 樓的空中露台花園。坐在開闊的休閒長椅上，眺望剛剛散步的皇居大片森林與護城河，靜靜享受極具震撼力的皇居夕陽美景！
+              </p>
+              <div class="node-tips wheelchair-tips">
+                <svg viewBox="0 0 24 24"><path d="M12,2C6.5,2 2,6.5 2,12s4.5,10 10,10s10,-4.5 10,-10S17.5,2 12,2m4.5,15.5c-0.3,0.5 -1,0.7 -1.5,0.4l-3,-1.9l-1.8,3.5C10,19.9 9.2,20.3 8.4,20L4.4,18.7C3.7,18.4 3.3,17.6 3.6,16.9l1.4,-3.7C5.3,12.5 6.1,12.1 6.9,12.4l4,1.3l2.4,-4.8c0.5,-0.9 1.6,-1.4 2.6,-0.8l3,1.7C20.4,11.1 20.6,11.8 20.3,12.3l-1.4,1.6L16.5,15.5M16.5,9A1.5,1.5 0 0,1 15,7.5A1.5,1.5 0 0,1 16.5,6A1.5,1.5 0 0,1 18,7.5A1.5,1.5 0 0,1 16.5,9Z"/></svg>
+                無障礙提醒：皇居一般參觀的「內苑導覽」路程長達 2.2 公里且需全程跟上導覽速度，對長者較為吃力；而我們安排的「皇居外苑與二重橋前」則完全開放且為100%全平鋪路面，推輪椅最為舒適安全。散步完直接搭日比谷線回上野，快速平價。
+              </div>
+            </div>
+          </div>
+          
+          <div class="timeline-node food">
+            <div class="node-dot">
+              <svg viewBox="0 0 24 24"><path d="M11,9H9V2H7V9H5V2H3V9C3,11.12 4.66,12.84 6.75,12.97V22H8.25V12.97C10.34,12.84 12,11.12 12,9V2H11V9M16,6V14H18.5V22H20V2H16V6Z"/></svg>
+            </div>
+            <div class="node-time">19:00 - 20:30 <span class="duration">1小時30分</span></div>
+            <div class="node-card">
+              <div class="node-title-row">
+                <span class="node-title">晚餐：LA COCORICO 上野店 (預算約：¥2,500 - ¥3,500/人)</span>
+                <a href="https://maps.google.com/?q=LA+COCORICO+Ueno" target="_blank" class="map-btn">
+                  <svg viewBox="0 0 24 24"><path d="M12,2C8.13,2 5,5.13 5,9c0,5.25 7,13 7,13s7,-7.75 7,-13c0,-3.87 -3.13,-7 -7,-7zM12,11.5c-1.38,0 -2.5,-1.12 -2.5,-2.5s1.12,-2.5 2.5,-2.5s2.5,1.12 2.5,2.5s-1.12,2.5 -2.5,2.5z"/></svg>地圖
+                </a>
+              </div>
+              <p class="node-desc">享用肉質香嫩多汁的法式烤大山雞餐。招牌烤半雞套餐約 <b>¥2,200</b>，烤全雞套餐約 <b>¥3,600</b>，3人晚餐總預算約為 <b>¥8,000</b>。全熟熱食、無生食、無任何牛肉。大樓入口平整設有電梯與無障礙化妝室，極為舒適。</p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      
+      <!-- Day 4 -->
+      <div id="day4" class="day-content">
+        <div class="day-banner">
+          <div class="day-banner-title">
+            <h2>不忍池晨間賞荷 ➔ 風鈴祭古社 ➔ 鰻魚午餐 ➔ 不忍池三社 ➔ 六本木夏日盆踊大會</h2>
+            <p>2026年8月22日 (星期六)</p>
+          </div>
+          <div class="day-summary-badge">風鈴悠揚與日本夏日祭典</div>
+        </div>
+        <div class="day-timeline">
+          
+          <div class="timeline-node">
+            <div class="node-dot">
+              <svg viewBox="0 0 24 24"><path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,18A6,6 0 1,1 18,12A6,6 0 0,1 12,18Z"/></svg>
+            </div>
+            <div class="node-time">07:15 - 08:15 <span class="duration">1小時</span></div>
+            <div class="node-card">
+              <div class="node-title-row">
+                <span class="node-title">不忍池晨間賞荷花</span>
+              </div>
+              <p class="node-desc">清晨天氣涼爽，推行輪椅漫步木棧道欣賞滿池荷花（上午最盛盛開），隨後步行返回飯店享用早餐並稍作休整。</p>
+            </div>
+          </div>
+          
+          <div class="timeline-node transit">
+            <div class="node-dot">
+              <svg viewBox="0 0 24 24"><path d="M12,2C11.38,2 10.88,2.5 10.88,3.13V4.38C7.5,4.78 5,7.63 5,11V17L3,19V20H21V19L19,17V11C19,7.63 16.5,4.78 13.13,4.38V3.13C13.13,2.5 12.63,2 12,2M12,6A5,5 0 0,1 17,11V17H7V11A5,5 0 0,1 12,6Z"/></svg>
+            </div>
+            <div class="node-time">09:45 - 10:30 <span class="duration">45分鐘</span></div>
+            <div class="node-card">
+              <div class="node-title-row">
+                <span class="node-title">前往西新井大師 (搭乘東武線，預算：¥330/人)</span>
+              </div>
+              <p class="node-desc"><strong>電車無障礙路線 (替代計程車)：</strong> 自飯店上野站搭乘地鐵日比谷線至北千住站，站內平直大電梯直接轉乘東武晴空塔線直達西新井站，再轉乘大師線至大師前站。全程無障礙電梯與坡道。車資為 <b>¥330/人</b>（3人共 <b>¥990</b>）。</p>
+            </div>
+          </div>
+          
+          <div class="timeline-node">
+            <div class="node-dot">
+              <svg viewBox="0 0 24 24"><path d="M12,2C8.13,2 5,5.13 5,9c0,5.25 7,13 7,13s7,-7.75 7,-13c0,-3.87 -3.13,-7 -7,-7zM12,11.5c-1.38,0 -2.5,-1.12 -2.5,-2.5s1.12,-2.5 2.5,-2.5s2.5,1.12 2.5,2.5s-1.12,2.5 -2.5,2.5z"/></svg>
+            </div>
+            <div class="node-time">10:30 - 12:30 <span class="duration">2小時</span></div>
+            <div class="node-card">
+              <div class="node-title-row">
+                <span class="node-title">西新井大師 (預算：免門票 / 御朱印 ¥500/份)</span>
+                <a href="https://maps.google.com/?q=Nishiarai+Daishi" target="_blank" class="map-btn">
+                  <svg viewBox="0 0 24 24"><path d="M12,2C8.13,2 5,5.13 5,9c0,5.25 7,13 7,13s7,-7.75 7,-13c0,-3.87 -3.13,-7 -7,-7zM12,11.5c-1.38,0 -2.5,-1.12 -2.5,-2.5s1.12,-2.5 2.5,-2.5s2.5,1.12 2.5,2.5s-1.12,2.5 -2.5,2.5z"/></svg>地圖
+                </a>
+              </div>
+              <p class="node-desc">穿著舒適的私服，在掛滿上千個日本傳統風鈴的庭院中散步拍照，聆聽悠揚風鈴聲。免收門票，於朱印所書寫御朱印費用為 <b>¥500</b>（受理至 16:00）。</p>
+              <div class="node-tips wheelchair-tips">
+                <svg viewBox="0 0 24 24"><path d="M12,2C6.5,2 2,6.5 2,12s4.5,10 10,10s10,-4.5 10,-10S17.5,2 12,2m4.5,15.5c-0.3,0.5 -1,0.7 -1.5,0.4l-3,-1.9l-1.8,3.5C10,19.9 9.2,20.3 8.4,20L4.4,18.7C3.7,18.4 3.3,17.6 3.6,16.9l1.4,-3.7C5.3,12.5 6.1,12.1 6.9,12.4l4,1.3l2.4,-4.8c0.5,-0.9 1.6,-1.4 2.6,-0.8l3,1.7C20.4,11.1 20.6,11.8 20.3,12.3l-1.4,1.6L16.5,15.5M16.5,9A1.5,1.5 0 0,1 15,7.5A1.5,1.5 0 0,1 16.5,6A1.5,1.5 0 0,1 18,7.5A1.5,1.5 0 0,1 16.5,9Z"/></svg>
+                無障礙提醒：境內極其開闊平坦，無段差設計，輪椅在風鈴下推行非常便利。
+              </div>
+            </div>
+          </div>
+          
+          <div class="timeline-node transit">
+            <div class="node-dot">
+              <svg viewBox="0 0 24 24"><path d="M12,2C11.38,2 10.88,2.5 10.88,3.13V4.38C7.5,4.78 5,7.63 5,11V17L3,19V20H21V19L19,17V11C19,7.63 16.5,4.78 13.13,4.38V3.13C13.13,2.5 12.63,2 12,2M12,6A5,5 0 0,1 17,11V17H7V11A5,5 0 0,1 12,6Z"/></svg>
+            </div>
+            <div class="node-time">12:30 - 13:00 <span class="duration">30分鐘</span></div>
+            <div class="node-card">
+              <div class="node-title-row">
+                <span class="node-title">前往淺草 (搭乘東武大師線/晴空塔線直達，預算：¥330/人)</span>
+              </div>
+              <p class="node-desc"><strong>電車無障礙路線：</strong> 自大師前站搭乘大師線（1站，大電梯）至西新井站，站內同月台轉乘東武晴空塔線區間急行或準急列車，**無需任何轉乘直達淺草站**。車程僅 20 分鐘，大樓與月台皆有大容量無障礙電梯，省時又省力！車資為 <b>¥330/人</b>（3人共 <b>¥990</b>）。</p>
+            </div>
+          </div>
+          
+          <div class="timeline-node food">
+            <div class="node-dot">
+              <svg viewBox="0 0 24 24"><path d="M11,9H9V2H7V9H5V2H3V9C3,11.12 4.66,12.84 6.75,12.97V22H8.25V12.97C10.34,12.84 12,11.12 12,9V2H11V9M16,6V14H18.5V22H20V2H16V6Z"/></svg>
+            </div>
+            <div class="node-time">13:00 - 14:30 <span class="duration">1小時30分</span></div>
+            <div class="node-card">
+              <div class="node-title-row">
+                <span class="node-title">午餐：淺草 駒形前川 (預算約：¥6,000 - ¥8,000/人)</span>
+                <a href="https://maps.google.com/?q=Kamakata+Mae-Kawa,+Asakusa" target="_blank" class="map-btn">
+                  <svg viewBox="0 0 24 24"><path d="M12,2C8.13,2 5,5.13 5,9c0,5.25 7,13 7,13s7,-7.75 7,-13c0,-3.87 -3.13,-7 -7,-7zM12,11.5c-1.38,0 -2.5,-1.12 -2.5,-2.5s1.12,-2.5 2.5,-2.5s2.5,1.12 2.5,2.5s-1.12,2.5 -2.5,2.5z"/></svg>地圖
+                </a>
+              </div>
+              <p class="node-desc">坐落在隅田川河畔。享用百年蒲燒鰻魚重，肉質肥美肥嫩，入口即化，極適合長者。鰻魚飯重售價通常為 <b>¥6,300 - ¥8,000</b>（含稅）。全店無任何牛肉料理，熟食安全。店內備有寬敞的無障礙電梯與輪椅席位，用餐極其安心舒適。3人午餐預算共約 <b>¥19,500</b>。</p>
+            </div>
+          </div>
+          
+          <div class="timeline-node transit">
+            <div class="node-dot">
+              <svg viewBox="0 0 24 24"><path d="M12,2C11.38,2 10.88,2.5 10.88,3.13V4.38C7.5,4.78 5,7.63 5,11V17L3,19V20H21V19L19,17V11C19,7.63 16.5,4.78 13.13,4.38V3.13C13.13,2.5 12.63,2 12,2M12,6A5,5 0 0,1 17,11V17H7V11A5,5 0 0,1 12,6Z"/></svg>
+            </div>
+            <div class="node-time">14:30 - 14:50 <span class="duration">20分鐘</span></div>
+            <div class="node-card">
+              <div class="node-title-row">
+                <span class="node-title">地鐵無障礙直達：前往上野公園 (預算：¥180/人)</span>
+              </div>
+              <p class="node-desc"><strong>電車無障礙路線：</strong> 自淺草站搭乘地鐵銀座線直達上野站（3站，5分鐘，備有大容量無障礙電梯直上地面層）。隨後推車步行 3 分鐘直接進入上野恩賜公園。車資為 <b>¥180/人</b>（3人共 <b>¥540</b>）。</p>
+            </div>
+          </div>
+          
+          <div class="timeline-node">
+            <div class="node-dot">
+              <svg viewBox="0 0 24 24"><path d="M12,2C8.13,2 5,5.13 5,9c0,5.25 7,13 7,13s7,-7.75 7,-13c0,-3.87 -3.13,-7 -7,-7zM12,11.5c-1.38,0 -2.5,-1.12 -2.5,-2.5s1.12,-2.5 2.5,-2.5s2.5,1.12 2.5,2.5s-1.12,2.5 -2.5,2.5z"/></svg>
+            </div>
+            <div class="node-time">14:50 - 16:20 <span class="duration">1小時30分鐘</span></div>
+            <div class="node-card">
+              <div class="node-title-row">
+                <span class="node-title">不忍池辯天堂 ➔ 清水觀音堂 ➔ 湯島天滿宮參拜 (預算：免門票 / 御朱印 ¥500/份)</span>
+                <a href="https://maps.google.com/?q=Yushima+Tenmangu" target="_blank" class="map-btn">
+                  <svg viewBox="0 0 24 24"><path d="M12,2C8.13,2 5,5.13 5,9c0,5.25 7,13 7,13s7,-7.75 7,-13c0,-3.87 -3.13,-7 -7,-7zM12,11.5c-1.38,0 -2.5,-1.12 -2.5,-2.5s1.12,-2.5 2.5,-2.5s2.5,1.12 2.5,2.5s-1.12,2.5 -2.5,2.5z"/></svg>地圖
+                </a>
+              </div>
+              <p class="node-desc">抵達上野公園後直接推輪椅，前往位於不忍池中央的【不忍池辯天堂】（設有平緩斜坡）；接著推車 5 分鐘前往【清水觀音堂】參拜；最後由不忍池旁平坦小路步行推車約 10 分鐘，即可輕鬆抵達【湯島天滿宮】參拜。三處均免門票，每份御朱印費用為 <b>¥500</b>，若三處皆收集，每人共需 <b>¥1,500</b>。</p>
+            </div>
+          </div>
+          
+          <div class="timeline-node transit">
+            <div class="node-dot">
+              <svg viewBox="0 0 24 24"><path d="M12,2C11.38,2 10.88,2.5 10.88,3.13V4.38C7.5,4.78 5,7.63 5,11V17L3,19V20H21V19L19,17V11C19,7.63 16.5,4.78 13.13,4.38V3.13C13.13,2.5 12.63,2 12,2M12,6A5,5 0 0,1 17,11V17H7V11A5,5 0 0,1 12,6Z"/></svg>
+            </div>
+            <div class="node-time">16:20 - 17:00 <span class="duration">40分鐘</span></div>
+            <div class="node-card">
+              <div class="node-title-row">
+                <span class="node-title">前往六本木 (搭乘地鐵日比谷線直達，預算：¥210/人)</span>
+              </div>
+              <p class="node-desc"><strong>電車無障礙路線：</strong> 湯島天滿宮旁步行 5 分鐘至地鐵湯島站，或直接回上野站搭乘地鐵日比谷線直達六本木站，出站走 1C 出口（備有大型無障礙升降電梯直結會場，免轉車，極為便利）。車資為 <b>¥210/人</b>（3人共 <b>¥630</b>）。</p>
+            </div>
+          </div>
+          
+          <div class="timeline-node">
+            <div class="node-dot">
+              <svg viewBox="0 0 24 24"><path d="M12,2c-4.97,0 -9,4.03 -9,9c0,5.25 9,13 9,13s9,-7.75 9,-13c0,-4.97 -4.03,-9 -9,-9z"/></svg>
+            </div>
+            <div class="node-time">17:00 - 20:15 <span class="duration">3小時15分鐘</span></div>
+            <div class="node-card">
+              <div class="node-title-row">
+                <span class="node-title">六本木之丘夏日盆踊大會 (預算：免入場門票 / 屋台小吃預算約 ¥2,000/人)</span>
+                <a href="https://maps.google.com/?q=Roppongi+Hills+Arena" target="_blank" class="map-btn">
+                  <svg viewBox="0 0 24 24"><path d="M12,2C8.13,2 5,5.13 5,9c0,5.25 7,13 7,13s7,-7.75 7,-13c0,-3.87 -3.13,-7 -7,-7zM12,11.5c-1.38,0 -2.5,-1.12 -2.5,-2.5s1.12,-2.5 2.5,-2.5s2.5,1.12 2.5,2.5s-1.12,2.5 -2.5,2.5z"/></svg>地圖
+                </a>
+              </div>
+              <p class="node-desc">今日全家身穿舒適的常服與當天買的 HOKA 運動鞋，在六本木之丘 Arena 輕鬆推輪椅觀賞巨型紅色櫓木、聆聽傳統太鼓民謠。入場免費，晚餐於現場屋台美食攤位享用熟食點心「黑長堂炭烤鰻魚串」、「南翔小籠包」（全熟食無牛）。每個品項售價約 <b>¥500 - ¥1,500</b>，3人美食消費預算約 <b>¥6,000</b>。</p>
+              <div class="node-tips wheelchair-tips">
+                <svg viewBox="0 0 24 24"><path d="M12,2C6.5,2 2,6.5 2,12s4.5,10 10,10s10,-4.5 10,-10S17.5,2 12,2m4.5,15.5c-0.3,0.5 -1,0.7 -1.5,0.4l-3,-1.9l-1.8,3.5C10,19.9 9.2,20.3 8.4,20L4.4,18.7C3.7,18.4 3.3,17.6 3.6,16.9l1.4,-3.7C5.3,12.5 6.1,12.1 6.9,12.4l4,1.3l2.4,-4.8c0.5,-0.9 1.6,-1.4 2.6,-0.8l3,1.7C20.4,11.1 20.6,11.8 20.3,12.3l-1.4,1.6L16.5,15.5M16.5,9A1.5,1.5 0 0,1 15,7.5A1.5,1.5 0 0,1 16.5,6A1.5,1.5 0 0,1 18,7.5A1.5,1.5 0 0,1 16.5,9Z"/></svg>
+                避堵避累叮嚀：不穿和服浴衣可大大減輕在盆踊大會擁擠人群中的悶熱與束縛感，讓媽媽極為放鬆。餐後搭乘地鐵日比谷線直達上野回飯店（車資 <b>¥210/人</b>，共 <b>¥630</b>），快速平價。
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      
+      <!-- Day 5 -->
+      <div id="day5" class="day-content">
+        <div class="day-banner">
+          <div class="day-banner-title">
+            <h2>淺草浴衣拍照日 ➔ 淺草寺/神社參拜 ➔ 壽喜燒午餐 ➔ 阿美橫丁散步 ➔ 黑船亭晚餐</h2>
+            <p>2026年8月23日 (星期日)</p>
+          </div>
+          <div class="day-summary-badge">浴衣風情與淺草古街</div>
+        </div>
+        <div class="day-timeline">
+          
+          <div class="timeline-node transit">
+            <div class="node-dot">
+              <svg viewBox="0 0 24 24"><path d="M12,2c-4.4,0-8,3.6-8,8v9h16v-9C20,5.6,16.4,2,12,2z"/></svg>
+            </div>
+            <div class="node-time">09:30 - 10:00 <span class="duration">30分鐘</span></div>
+            <div class="node-card">
+              <div class="node-title-row">
+                <span class="node-title">前往淺草站 (預算：¥180/人)</span>
+              </div>
+              <p class="node-desc">搭乘地鐵銀座線，出淺草站 1 號口無障礙電梯直升地面。車資為 <b>¥180/人</b>（3人共 <b>¥540</b>）。</p>
+            </div>
+          </div>
+          
+          <div class="timeline-node">
+            <div class="node-dot">
+              <svg viewBox="0 0 24 24"><path d="M12,18A6,6 0 1,1 18,12A6,6 0 0,1 12,18Z"/></svg>
+            </div>
+            <div class="node-time">10:00 - 11:30 <span class="duration">1小時30分鐘</span></div>
+            <div class="node-card">
+              <div class="node-title-row">
+                <span class="node-title">「梨花和服」淺草店 浴衣著裝體驗 (預算約：¥3,500 - ¥5,000/人)</span>
+              </div>
+              <p class="node-desc">換上日本精緻夏日浴衣。基本方案為 <b>¥2,980 - ¥4,500/人</b>（含專業著裝與精緻髮型）。大樓設有大型升降電梯，手推輪椅進出極為便捷。3人預算共約 <b>¥13,500</b>。</p>
+            </div>
+          </div>
+          
+          <div class="timeline-node">
+            <div class="node-dot">
+              <svg viewBox="0 0 24 24"><path d="M12,2C8.13,2 5,5.13 5,9c0,5.25 7,13 7,13s7,-7.75 7,-13c0,-3.87 -3.13,-7 -7,-7zM12,11.5c-1.38,0 -2.5,-1.12 -2.5,-2.5s1.12,-2.5 2.5,-2.5s2.5,1.12 2.5,2.5s-1.12,2.5 -2.5,2.5z"/></svg>
+            </div>
+            <div class="node-time">11:30 - 13:00 <span class="duration">1小時30分鐘</span></div>
+            <div class="node-card">
+              <div class="node-title-row">
+                <span class="node-title">身穿浴衣漫步雷門 ➔ 仲見世通 ➔ 淺草寺與淺草神社參拜拍照 (預算：免門票 / 御朱印 ¥500/份)</span>
+                <a href="https://maps.google.com/?q=Sensoji+Temple" target="_blank" class="map-btn">
+                  <svg viewBox="0 0 24 24"><path d="M12,2C8.13,2 5,5.13 5,9c0,5.25 7,13 7,13s7,-7.75 7,-13c0,-3.87 -3.13,-7 -7,-7zM12,11.5c-1.38,0 -2.5,-1.12 -2.5,-2.5s1.12,-2.5 2.5,-2.5s2.5,1.12 2.5,2.5s-1.12,2.5 -2.5,2.5z"/></svg>地圖
+                </a>
+              </div>
+              <p class="node-desc">身穿浴衣拍攝照片。漫步於平整淺草古街。步行推車至【淺草寺】本堂（由本堂左側「優先電梯棟」直升二樓登堂參拜）與【淺草神社】參拜，收集此處 2 份御朱印費用為 <b>¥1,000/人</b>（受理時間至 16:00）。</p>
+              <div class="node-tips wheelchair-tips">
+                <svg viewBox="0 0 24 24"><path d="M12,2C6.5,2 2,6.5 2,12s4.5,10 10,10s10,-4.5 10,-10S17.5,2 12,2m4.5,15.5c-0.3,0.5 -1,0.7 -1.5,0.4l-3,-1.9l-1.8,3.5C10,19.9 9.2,20.3 8.4,20L4.4,18.7C3.7,18.4 3.3,17.6 3.6,16.9l1.4,-3.7C5.3,12.5 6.1,12.1 6.9,12.4l4,1.3l2.4,-4.8c0.5,-0.9 1.6,-1.4 2.6,-0.8l3,1.7C20.4,11.1 20.6,11.8 20.3,12.3l-1.4,1.6L16.5,15.5M16.5,9A1.5,1.5 0 0,1 15,7.5A1.5,1.5 0 0,1 16.5,6A1.5,1.5 0 0,1 18,7.5A1.5,1.5 0 0,1 16.5,9Z"/></svg>
+                無障礙提醒：週日淺草寺遊客密度適中，無週六大會擁擠感，推輪椅穿浴衣拍照更顯從容優雅。
+              </div>
+            </div>
+          </div>
+          
+          <div class="timeline-node food">
+            <div class="node-dot">
+              <svg viewBox="0 0 24 24"><path d="M11,9H9V2H7V9H5V2H3V9C3,11.12 4.66,12.84 6.75,12.97V22H8.25V12.97C10.34,12.84 12,11.12 12,9V2H11V9M16,6V14H18.5V22H20V2H16V6Z"/></svg>
+            </div>
+            <div class="node-time">13:00 - 14:30 <span class="duration">1小時30分</span></div>
+            <div class="node-card">
+              <div class="node-title-row">
+                <span class="node-title">午餐：淺草今半 雷門店 (預算約：¥3,500 - ¥5,500/人)</span>
+                <a href="https://maps.google.com/?q=Asakusa+Imahan+Kaminarimon" target="_blank" class="map-btn">
+                  <svg viewBox="0 0 24 24"><path d="M12,2C8.13,2 5,5.13 5,9c0,5.25 7,13 7,13s7,-7.75 7,-13c0,-3.87 -3.13,-7 -7,-7zM12,11.5c-1.38,0 -2.5,-1.12 -2.5,-2.5s1.12,-2.5 2.5,-2.5s2.5,1.12 2.5,2.5s-1.12,2.5 -2.5,2.5z"/></svg>地圖
+                </a>
+              </div>
+              <p class="node-desc">自淺草寺步行推車 8-10 分鐘即可抵達。享用由服務人員桌邊服務的「特選豬肉壽喜燒午餐定食」或「大山雞肉壽喜燒定食」（票價約 <b>¥5,390/人</b>，含稅）。3 人餐費預算約 <b>¥16,170</b>。現場請向服務人員確認**不吃牛肉、不提供生食**。</p>
+              <div class="node-tips wheelchair-tips">
+                <svg viewBox="0 0 24 24"><path d="M12,2C6.5,2 2,6.5 2,12s4.5,10 10,10s10,-4.5 10,-10S17.5,2 12,2m4.5,15.5c-0.3,0.5 -1,0.7 -1.5,0.4l-3,-1.9l-1.8,3.5C10,19.9 9.2,20.3 8.4,20L4.4,18.7C3.7,18.4 3.3,17.6 3.6,16.9l1.4,-3.7C5.3,12.5 6.1,12.1 6.9,12.4l4,1.3l2.4,-4.8c0.5,-0.9 1.6,-1.4 2.6,-0.8l3,1.7C20.4,11.1 20.6,11.8 20.3,12.3l-1.4,1.6L16.5,15.5M16.5,9A1.5,1.5 0 0,1 15,7.5A1.5,1.5 0 0,1 16.5,6A1.5,1.5 0 0,1 18,7.5A1.5,1.5 0 0,1 16.5,9Z"/></svg>
+                無障礙提醒：店家大門備有輪椅斜坡及大型電梯直達包廂，穿著浴衣用餐舒適且極富傳統和風氛圍。
+              </div>
+            </div>
+          </div>
+          
+          <div class="timeline-node">
+            <div class="node-dot">
+              <svg viewBox="0 0 24 24"><path d="M12,18A6,6 0 1,1 18,12A6,6 0 0,1 12,18Z"/></svg>
+            </div>
+            <div class="node-time">14:30 - 15:15 <span class="duration">45分鐘</span></div>
+            <div class="node-card">
+              <div class="node-title-row">
+                <span class="node-title">隅田公園旁散步 (以晴空塔為背景合照，步行路線)</span>
+              </div>
+              <p class="node-desc">自餐廳步行推車約 8 分鐘前往隅田公園河畔，身穿浴衣、以巨大的東京晴空塔與隅田川為背景，拍攝絕美的和風合照。</p>
+            </div>
+          </div>
+          
+          <div class="timeline-node transit">
+            <div class="node-dot">
+              <svg viewBox="0 0 24 24"><path d="M12,2C11.38,2 10.88,2.5 10.88,3.13V4.38C7.5,4.78 5,7.63 5,11V17L3,19V20H21V19L19,17V11C19,7.63 16.5,4.78 13.13,4.38V3.13C13.13,2.5 12.63,2 12,2M12,6A5,5 0 0,1 17,11V17H7V11A5,5 0 0,1 12,6Z"/></svg>
+            </div>
+            <div class="node-time">15:15 - 15:45 <span class="duration">30分鐘</span></div>
+            <div class="node-card">
+              <div class="node-title-row">
+                <span class="node-title">歸還浴衣，換回私服</span>
+              </div>
+              <p class="node-desc">步行返回「梨花和服」退還浴衣，換回輕便的私人常服與 HOKA 鞋。</p>
+            </div>
+          </div>
+          
+          <div class="timeline-node transit">
+            <div class="node-dot">
+              <svg viewBox="0 0 24 24"><path d="M12,2c-4.4,0-8,3.6-8,8v9h16v-9C20,5.6,16.4,2,12,2z"/></svg>
+            </div>
+            <div class="node-time">15:45 - 17:30 <span class="duration">1小時45分鐘</span></div>
+            <div class="node-card">
+              <div class="node-title-row">
+                <span class="node-title">電車無障礙路線：回上野 ➔ 阿美橫丁輕鬆散步</span>
+              </div>
+              <p class="node-desc"><strong>電車無障礙路線 (替代計程車)：</strong> 自淺草站搭乘地鐵銀座線直達上野站（3站，5分鐘，出站全程備有電梯直通地面層）。推輪椅悠閒逛逛阿美橫丁，感受熱鬧街景、為親友補貨藥妝或伴手禮。</p>
+            </div>
+          </div>
+          
+          <div class="timeline-node food">
+            <div class="node-dot">
+              <svg viewBox="0 0 24 24"><path d="M11,9H9V2H7V9H5V2H3V9C3,11.12 4.66,12.84 6.75,12.97V22H8.25V12.97C10.34,12.84 12,11.12 12,9V2H11V9M16,6V14H18.5V22H20V2H16V6Z"/></svg>
+            </div>
+            <div class="node-time">18:00 - 19:30 <span class="duration">1小時30分</span></div>
+            <div class="node-card">
+              <div class="node-title-row">
+                <span class="node-title">晚餐：黑船亭 (預算約：¥3,500 - ¥4,500/人)</span>
+                <a href="https://maps.google.com/?q=Kurofunetei,+Ueno" target="_blank" class="map-btn">
+                  <svg viewBox="0 0 24 24"><path d="M12,2C8.13,2 5,5.13 5,9c0,5.25 7,13 7,13s7,-7.75 7,-13c0,-3.87 -3.13,-7 -7,-7zM12,11.5c-1.38,0 -2.5,-1.12 -2.5,-2.5s1.12,-2.5 2.5,-2.5s2.5,1.12 2.5,2.5s-1.12,2.5 -2.5,2.5z"/></svg>地圖
+                </a>
+              </div>
+              <p class="node-desc">自阿美橫丁步行推車僅需 5-8 分鐘即可抵達。享用熱騰騰、極富層次的「鮮蟹肉可樂餅」（約 <b>¥1,800</b>）、「大蝦奶油焗烤飯」（約 <b>¥1,700</b>）或「香煎黑豚肉」（約 <b>¥2,200</b>）。大樓設有升降電梯，餐食為完全高溫熟食、不含任何牛肉料理。3人晚餐預算約為 <b>¥11,000</b>。</p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      
+      <!-- Day 6 -->
+      <div id="day6" class="day-content">
+        <div class="day-banner">
+          <div class="day-banner-title">
+            <h2>下谷神社花手水 ➔ 多慶屋採買 ➔ 松葉蟹熟食午餐 ➔ 搭 Skyliner 返台</h2>
+            <p>2026年8月24日 (星期一)</p>
+          </div>
+          <div class="day-summary-badge">最後採購與歸途</div>
+        </div>
+        <div class="day-timeline">
+          
+          <div class="timeline-node hotel">
+            <div class="node-dot">
+              <svg viewBox="0 0 24 24"><path d="M19,9.3V4h-3v2.6L12,3L2,12h3v8h5v-6h4v6h5v-8h3L19,9.3z M10,10c0-1.1,0.9-2,2-2s2,0.9,2,2H10z"/></svg>
+            </div>
+            <div class="node-time">09:00 - 09:30 <span class="duration">30分鐘</span></div>
+            <div class="node-card">
+              <div class="node-title-row">
+                <span class="node-title">辦理飯店退房 & 行李寄存</span>
+              </div>
+              <p class="node-desc">辦理 Check-out，大件行李（3件）寄存大廳櫃檯，方便最後一天的輕鬆採買。</p>
+            </div>
+          </div>
+          
+          <div class="timeline-node">
+            <div class="node-dot">
+              <svg viewBox="0 0 24 24"><path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,18A6,6 0 1,1 18,12A6,6 0 0,1 12,18M12,8A4,4 0 1,0 16,12A4,4 0 0,0 12,8Z"/></svg>
+            </div>
+            <div class="node-time">09:30 - 10:15 <span class="duration">45分鐘</span></div>
+            <div class="node-card">
+              <div class="node-title-row">
+                <span class="node-title">下谷神社 (絕美花手水與最後一份御朱印，步行路線)</span>
+                <a href="https://maps.google.com/?q=Shitaya+Shrine" target="_blank" class="map-btn">
+                  <svg viewBox="0 0 24 24"><path d="M12,2C8.13,2 5,5.13 5,9c0,5.25 7,13 7,13s7,-7.75 7,-13c0,-3.87 -3.13,-7 -7,-7zM12,11.5c-1.38,0 -2.5,-1.12 -2.5,-2.5s1.12,-2.5 2.5,-2.5s2.5,1.12 2.5,2.5s-1.12,2.5 -2.5,2.5z"/></svg>地圖
+                </a>
+              </div>
+              <p class="node-desc">步行 12 分鐘至鄰近的【下谷神社】參拜。觀賞社內精美清透的定期花手水，並在朱印所書寫此行最後一份珍貴的御朱印（Goshuin 開放時間為 09:00 起）。</p>
+              <div class="node-tips wheelchair-tips">
+                <svg viewBox="0 0 24 24"><path d="M12,2C6.5,2 2,6.5 2,12s4.5,10 10,10s10,-4.5 10,-10S17.5,2 12,2m4.5,15.5c-0.3,0.5 -1,0.7 -1.5,0.4l-3,-1.9l-1.8,3.5C10,19.9 9.2,20.3 8.4,20L4.4,18.7C3.7,18.4 3.3,17.6 3.6,16.9l1.4,-3.7C5.3,12.5 6.1,12.1 6.9,12.4l4,1.3l2.4,-4.8c0.5,-0.9 1.6,-1.4 2.6,-0.8l3,1.7C20.4,11.1 20.6,11.8 20.3,12.3l-1.4,1.6L16.5,15.5M16.5,9A1.5,1.5 0 0,1 15,7.5A1.5,1.5 0 0,1 16.5,6A1.5,1.5 0 0,1 18,7.5A1.5,1.5 0 0,1 16.5,9Z"/></svg>
+                無障礙提醒：下谷神社位於平地，人行道與鳥居入口平整，輪椅參拜非常容易。
+              </div>
+            </div>
+          </div>
+          
+          <div class="timeline-node">
+            <div class="node-dot">
+              <svg viewBox="0 0 24 24"><path d="M12,18A6,6 0 1,1 18,12A6,6 0 0,1 12,18M12,2A10,10 0 0,0 2,12A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"/></svg>
+            </div>
+            <div class="node-time">10:15 - 11:30 <span class="duration">1小時15分鐘</span></div>
+            <div class="node-card">
+              <div class="node-title-row">
+                <span class="node-title">多慶屋 (TAKEYA) 伴手禮最後衝刺 (步行路線)</span>
+              </div>
+              <p class="node-desc">自下谷神社步行推車 8 分鐘前往御徒町的多慶屋。大樓通道開闊平坦、備有大升降電梯與符合標準的多功能無障礙化妝室，推輪椅採買非常舒適。</p>
+            </div>
+          </div>
+          
+          <div class="timeline-node food">
+            <div class="node-dot">
+              <svg viewBox="0 0 24 24"><path d="M11,9H9V2H7V9H5V2H3V9C3,11.12 4.66,12.84 6.75,12.97V22H8.25V12.97C10.34,12.84 12,11.12 12,9V2H11V9M16,6V14H18.5V22H20V2H16V6Z"/></svg>
+            </div>
+            <div class="node-time">11:45 - 12:45 <span class="duration">1小時</span></div>
+            <div class="node-card">
+              <div class="node-title-row">
+                <span class="node-title">午餐：まるごと北海道 (UENO 3153 店，預算約：¥2,500 - ¥3,500/人)</span>
+                <a href="https://maps.google.com/?q=UENO+3153+Building,+Ueno" target="_blank" class="map-btn">
+                  <svg viewBox="0 0 24 24"><path d="M12,2C8.13,2 5,5.13 5,9c0,5.25 7,13 7,13s7,-7.75 7,-13c0,-3.87 -3.13,-7 -7,-7zM12,11.5c-1.38,0 -2.5,-1.12 -2.5,-2.5s1.12,-2.5 2.5,-2.5s2.5,1.12 2.5,2.5s-1.12,2.5 -2.5,2.5z"/></svg>地圖
+                </a>
+              </div>
+              <p class="node-desc">自多慶屋步行推車 10 分鐘抵達 UENO 3153。享用清蒸松葉蟹、熟蟹肉炒飯及鹽烤真花魚。點餐時向服務生告知「全熟食需求」，店家將提供全熟烹調。沙發席座位寬敞平整。3 人餐費預算約 <b>¥9,000</b>。</p>
+            </div>
+          </div>
+          
+          <div class="timeline-node transit">
+            <div class="node-dot">
+              <svg viewBox="0 0 24 24"><path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,16H13V18H11V16M11,6H13V14H11V6Z"/></svg>
+            </div>
+            <div class="node-time">12:45 - 13:25 <span class="duration">40分鐘</span></div>
+            <div class="node-card">
+              <div class="node-title-row">
+                <span class="node-title">返回飯店取行李 ➔ 抵達京成上野站</span>
+              </div>
+              <p class="node-desc">回飯店大廳取行李，推行至京成上野站（均含加權緩衝）。由正面口大電梯直達地鐵層。</p>
+            </div>
+          </div>
+          
+          <div class="timeline-node transit">
+            <div class="node-dot">
+              <svg viewBox="0 0 24 24"><path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M12,6A6,6 0 0,0 6,12A6,6 0 0,0 12,18A6,6 0 0,0 18,12A6,6 0 0,0 12,6M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8Z"/></svg>
+            </div>
+            <div class="node-time">13:45 - 14:41 <span class="duration">56分鐘</span></div>
+            <div class="node-card">
+              <div class="node-title-row">
+                <span class="node-title">搭乘京成 Skyliner 33 號直達車前往機場</span>
+              </div>
+              <p class="node-desc">搭乘預訂的第 5 號無障礙車廂座席，乘降便利，直達機場。</p>
+            </div>
+          </div>
+          
+          <div class="timeline-node transit">
+            <div class="node-dot">
+              <svg viewBox="0 0 24 24"><path d="M21,16V14L13,9V3.5A1.5,1.5 0 0,0 11.5,2A1.5,1.5 0 0,0 10,3.5V9L2,14V16L10,13.5V19L8,20.5V22L11.5,21L15,22V20.5L13,19V13.5L21,16Z" transform="rotate(180 12 12)"/></svg>
+            </div>
+            <div class="node-time">14:41 - 16:55 <span class="duration">2小時14分</span></div>
+            <div class="node-card">
+              <div class="node-title-row">
+                <span class="node-title">成田機場第一航廈報到與搭機返台</span>
+              </div>
+              <p class="node-desc">抵達機場後辦理登機與行李託運。搭乘樂桃航空 MM625，19:40 降落桃園機場，結束溫馨安全的東京無障礙自由行！</p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      
+    </section>
+    
+    <!-- Toolkit & Interactive Area -->
+    <div class="toolkit-grid">
+      
+      <!-- Checklist Tool -->
+      <div class="card checklist-card">
+        <div class="checklist-title">
+          <span>行前與行李準備清單 (無障礙特別版)</span>
+          <span class="tag" id="progress-text" style="color: var(--primary);">0%</span>
+        </div>
+        <div class="checklist-progress-bar">
+          <div class="checklist-progress" id="checklist-progress-bar"></div>
+        </div>
+        
+        <div class="checklist-group">
+          <div class="checklist-group-title">重要文件與財務</div>
+          <label class="checklist-item">
+            <input type="checkbox" class="todo-item" data-id="doc-passport">
+            <div class="checkmark">
+              <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+            </div>
+            <span>中華民國護照 (有效期限6個月以上)</span>
+          </label>
+          <label class="checklist-item">
+            <input type="checkbox" class="todo-item" data-id="doc-yen">
+            <div class="checkmark">
+              <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+            </div>
+            <span>日幣現鈔 & 信用卡 (回饋較佳者)</span>
+          </label>
+          <label class="checklist-item">
+            <input type="checkbox" class="todo-item" data-id="doc-tickets">
+            <div class="checkmark">
+              <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+            </div>
+            <span>樂桃機票預訂信/QR Code (YJ99GA)</span>
+          </label>
+          <label class="checklist-item">
+            <input type="checkbox" class="todo-item" data-id="doc-hotel">
+            <div class="checkmark">
+              <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+            </div>
+            <span>Klook 住宿憑證 (TGK700399)</span>
+          </label>
+          <label class="checklist-item">
+            <input type="checkbox" class="todo-item" data-id="doc-vjw">
+            <div class="checkmark">
+              <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+            </div>
+            <span>填寫 Visit Japan Web (註記隨身輪椅並截圖QR)</span>
+          </label>
+        </div>
+        
+        <div class="checklist-group">
+          <div class="checklist-group-title">♿ 無障礙裝備確認</div>
+          <label class="checklist-item">
+            <input type="checkbox" class="todo-item" data-id="wheelchair-check">
+            <div class="checkmark">
+              <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+            </div>
+            <span>檢查手推輪椅/助行椅胎壓與剎車鎖功能</span>
+          </label>
+          <label class="checklist-item">
+            <input type="checkbox" class="todo-item" data-id="wheelchair-cushion">
+            <div class="checkmark">
+              <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+            </div>
+            <span>準備減壓輪椅坐墊（避免長者臀部久坐不適）</span>
+          </label>
+          <label class="checklist-item">
+            <input type="checkbox" class="todo-item" data-id="wheelchair-tag">
+            <div class="checkmark">
+              <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+            </div>
+            <span>確認已預約 Skyliner 第 5 車廂無障礙座位</span>
+          </label>
+        </div>
+        
+        <div class="checklist-group">
+          <div class="checklist-group-title">通訊與隨身</div>
+          <label class="checklist-item">
+            <input type="checkbox" class="todo-item" data-id="elec-esim">
+            <div class="checkmark">
+              <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+            </div>
+            <span>日本網路 (eSIM 或實體卡/分享器)</span>
+          </label>
+          <label class="checklist-item">
+            <input type="checkbox" class="todo-item" data-id="pers-umbrella">
+            <div class="checkmark">
+              <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+            </div>
+            <span>防曬雨傘/遮陽帽 & 長者常用個人隨身藥物</span>
+          </label>
+        </div>
+      </div>
+      
+      <!-- Currency Converter & Info -->
+      <div class="card converter-card">
+        <div class="checklist-title">
+          <span>實用旅遊工具箱</span>
+        </div>
+        
+        <div class="input-grp" style="margin-bottom: 20px;">
+          <label>即時日幣/台幣匯率試算</label>
+          <div class="converter-row">
+            <div class="input-grp">
+              <label for="jpy-input">日幣 (JPY)</label>
+              <div class="input-wrapper">
+                <span class="input-prefix">¥</span>
+                <input type="number" id="jpy-input" value="1000" placeholder="0">
+              </div>
+            </div>
+            <div style="font-size: 1.5rem; font-weight: bold; margin-top: 20px; color: var(--text-muted);">⇄</div>
+            <div class="input-grp">
+              <label for="twd-input">台幣 (TWD)</label>
+              <div class="input-wrapper">
+                <span class="input-prefix">$</span>
+                <input type="number" id="twd-input" value="210" placeholder="0">
+              </div>
+            </div>
+          </div>
+          <div class="rate-note">
+            匯率基準設定為：1 JPY = <span id="rate-display">0.2100</span> TWD (可自行輸入調整)
+          </div>
+        </div>
+        
+        <div class="checklist-group-title">重要緊急資訊</div>
+        <div class="info-list">
+          <div class="info-row">
+            <span class="info-lbl">飯店電話 (APA上野站南)</span>
+            <span class="info-val">+81 3-5816-1611</span>
+          </div>
+          <div class="info-row">
+            <span class="info-lbl">日本救護車/火警撥打</span>
+            <span class="info-val">119 (免費)</span>
+          </div>
+          <div class="info-row">
+            <span class="info-lbl">日本報警電話撥打</span>
+            <span class="info-val">110 (免費)</span>
+          </div>
+          <div class="info-row">
+            <span class="info-lbl">台北駐日經濟文化代表處</span>
+            <span class="info-val">+81 3-3280-7811 (24H應急)</span>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    
+    <!-- Footer -->
+    <footer style="margin-top: 60px; text-align: center; color: var(--text-muted); font-size: 0.8rem; border-top: 1px solid var(--border-color); padding-top: 30px;">
+      <p>祝 張天穎、鍾沁葉、張駿榮 與長者有個愉快美好的東京自由行！✈️♿</p>
+      <p style="margin-top: 8px; font-size: 0.7rem; opacity: 0.6;">© 2026 Interactive Tokyo Travel Itinerary Dashboard. Designed with Premium Aesthetics.</p>
+    </footer>
+    
+  </div>
+
+  <script>
+    // Theme Toggle Functionality
+    const themeToggle = document.getElementById('theme-toggle');
+    const body = document.body;
+    
+    // Check local storage for theme
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+      body.setAttribute('data-theme', savedTheme);
+      themeToggle.checked = savedTheme === 'dark';
+    } else {
+      body.setAttribute('data-theme', 'light');
+    }
+    
+    themeToggle.addEventListener('change', () => {
+      if (themeToggle.checked) {
+        body.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark');
+      } else {
+        body.setAttribute('data-theme', 'light');
+        localStorage.setItem('theme', 'light');
+      }
+    });
+    
+    // Tab switching for Day schedules
+    function switchDay(dayNum) {
+      document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+      document.querySelectorAll('.day-content').forEach(content => content.classList.remove('active'));
+      
+      const buttons = document.querySelectorAll('.tab-btn');
+      buttons[dayNum - 1].classList.add('active');
+      
+      const targetContent = document.getElementById('day' + dayNum);
+      if (targetContent) {
+        targetContent.classList.add('active');
+      }
+      
+      const navOffset = document.getElementById('sticky-nav').offsetTop - 10;
+      window.scrollTo({
+        top: navOffset,
+        behavior: 'smooth'
+      });
+    }
+    
+    // Checklist State Management (localStorage)
+    const checklistItems = document.querySelectorAll('.todo-item');
+    
+    function loadChecklistState() {
+      checklistItems.forEach(item => {
+        const id = item.getAttribute('data-id');
+        const checked = localStorage.getItem('todo-' + id) === 'true';
+        item.checked = checked;
+      });
+      updateProgress();
+    }
+    
+    function updateProgress() {
+      const total = checklistItems.length;
+      const checkedCount = Array.from(checklistItems).filter(item => item.checked).length;
+      const percent = total > 0 ? Math.round((checkedCount / total) * 100) : 0;
+      
+      document.getElementById('checklist-progress-bar').style.width = percent + '%';
+      document.getElementById('progress-text').textContent = percent + '%';
+    }
+    
+    checklistItems.forEach(item => {
+      item.addEventListener('change', () => {
+        const id = item.getAttribute('data-id');
+        localStorage.setItem('todo-' + id, item.checked);
+        updateProgress();
+      });
+    });
+    
+    // Currency Converter Implementation
+    const jpyInput = document.getElementById('jpy-input');
+    const twdInput = document.getElementById('twd-input');
+    let exchangeRate = 0.21;
+    
+    jpyInput.addEventListener('input', () => {
+      const jpyVal = parseFloat(jpyInput.value);
+      if (!isNaN(jpyVal)) {
+        twdInput.value = Math.round(jpyVal * exchangeRate);
+      } else {
+        twdInput.value = '';
+      }
+    });
+    
+    twdInput.addEventListener('input', () => {
+      const twdVal = parseFloat(twdInput.value);
+      if (!isNaN(twdVal) && twdVal > 0) {
+        jpyInput.value = Math.round(twdVal / exchangeRate);
+      } else {
+        jpyInput.value = '';
+      }
+    });
+    
+    function recalculateRate() {
+      const jpy = parseFloat(jpyInput.value);
+      const twd = parseFloat(twdInput.value);
+      if (!isNaN(jpy) && jpy > 0 && !isNaN(twd) && twd > 0) {
+        exchangeRate = twd / jpy;
+        document.getElementById('rate-display').textContent = exchangeRate.toFixed(4);
+      }
+    }
+    
+    jpyInput.addEventListener('blur', recalculateRate);
+    twdInput.addEventListener('blur', recalculateRate);
+    
+    window.addEventListener('DOMContentLoaded', () => {
+      loadChecklistState();
+    });
+  </script>
+</body>
+</html>
