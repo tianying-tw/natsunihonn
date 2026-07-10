@@ -1180,6 +1180,7 @@
       - Budget and Pricing markings:
         * Marked all ticket, meal, transit, and Goshuin prices inside day-by-day itineraries.
         * Created an interactive/visual Budget Summary Card in the booking dashboard, containing pre-booked vs on-site cash estimations.
+        * Optimized Day 4 (8/22) Route: Replaced the distant Nishiarai Daishi with a consolidated morning walk to Ueno Park shrines (銝?瘙劑憭拙? ??皜偌閫?喳? ??皝臬雀憭拇遛摰? and an afternoon visit to the 100% barrier-free Sumida Hokusai Museum. This created a smooth Ueno ??Asakusa ??Ryogoku ??Roppongi transit flow (all direct lines/short taxis), completely eliminating 2-transfer subways and reducing mid-day physical fatigue.
         * Optimized Day 5 (8/23) Yukata experience: Only young members (撘萄?憪? 撘萄??? rent Yukata, while ?暸戭?wears cool, comfortable summer private clothes to prevent heat exhaustion and chest tightness. Pusher wears sneakers instead of Geta clogs. Adjusted timeline to return Yukata early (at 14:15) right after lunch to minimize heat fatigue.
         * Anonymized names (撘萄?憪? ?暸戭? 撘萄??? and booking numbers (TGK888888, YJ8888) to protect PII before uploading to GitHub.
     ========================================================================
@@ -1492,6 +1493,57 @@
         </div>
       </div>
       
+      <!-- Reservation Guide Card -->
+      <div class="card" style="grid-column: span 1; border-color: rgba(245, 158, 11, 0.35);">
+        <div class="card-header" style="background-color: rgba(245, 158, 11, 0.08); border-bottom: 1px solid rgba(245, 158, 11, 0.15);">
+          <div class="card-title" style="color: var(--accent-orange); font-weight: 700;">
+            <svg viewBox="0 0 24 24" style="fill: var(--accent-orange); width: 20px; height: 20px; vertical-align: middle; margin-right: 6px;"><path d="M19,19H5V8H19M19,3H18V1H16V3H8V1H6V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3Z"/></svg>
+            📅 預約與聯絡指南 (12項)
+          </div>
+          <div class="tag" style="background-color: rgba(245, 158, 11, 0.12); color: var(--accent-orange); border: none; font-weight: 700;">出發前必辦清單</div>
+        </div>
+        <div class="hotel-info" style="gap: 10px; max-height: 400px; overflow-y: auto; padding: 16px;">
+          <div style="font-size: 0.8rem; color: var(--text-secondary); line-height: 1.55;">
+            <strong>1. 京成 Skyliner 機場特急</strong><br>
+            - 預約：於 Klook 或官網購票取得 QR Code。<br>
+            - ♿ 輪椅席：乘車當天至櫃檯出示並換取 Car 5 輪椅席。<br>
+            <hr style="border: none; border-top: 1px solid var(--border-color); margin: 6px 0;">
+            <strong>2. 東京晴空塔展望台 (350M)</strong><br>
+            - 預約：出發前 30 定於 <a href="https://www.tokyo-skytree.jp/cn_t/" target="_blank" style="color: var(--secondary); text-decoration: underline;">晴空塔官網</a> 或 Klook 預訂時間門票。<br>
+            <hr style="border: none; border-top: 1px solid var(--border-color); margin: 6px 0;">
+            <strong>3. Hotaluna 號觀光船 (14:15 淺草➔日之出)</strong><br>
+            - 預約：出發前 30 天於 <a href="https://www.suijobus.co.jp/" target="_blank" style="color: var(--secondary); text-decoration: underline;">東京都觀光汽船官網</a> 訂位。<br>
+            <hr style="border: none; border-top: 1px solid var(--border-color); margin: 6px 0;">
+            <strong>4. 兔屋銅鑼燒 (うさぎや)</strong><br>
+            - 預約：當天早上或前一天撥打 <b>+81-3-3831-6195</b> 電話預留。<br>
+            <hr style="border: none; border-top: 1px solid var(--border-color); margin: 6px 0;">
+            <strong>5. 上野 伊豆榮 本店 (鰻魚)</strong><br>
+            - 預約：電話 <b>+81-3-3831-0954</b>。♿ 註明需電梯與輪椅席。<br>
+            <hr style="border: none; border-top: 1px solid var(--border-color); margin: 6px 0;">
+            <strong>6. 上野公園 韻松亭 (懷石)</strong><br>
+            - 預約：提前 1-2 個月於 <a href="https://www.unsoutei.jp/" target="_blank" style="color: var(--secondary); text-decoration: underline;">官網</a> 或電話 <b>+81-3-3821-2010</b>。♿ <b>務必指定 1 樓餐桌席</b>。<br>
+            <hr style="border: none; border-top: 1px solid var(--border-color); margin: 6px 0;">
+            <strong>7. LA COCORICO Ueno (烤雞)</strong><br>
+            - 預約：提前透過 Hot Pepper 或 Tabelog 線上訂位。<br>
+            <hr style="border: none; border-top: 1px solid var(--border-color); margin: 6px 0;">
+            <strong>8. 淺草 駒形前川 (鰻魚)</strong><br>
+            - 預約：撥打電話 <b>+81-3-3847-1511</b> 或官網預約。<br>
+            <hr style="border: none; border-top: 1px solid var(--border-color); margin: 6px 0;">
+            <strong>9. 梨花和服 淺草店 (浴衣)</strong><br>
+            - 預約：提前 2-4 週於 <a href="https://ewha-yifu.com/" target="_blank" style="color: var(--secondary); text-decoration: underline;">官網</a> 預訂 <b>3人早上 09:00 時段</b> (包含鍾阿嬤)。♿ <b>務必備註同行長者使用輪椅並要求腰帶綁得稍微寬鬆以利呼吸防暑</b>。<br>
+            <hr style="border: none; border-top: 1px solid var(--border-color); margin: 6px 0;">
+            <strong>10. 淺草今半 雷門店 (壽喜燒)</strong><br>
+            - 預約：電話 <b>+81-3-3841-1114</b> 預定 <b>12:00 時段</b>。♿ 註明需要平地桌席。<br>
+            <hr style="border: none; border-top: 1px solid var(--border-color); margin: 6px 0;">
+            <strong>11. 上野 黑船亭 (洋食)</strong><br>
+            - 預約：電話 <b>+81-3-3837-1600</b> 或官網預約. ♿ 備註需要輪椅席。<br>
+            <hr style="border: none; border-top: 1px solid var(--border-color); margin: 6px 0;">
+            <strong>12. まるごと北海道 UENO 3153 店</strong><br>
+            - 預約：提前透過 Hot Pepper 或電話線上訂位。
+          </div>
+        </div>
+      </div>
+
     </section>
     
     <!-- Itinerary Section -->
@@ -2040,10 +2092,10 @@
       <div id="day4" class="day-content">
         <div class="day-banner">
           <div class="day-banner-title">
-            <h2>不忍池晨間賞荷 ➔ 風鈴祭古社 ➔ 鰻魚午餐 ➔ 不忍池三社 ➔ 六本木夏日盆踊大會</h2>
+            <h2>不忍池晨荷 ➔ 上野公園古社參拜 ➔ 淺草川畔鰻魚午餐 ➔ 墨田北齋美術館 (葛飾北齋大師畫作) ➔ 六本木夏日盆踊大會</h2>
             <p>2026年8月22日 (星期六)</p>
           </div>
-          <div class="day-summary-badge">風鈴悠揚與日本夏日祭典</div>
+          <div class="day-summary-badge">極致藝文與江戶夏祭</div>
         </div>
         <div class="day-timeline">
           
@@ -2060,49 +2112,34 @@
             </div>
           </div>
           
-          <div class="timeline-node transit">
-            <div class="node-dot">
-              <svg viewBox="0 0 24 24"><path d="M12,2C11.38,2 10.88,2.5 10.88,3.13V4.38C7.5,4.78 5,7.63 5,11V17L3,19V20H21V19L19,17V11C19,7.63 16.5,4.78 13.13,4.38V3.13C13.13,2.5 12.63,2 12,2M12,6A5,5 0 0,1 17,11V17H7V11A5,5 0 0,1 12,6Z"/></svg>
-            </div>
-            <div class="node-time">09:45 - 10:30 <span class="duration">45分鐘</span></div>
-            <div class="node-card">
-              <div class="node-title-row">
-                <span class="node-title">前往西新井大師 (搭乘東武線，預算：¥330/人)</span>
-              </div>
-              <p class="node-desc"><strong>乘車月台與無障礙指引：</strong><br>1. **搭車位置**：至 **【地鐵日比谷線・上野站】**，搭乘電梯至 **2 號月台 (往北千住/東武動物公園方向)**，搭至 **【北千住站】**。<br>2. **第一次轉乘**：在北千住站，利用站內大電梯轉乘 **【東武晴空塔線】(1 或 2 號月台，往東武動物公園方向)**，搭乘至 **【西新井站】**。<br>3. **第二次轉乘**：在西新井站，經由月台電梯至大廳，再轉往 **1 或 2 號月台【東武大師線】**，搭乘 1 站 (2 分鐘) 直達 **【大師前站】**。<br>4. **出站位置**：大師前站為全站平坦無障礙設計，推輪椅出站後走平路 3 分鐘即可到達西新井大師本堂。</p>
-            </div>
-          </div>
-          
           <div class="timeline-node">
             <div class="node-dot">
               <svg viewBox="0 0 24 24"><path d="M12,2C8.13,2 5,5.13 5,9c0,5.25 7,13 7,13s7,-7.75 7,-13c0,-3.87 -3.13,-7 -7,-7zM12,11.5c-1.38,0 -2.5,-1.12 -2.5,-2.5s1.12,-2.5 2.5,-2.5s2.5,1.12 2.5,2.5s-1.12,2.5 -2.5,2.5z"/></svg>
             </div>
-            <div class="node-time">10:30 - 12:30 <span class="duration">2小時</span></div>
+            <div class="node-time">09:30 - 11:30 <span class="duration">2小時</span></div>
             <div class="node-card">
               <div class="node-title-row">
-                <span class="node-title">西新井大師 (預算：免門票 / 御朱印 ¥500/份)</span>
-                <a href="https://maps.google.com/?q=Nishiarai+Daishi" target="_blank" class="map-btn">
-                  <svg viewBox="0 0 24 24"><path d="M12,2C8.13,2 5,5.13 5,9c0,5.25 7,13 7,13s7,-7.75 7,-13c0,-3.87 -3.13,-7 -7,-7zM12,11.5c-1.38,0 -2.5,-1.12 -2.5,-2.5s1.12,-2.5 2.5,-2.5s2.5,1.12 2.5,2.5s-1.12,2.5 -2.5,2.5z"/></svg>地圖
-                </a>
+                <span class="node-title">上野公園名所 ➔ 不忍池辯天堂 ➔ 清水觀音堂 ➔ 湯島天滿宮參拜</span>
               </div>
-              <p class="node-desc">穿著舒適的私服，在掛滿上千個日本傳統風鈴的庭院中散步拍照，聆聽悠揚風鈴聲。免收門票，於朱印所書寫御朱印費用為 <b>¥500</b>（受理至 16:00）。</p>
-              <div class="node-tips wheelchair-tips">
-                <svg viewBox="0 0 24 24"><path d="M12,2C6.5,2 2,6.5 2,12s4.5,10 10,10s10,-4.5 10,-10S17.5,2 12,2m4.5,15.5c-0.3,0.5 -1,0.7 -1.5,0.4l-3,-1.9l-1.8,3.5C10,19.9 9.2,20.3 8.4,20L4.4,18.7C3.7,18.4 3.3,17.6 3.6,16.9l1.4,-3.7C5.3,12.5 6.1,12.1 6.9,12.4l4,1.3l2.4,-4.8c0.5,-0.9 1.6,-1.4 2.6,-0.8l3,1.7C20.4,11.1 20.6,11.8 20.3,12.3l-1.4,1.6L16.5,15.5M16.5,9A1.5,1.5 0 0,1 15,7.5A1.5,1.5 0 0,1 16.5,6A1.5,1.5 0 0,1 18,7.5A1.5,1.5 0 0,1 16.5,9Z"/></svg>
-                無障礙提醒：境內極其開闊平坦，無段差設計，輪椅在風鈴下推行非常便利。
-              </div>
+              <p class="node-desc">自飯店推車出發，進行上野區域的古社巡禮（0 轉乘，完全步行）。
+              1. **不忍池辯天堂**：推輪椅經平緩斜坡進入參拜。
+              2. **清水觀音堂**：順路前往參拜，長者可於堂前平坦處小休。
+              3. **湯島天滿宮**：步行 10 分鐘，經平坦小路抵達。三處均免門票，每份御朱印費用為 <b>¥500</b>，3 處共約 <b>¥1,500</b>。在早晨較涼爽時完成上野參拜，省去下午反覆折返的疲勞。</p>
             </div>
           </div>
           
           <div class="timeline-node transit">
             <div class="node-dot">
-              <svg viewBox="0 0 24 24"><path d="M12,2C11.38,2 10.88,2.5 10.88,3.13V4.38C7.5,4.78 5,7.63 5,11V17L3,19V20H21V19L19,17V11C19,7.63 16.5,4.78 13.13,4.38V3.13C13.13,2.5 12.63,2 12,2M12,6A5,5 0 0,1 17,11V17H7V11A5,5 0 0,1 12,6Z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12,2c-4.4,0-8,3.6-8,8v9h16v-9C20,5.6,16.4,2,12,2z"/></svg>
             </div>
-            <div class="node-time">12:30 - 13:00 <span class="duration">30分鐘</span></div>
+            <div class="node-time">11:30 - 12:00 <span class="duration">30分鐘</span></div>
             <div class="node-card">
               <div class="node-title-row">
-                <span class="node-title">前往淺草 (搭乘東武大師線/晴空塔線直達，預算：¥330/人)</span>
+                <span class="node-title">地鐵無障礙直達：前往淺草站 (預算：¥180/人)</span>
               </div>
-              <p class="node-desc"><strong>乘車月台與無障礙指引：</strong><br>1. **搭車位置**：自 **【大師前站】** 搭乘東武大師線回到 **【西新井站】**。<br>2. **轉乘直達**：在西新井站，搭乘電梯前往 **3 或 4 號月台 (東武晴空塔線急行/準急，往淺草方向)**，直接搭至終點站 **【淺草站】**。<br>3. **出站位置**：抵達 **【東武淺草站】** 後，該站月台位於 Ekimise 百貨 2 樓。搭乘站內無障礙電梯直降至 **1 樓正面出入口** 出站，即達雷門前平坦人行道。</p>
+              <p class="node-desc"><strong>乘車月台與無障礙指引：</strong><br>
+              1. **搭車位置**：自湯島天滿宮推車 6 分鐘至 **【地鐵銀座線・上野站】**，搭乘電梯至 **2 號月台 (往淺草方向)** 搭車，直達終點站淺草（車資為 <b>¥180/人</b>，3 人共 <b>¥540</b>）。<i>（亦可直接搭乘計程車，車程約 10 分鐘，車資約 ¥1,500，3 人分攤極為輕鬆省力）</i><br>
+              2. **出站位置**：抵達 **【淺草站】** 後，經由月台電梯升至 B1F 剪票口，從 **A4/A5 出口方向的電梯** 直升至地面，步行 5 分鐘抵達餐廳。</p>
             </div>
           </div>
           
@@ -2110,7 +2147,7 @@
             <div class="node-dot">
               <svg viewBox="0 0 24 24"><path d="M11,9H9V2H7V9H5V2H3V9C3,11.12 4.66,12.84 6.75,12.97V22H8.25V12.97C10.34,12.84 12,11.12 12,9V2H11V9M16,6V14H18.5V22H20V2H16V6Z"/></svg>
             </div>
-            <div class="node-time">13:00 - 14:30 <span class="duration">1小時30分</span></div>
+            <div class="node-time">12:00 - 13:30 <span class="duration">1小時30分</span></div>
             <div class="node-card">
               <div class="node-title-row">
                 <span class="node-title">午餐：淺草 駒形前川 (預算約：¥6,000 - ¥8,000/人)</span>
@@ -2124,30 +2161,31 @@
           
           <div class="timeline-node transit">
             <div class="node-dot">
-              <svg viewBox="0 0 24 24"><path d="M12,2C11.38,2 10.88,2.5 10.88,3.13V4.38C7.5,4.78 5,7.63 5,11V17L3,19V20H21V19L19,17V11C19,7.63 16.5,4.78 13.13,4.38V3.13C13.13,2.5 12.63,2 12,2M12,6A5,5 0 0,1 17,11V17H7V11A5,5 0 0,1 12,6Z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12,2c-4.4,0-8,3.6-8,8v9h16v-9C20,5.6,16.4,2,12,2z"/></svg>
             </div>
-            <div class="node-time">14:30 - 14:50 <span class="duration">20分鐘</span></div>
+            <div class="node-time">13:30 - 13:50 <span class="duration">20分鐘</span></div>
             <div class="node-card">
               <div class="node-title-row">
-                <span class="node-title">地鐵無障礙直達：前往上野公園 (預算：¥180/人)</span>
+                <span class="node-title">輕鬆直達：前往墨田北齋美術館 (推薦搭乘計程車)</span>
               </div>
-              <p class="node-desc"><strong>電車無障礙路線：</strong> 自淺草站搭乘地鐵銀座線直達上野站（3站，5分鐘，備有大容量無障礙電梯直上地面層）。隨後推車步行 3 分鐘直接進入上野恩賜公園。車資為 <b>¥180/人</b>（3人共 <b>¥540</b>）。</p>
+              <p class="node-desc"><strong>計程車最推薦方案：</strong><br>
+              自餐廳門口直接搭乘計程車前往墨田北齋美術館，距離僅約 2 公里，車程約 6-8 分鐘即可抵達，單程車資僅約 **¥1,000 - ¥1,300**。3 人同行省去了在烈日下推輪椅過橋的曝曬，亦免去地鐵轉乘樓層的繁瑣，是最體貼長者與推車者的移動方式。</p>
             </div>
           </div>
           
           <div class="timeline-node">
             <div class="node-dot">
-              <svg viewBox="0 0 24 24"><path d="M12,2C8.13,2 5,5.13 5,9c0,5.25 7,13 7,13s7,-7.75 7,-13c0,-3.87 -3.13,-7 -7,-7zM12,11.5c-1.38,0 -2.5,-1.12 -2.5,-2.5s1.12,-2.5 2.5,-2.5s2.5,1.12 2.5,2.5s-1.12,2.5 -2.5,2.5z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12,2C6.48,2 2,6.48 2,12C2,17.52 6.48,22 12,22C17.52,22 22,17.52 22,12C22,6.48 17.52,2 12,2M11,16H13V18H11V16M11,6H13V14H11V6Z"/></svg>
             </div>
-            <div class="node-time">14:50 - 16:20 <span class="duration">1小時30分鐘</span></div>
+            <div class="node-time">13:50 - 15:50 <span class="duration">2小時</span></div>
             <div class="node-card">
               <div class="node-title-row">
-                <span class="node-title">不忍池辯天堂 ➔ 清水觀音堂 ➔ 湯島天滿宮參拜 (預算：免門票 / 御朱印 ¥500/份)</span>
-                <a href="https://maps.google.com/?q=Yushima+Tenmangu" target="_blank" class="map-btn">
+                <span class="node-title">墨田北齋美術館 ➔ 欣賞浮世繪大師葛飾北齋之作 (預算約：¥400/人)</span>
+                <a href="https://maps.google.com/?q=The+Sumida+Hokusai+Museum" target="_blank" class="map-btn">
                   <svg viewBox="0 0 24 24"><path d="M12,2C8.13,2 5,5.13 5,9c0,5.25 7,13 7,13s7,-7.75 7,-13c0,-3.87 -3.13,-7 -7,-7zM12,11.5c-1.38,0 -2.5,-1.12 -2.5,-2.5s1.12,-2.5 2.5,-2.5s2.5,1.12 2.5,2.5s-1.12,2.5 -2.5,2.5z"/></svg>地圖
                 </a>
               </div>
-              <p class="node-desc">抵達上野公園後直接推輪椅，前往位於不忍池中央的【不忍池辯天堂】（設有平緩斜坡）；接著推車 5 分鐘前往【清水觀音堂】參拜；最後由不忍池旁平坦小路步行推車約 10 分鐘，即可輕鬆抵達【湯島天滿宮】參拜。三處均免門票，每份御朱印費用為 <b>¥500</b>，若三處皆收集，每人共需 <b>¥1,500</b>。</p>
+              <p class="node-desc">欣賞著名浮世繪大師葛飾北齋（富嶽三十六景作者）的精緻展覽。建築由普立茲克獎得主妹島和世設計，外觀極具現代感。<b>無障礙優勢：全館 100% 採無障礙空間設計，大容量電梯、無段差自動門及坡道極為完善，並配有寬敞的多功能無障礙廁所。在盛夏最炎熱的下午兩點，安排長者在安靜、冷氣充足的現代美術館中一邊推車一邊欣賞藝術，是避暑與放慢節奏的絕佳景點</b>。常設展門票僅 <b>¥400/人</b> (3 人共約 <b>¥1,200</b>)。</p>
             </div>
           </div>
           
@@ -2155,12 +2193,14 @@
             <div class="node-dot">
               <svg viewBox="0 0 24 24"><path d="M12,2C11.38,2 10.88,2.5 10.88,3.13V4.38C7.5,4.78 5,7.63 5,11V17L3,19V20H21V19L19,17V11C19,7.63 16.5,4.78 13.13,4.38V3.13C13.13,2.5 12.63,2 12,2M12,6A5,5 0 0,1 17,11V17H7V11A5,5 0 0,1 12,6Z"/></svg>
             </div>
-            <div class="node-time">16:20 - 17:00 <span class="duration">40分鐘</span></div>
+            <div class="node-time">15:50 - 16:30 <span class="duration">40分鐘</span></div>
             <div class="node-card">
               <div class="node-title-row">
-                <span class="node-title">前往六本木 (搭乘地鐵日比谷線直達，預算：¥210/人)</span>
+                <span class="node-title">地鐵無障礙直達：前往六本木 (大江戶線直達，預算：¥280/人)</span>
               </div>
-              <p class="node-desc"><strong>電車無障礙路線：</strong> 湯島天滿宮旁步行 5 分鐘至地鐵湯島站，或直接回上野站搭乘地鐵日比谷線直達六本木站，出站走 1C 出口（備有大型無障礙升降電梯直結會場，免轉車，極為便利）。車資為 <b>¥210/人</b>（3人共 <b>¥630</b>）。</p>
+              <p class="node-desc"><strong>乘車月台與無障礙指引：</strong><br>
+              1. **搭車位置**：自美術館步行 5 分鐘至 **【地鐵大江戶線・兩國站】**，搭乘電梯進入月台，前往 **1 號月台 (大江戶線環狀線逆時針方向，往大門/六本木方向)** 搭車，直達六本木。<b>大江戶線為近代新建地鐵，無障礙升降電梯極為完善且完全直達，中途免換車！</b>車資為 <b>¥280/人</b>（3人共 <b>¥840</b>）。<br>
+              2. **出站位置**：抵達 **【六本木站】** 後，經由月台電梯至 B1F 剪票口，從 **1C 出口 (設有大型無障礙直結電梯)** 出站，直通六本木之丘 Arena 會場，完全不用上到馬路日曬或爬階梯。</p>
             </div>
           </div>
           
@@ -2168,7 +2208,7 @@
             <div class="node-dot">
               <svg viewBox="0 0 24 24"><path d="M12,2c-4.97,0 -9,4.03 -9,9c0,5.25 9,13 9,13s9,-7.75 9,-13c0,-4.97 -4.03,-9 -9,-9z"/></svg>
             </div>
-            <div class="node-time">17:00 - 20:15 <span class="duration">3小時15分鐘</span></div>
+            <div class="node-time">16:30 - 19:45 <span class="duration">3小時15分鐘</span></div>
             <div class="node-card">
               <div class="node-title-row">
                 <span class="node-title">六本木之丘夏日盆踊大會 (預算：免入場門票 / 屋台小吃預算約 ¥2,000/人)</span>
@@ -2176,14 +2216,29 @@
                   <svg viewBox="0 0 24 24"><path d="M12,2C8.13,2 5,5.13 5,9c0,5.25 7,13 7,13s7,-7.75 7,-13c0,-3.87 -3.13,-7 -7,-7zM12,11.5c-1.38,0 -2.5,-1.12 -2.5,-2.5s1.12,-2.5 2.5,-2.5s2.5,1.12 2.5,2.5s-1.12,2.5 -2.5,2.5z"/></svg>地圖
                 </a>
               </div>
-              <p class="node-desc">今日全家身穿舒適的常服與當天買的 HOKA 運動鞋，在六本木之丘 Arena 輕鬆推輪椅觀賞巨型紅色櫓木、聆聽傳統太鼓民謠。入場免費，晚餐於現場屋台美食攤位享用熟食點心「黑長堂炭烤鰻魚串」、「南翔小籠包」（全熟食無牛）。每個品項售價約 <b>¥500 - ¥1,500</b>，3人美食消費預算約 <b>¥6,000</b>。</p>
+              <p class="node-desc">身穿舒適常服與 HOKA 運動鞋，在六本木之丘 Arena 輕鬆推輪椅觀賞巨型紅色櫓木、聆聽傳統太鼓民謠。入場免費，晚餐於現場屋台美食攤位享用熟食點心「黑長堂炭烤鰻魚串」、「南翔小籠包」（全熟食無牛）。每個品項售價約 <b>¥500 - ¥1,500</b>，3人美食消費預算約 <b>¥6,000</b>。</p>
               <div class="node-tips wheelchair-tips">
                 <svg viewBox="0 0 24 24"><path d="M12,2C6.5,2 2,6.5 2,12s4.5,10 10,10s10,-4.5 10,-10S17.5,2 12,2m4.5,15.5c-0.3,0.5 -1,0.7 -1.5,0.4l-3,-1.9l-1.8,3.5C10,19.9 9.2,20.3 8.4,20L4.4,18.7C3.7,18.4 3.3,17.6 3.6,16.9l1.4,-3.7C5.3,12.5 6.1,12.1 6.9,12.4l4,1.3l2.4,-4.8c0.5,-0.9 1.6,-1.4 2.6,-0.8l3,1.7C20.4,11.1 20.6,11.8 20.3,12.3l-1.4,1.6L16.5,15.5M16.5,9A1.5,1.5 0 0,1 15,7.5A1.5,1.5 0 0,1 16.5,6A1.5,1.5 0 0,1 18,7.5A1.5,1.5 0 0,1 16.5,9Z"/></svg>
-                避堵避累叮嚀：不穿和服浴衣可大大減輕在盆踊大會擁擠人群中的悶熱與束縛感，讓媽媽極為放鬆。餐後搭乘地鐵日比谷線直達上野回飯店（車資 <b>¥210/人</b>，共 <b>¥630</b>），快速平價。
+                無障礙提醒：會場有升降梯，動線鋪設良好，人潮變多時可於稍微後方的空曠平坦處坐著輪椅觀賞，活動現場十分熱鬧安全。
               </div>
             </div>
           </div>
           
+          <div class="timeline-node transit">
+            <div class="node-dot">
+              <svg viewBox="0 0 24 24"><path d="M12,2C11.38,2 10.88,2.5 10.88,3.13V4.38C7.5,4.78 5,7.63 5,11V17L3,19V20H21V19L19,17V11C19,7.63 16.5,4.78 13.13,4.38V3.13C13.13,2.5 12.63,2 12,2M12,6A5,5 0 0,1 17,11V17H7V11A5,5 0 0,1 12,6Z"/></svg>
+            </div>
+            <div class="node-time">19:45 - 20:30 <span class="duration">45分鐘</span></div>
+            <div class="node-card">
+              <div class="node-title-row">
+                <span class="node-title">地鐵無障礙直達：回上野飯店休息 (預算：¥210/人)</span>
+              </div>
+              <p class="node-desc"><strong>乘車月台與無障礙指引：</strong><br>
+              1. **搭車位置**：自六本木之丘 1C 出口電梯進入 **【地鐵日比谷線・六本木站】**，前往 **2 號月台 (日比谷線往北千住方向)** 搭車，直達上野（車資為 <b>¥210/人</b>，3 人共 <b>¥630</b>）。<br>
+              2. **出站位置**：抵達 **【上野站】** 後，搭乘電梯至 **4 號出口電梯** 上至地面，步行 5 分鐘回飯店休息，結束充實且完全避暑的藝文與祭典一日遊。</p>
+            </div>
+          </div>
+
         </div>
           <!-- Heat Escape & Wheelchair Rest Area -->
           <div class="timeline-node cafe">
@@ -2204,15 +2259,14 @@
           </div>
 
       </div>
-      
       <!-- Day 5 -->
       <div id="day5" class="day-content">
         <div class="day-banner">
           <div class="day-banner-title">
-            <h2>雙人雷門浴衣體驗 ➔ 避暑林蔭漫步淺草寺 ➔ 淺草今半壽喜燒 ➔ 觀光中心 8F 落地窗避暑大休息</h2>
+            <h2>3人雷門浴衣體驗 ➔ 避暑林蔭漫步淺草寺 ➔ 淺草今半壽喜燒 ➔ 觀光中心 8F 落地窗避暑大休息 ➔ 黑船亭洋食晚餐</h2>
             <p>2026年8月23日 (星期日)</p>
           </div>
-          <div class="day-summary-badge">傳統和風與絕佳高空視野</div>
+          <div class="day-summary-badge">傳統和風與雙寺參拜</div>
         </div>
         <div class="day-timeline">
           
@@ -2220,7 +2274,7 @@
             <div class="node-dot">
               <svg viewBox="0 0 24 24"><path d="M12,2c-4.4,0-8,3.6-8,8v9h16v-9C20,5.6,16.4,2,12,2z M7.5,16c-0.8,0-1.5-0.7-1.5-1.5S6.7,13,7.5,13S9,13.7,9,14.5S8.3,16,7.5,16z M16.5,16c-0.8,0-1.5-0.7-1.5-1.5s0.7-1.5,1.5-1.5s1.5,0.7,1.5,1.5S17.3,16,16.5,16z"/></svg>
             </div>
-            <div class="node-time">09:30 - 10:00 <span class="duration">30分鐘</span></div>
+            <div class="node-time">08:30 - 09:00 <span class="duration">30分鐘</span></div>
             <div class="node-card">
               <div class="node-title-row">
                 <span class="node-title">地鐵直達：前往淺草站</span>
@@ -2235,12 +2289,12 @@
             <div class="node-dot">
               <svg viewBox="0 0 24 24"><path d="M12,18A6,6 0 1,1 18,12A6,6 0 0,1 12,18Z"/></svg>
             </div>
-            <div class="node-time">10:00 - 11:00 <span class="duration">1小時</span></div>
+            <div class="node-time">09:00 - 10:30 <span class="duration">1小時30分鐘</span></div>
             <div class="node-card">
               <div class="node-title-row">
-                <span class="node-title">「梨花和服」淺草店 雙人浴衣著裝體驗 (預算約：¥4,500 × 2)</span><span class="tag booking-tag" style="background-color: rgba(245, 158, 11, 0.1); color: var(--accent-orange); border: 1px solid rgba(245, 158, 11, 0.2); font-size: 0.75rem; padding: 2px 6px; border-radius: 4px; font-weight: 700; margin-left: 8px; display: inline-block; vertical-align: middle;">⚠️ 務必提前預約</span>
+                <span class="node-title">「梨花和服」淺草店 3人浴衣著裝體驗 (預算約：¥4,500 × 3)</span><span class="tag booking-tag" style="background-color: rgba(245, 158, 11, 0.1); color: var(--accent-orange); border: 1px solid rgba(245, 158, 11, 0.2); font-size: 0.75rem; padding: 2px 6px; border-radius: 4px; font-weight: 700; margin-left: 8px; display: inline-block; vertical-align: middle;">⚠️ 務必提前預約</span>
               </div>
-              <p class="node-desc">張小姐與張先生換上日本夏季浴衣（2 人預算共 <b>¥9,000</b>，含專業髮型與配飾）。大樓設有大型無障礙電梯。<b>特別提醒：為保障鍾阿嬤體力，鍾阿嬤在此不參與浴衣著裝，著透氣輕便私服，避免高溫下腰部厚重束縛造成胸悶與中暑。負責推輪椅的張先生穿著浴衣但改穿避震運動鞋（不穿木屐），確保推車與行走平穩安全。</b>由於僅 2 人著裝，時間由 1.5 小時縮短至 1 小時，更加從容。<i>(預約方式：建議出發前 2-4 週於梨花和服官網 ewha-yifu.com 預約 10:00 時段，並於備註欄註明攜帶同行輪椅長者以利動線安排)</i></p>
+              <p class="node-desc">全家 3 人換上日本夏季浴衣（3 人預算共約 <b>¥13,500</b>，含專業髮型與配飾）。大樓設有大型無障礙電梯。<b>♿ 鍾阿嬤無障礙穿戴叮嚀：請於店內著裝時，務必告知協助著裝的日本老師「希望能綁得稍微寬鬆一些」（日文：帯を少し緩めに結んでください），避免長者因久坐輪椅與盛夏高溫，導致腰部過度束縛造成胸悶或呼吸不適。負責推輪椅的張先生穿著浴衣但改穿避震運動鞋（不穿木屐），確保推車與行走平穩安全</b>。3人著裝時間安排 1.5 小時，預約 09:00 第一批進店著裝，人潮最少且不需排隊等待，著裝完畢後即可出發拍照。<i>(預約方式：建議出發前 2-4 週於梨花和服官網 ewha-yifu.com 預約 09:00 時段，並於備註欄註明攜帶同行輪椅長者以利動線安排)</i></p>
             </div>
           </div>
           
@@ -2248,7 +2302,7 @@
             <div class="node-dot">
               <svg viewBox="0 0 24 24"><path d="M12,2C8.13,2 5,5.13 5,9c0,5.25 7,13 7,13s7,-7.75 7,-13c0,-3.87 -3.13,-7 -7,-7zM12,11.5c-1.38,0 -2.5,-1.12 -2.5,-2.5s1.12,-2.5 2.5,-2.5s2.5,1.12 2.5,2.5s-1.12,2.5 -2.5,2.5z"/></svg>
             </div>
-            <div class="node-time">11:00 - 12:45 <span class="duration">1小時45分鐘</span></div>
+            <div class="node-time">10:30 - 12:00 <span class="duration">1小時30分鐘</span></div>
             <div class="node-card">
               <div class="node-title-row">
                 <span class="node-title">雷門拍照 ➔ 避暑林蔭小道漫步 ➔ 淺草寺與淺草神社參拜</span>
@@ -2256,7 +2310,7 @@
                   <svg viewBox="0 0 24 24"><path d="M12,2C8.13,2 5,5.13 5,9c0,5.25 7,13 7,13s7,-7.75 7,-13c0,-3.87 -3.13,-7 -7,-7zM12,11.5c-1.38,0 -2.5,-1.12 -2.5,-2.5s1.12,-2.5 2.5,-2.5s2.5,1.12 2.5,2.5s-1.12,2.5 -2.5,2.5z"/></svg>地圖
                 </a>
               </div>
-              <p class="node-desc">身穿浴衣拍攝極具紀念價值的家庭合照。<b>避暑與避障技巧：週日正午雷門仲見世通人山人海，推輪椅極難行進且無遮蔭，請繞道兩側平坦且有樹蔭的側邊商店街前行</b>。抵達【淺草寺】本堂後，由本堂左側「無障礙優先電梯棟」升至二樓參拜，隨後前往遊客較少、樹蔭茂密的【淺草神社】參拜，收集此處御朱印（約 <b>¥500</b>）。</p>
+              <p class="node-desc">身穿浴衣拍攝極具紀念價值的家庭合照。<b>避暑與避障技巧：週日上午 10:30 雷門人潮正剛開始聚集，氣溫亦比中午舒適，請抓緊時間拍照，並繞道兩側平坦且有樹蔭的側邊商店街前行</b>。抵達【淺草寺】本堂後，由本堂左側「無障礙優先電梯棟」升至二樓參拜，隨後前往遊客較少、樹蔭茂密的【淺草神社】參拜，收集此處御朱印（約 <b>¥500</b>）。</p>
             </div>
           </div>
           
@@ -2264,7 +2318,7 @@
             <div class="node-dot">
               <svg viewBox="0 0 24 24"><path d="M11,9H9V2H7V9H5V2H3V9C3,11.12 4.66,12.84 6.75,12.97V22H8.25V12.97C10.34,12.84 12,11.12 12,9V2H11V9M16,6V14H18.5V22H20V2H16V6Z"/></svg>
             </div>
-            <div class="node-time">12:45 - 14:15 <span class="duration">1小時30分</span></div>
+            <div class="node-time">12:00 - 13:30 <span class="duration">1小時30分</span></div>
             <div class="node-card">
               <div class="node-title-row">
                 <span class="node-title">午餐：淺草今半 雷門店 (預算約：¥3,500 - ¥5,500/人)</span><span class="tag booking-tag" style="background-color: rgba(59, 130, 246, 0.1); color: var(--secondary); border: 1px solid rgba(59, 130, 246, 0.2); font-size: 0.75rem; padding: 2px 6px; border-radius: 4px; font-weight: 700; margin-left: 8px; display: inline-block; vertical-align: middle;">⚠️ 務必提前預約</span>
@@ -2272,7 +2326,7 @@
                   <svg viewBox="0 0 24 24"><path d="M12,2C8.13,2 5,5.13 5,9c0,5.25 7,13 7,13s7,-7.75 7,-13c0,-3.87 -3.13,-7 -7,-7zM12,11.5c-1.38,0 -2.5,-1.12 -2.5,-2.5s1.12,-2.5 2.5,-2.5s2.5,1.12 2.5,2.5s-1.12,2.5 -2.5,2.5z"/></svg>地圖
                 </a>
               </div>
-              <p class="node-desc">享用由服務人員桌邊服務的「特選豬肉壽喜燒午餐定食」或「大山雞肉壽喜燒定食」（票價約 <b>¥5,390/人</b>，含稅，3 人共約 <b>¥16,170</b>）。現場請向服務人員確認**不吃牛肉、不提供生食**。備有大容量無障礙電梯。<i>(預約方式：此餐廳週日午餐極為熱門，務必提前透過官方網站或撥打電話 +81-3-3841-1114 預訂座位並註明輪椅需求；若未預約且現場人多，請直接改往地鐵淺草站直通的 Ekimise 百貨 7F 餐廳街以節省排隊時間)</i></p>
+              <p class="node-desc">享用由服務人員桌邊服務的「特選豬肉壽喜燒午餐定食」或「大山雞肉壽喜燒定食」（票價約 <b>¥5,390/人</b>，含稅，3 人共約 <b>¥16,170</b>）。現場請向服務人員確認**不吃牛肉、不提供生食**。備有大容量無障礙電梯。預訂 12:00 第一批進店用餐最為順暢，吃午餐順便讓長者在強冷氣房中躲避正午的烈日。<i>(預約方式：此餐廳週日午餐極為熱門，務必提前預約 12:00 時段，並註明輪椅需求)</i></p>
             </div>
           </div>
           
@@ -2280,12 +2334,12 @@
             <div class="node-dot">
               <svg viewBox="0 0 24 24"><path d="M12,2C6.5,2 2,6.5 2,12s4.5,10 10,10s10,-4.5 10,-10S17.5,2 12,2m4.5,15.5c-0.3,0.5 -1,0.7 -1.5,0.4l-3,-1.9l-1.8,3.5C10,19.9 9.2,20.3 8.4,20L4.4,18.7C3.7,18.4 3.3,17.6 3.6,16.9l1.4,-3.7C5.3,12.5 6.1,12.1 6.9,12.4l4,1.3l2.4,-4.8c0.5,-0.9 1.6,-1.4 2.6,-0.8l3,1.7C20.4,11.1 20.6,11.8 20.3,12.3l-1.4,1.6L16.5,15.5M16.5,9A1.5,1.5 0 0,1 15,7.5A1.5,1.5 0 0,1 16.5,6A1.5,1.5 0 0,1 18,7.5A1.5,1.5 0 0,1 16.5,9Z"/></svg>
             </div>
-            <div class="node-time">14:15 - 14:45 <span class="duration">30分鐘</span></div>
+            <div class="node-time">13:30 - 14:00 <span class="duration">30分鐘</span></div>
             <div class="node-card">
               <div class="node-time-row">
                 <span class="node-title">歸還浴衣 ➔ 換回私服與 HOKA 舒適鞋</span>
               </div>
-              <p class="node-desc">午餐後直接步行 5 分鐘返回「梨花和服」歸還浴衣。<b>在一天當中最炎熱的下午時段，提早脫去多層束縛的浴衣、換回排汗通風的私服，能大幅降低體力流失與中暑風險，確保後半日行程輕鬆自如。</b></p>
+              <p class="node-desc">午餐後直接步行 5 分鐘返回「梨花和服」歸還浴衣。<b>下午兩點是整天陽光與氣溫最毒辣的時段，此時提早換回輕便常服，能最大程度保護長者防暑降溫，避免體力透支。</b></p>
             </div>
           </div>
           
@@ -2293,15 +2347,15 @@
             <div class="node-dot">
               <svg viewBox="0 0 24 24"><path d="M12,18A6,6 0 1,1 18,12A6,6 0 0,1 12,18Z"/></svg>
             </div>
-            <div class="node-time">14:45 - 15:45 <span class="duration">1小時</span></div>
+            <div class="node-time">14:00 - 15:00 <span class="duration">1小時</span></div>
             <div class="node-card">
               <div class="node-title-row">
-                <span class="node-title">輕鬆自由行：隅田公園河畔散步 或 觀光中心 8F 展望避暑 (免費)</span>
+                <span class="node-title">輕鬆自由行：觀光中心 8F 展望避暑 (免費) 或 隅田公園散步</span>
                 <a href="https://maps.google.com/?q=Asakusa+Culture+Tourist+Information+Center" target="_blank" class="map-btn">
                   <svg viewBox="0 0 24 24"><path d="M12,2C8.13,2 5,5.13 5,9c0,5.25 7,13 7,13s7,-7.75 7,-13c0,-3.87 -3.13,-7 -7,-7zM12,11.5c-1.38,0 -2.5,-1.12 -2.5,-2.5s1.12,-2.5 2.5,-2.5s2.5,1.12 2.5,2.5s-1.12,2.5 -2.5,2.5z"/></svg>地圖
                 </a>
               </div>
-              <p class="node-desc">換回舒適便服後，可推輪椅至隅田川畔平坦步道拍攝晴空塔，或者直接前往雷門對面的 **【淺草文化觀光中心】**。搭乘大容量升降電梯直達 **8 樓展望露台**，在冷氣大廳的座椅中一邊避暑大休息、喝水，一邊透過巨大的整面落地窗，以「神之視角」俯瞰剛才散步過的雷門、仲見世通商店街及整座淺草寺屋頂，壯觀且安全防暑。</p>
+              <p class="node-desc">換回舒適便服後，可推輪椅至隅田川畔平坦步道拍攝晴空塔，或者直接前往雷門對面的 **【淺草文化觀光中心】**。搭乘大容量升降電梯直達 **8 樓展望露台**，在冷氣大廳的座椅一邊休息喝水、避開烈日，一邊透過巨大的落地窗，以「神之視角」俯瞰雷門、仲見世通商店街及整座淺草寺屋頂，壯觀且防暑。</p>
             </div>
           </div>
           
@@ -2309,14 +2363,30 @@
             <div class="node-dot">
               <svg viewBox="0 0 24 24"><path d="M12,2c-4.4,0-8,3.6-8,8v9h16v-9C20,5.6,16.4,2,12,2z"/></svg>
             </div>
-            <div class="node-time">15:45 - 17:30 <span class="duration">1小時45分鐘</span></div>
+            <div class="node-time">15:00 - 16:30 <span class="duration">1小時30分鐘</span></div>
             <div class="node-card">
               <div class="node-title-row">
-                <span class="node-title">電車無障礙路線：回上野 ➔ 阿美橫丁輕鬆散步</span>
+                <span class="node-title">電車無障礙路線：回上野飯店休息 / 阿美橫丁輕鬆散步</span>
               </div>
               <p class="node-desc"><strong>乘車月台與無障礙指引：</strong><br>
               1. **搭車位置**：自淺草文化觀光中心對面之 **【地鐵銀座線・淺草站】** 經電梯進入，前往 **1 或 2 號月台 (往澀谷方向)**，搭乘 3 站直達上野。<br>
-              2. **出站位置**：抵達 **【上野站】** 後，經由無障礙閘口及大廳電梯前往 **4 號出口電梯** 升至地面，步行即可直達阿美橫丁，推輪椅悠閒散步採買伴手禮。</p>
+              2. **出站位置**：抵達 **【上野站】** 後，經由無障礙閘口及大廳電梯前往 **4 號出口電梯** 升至地面，步行回飯店休息，或是推輪椅在阿美橫丁悠閒散步採買伴手禮。</p>
+            </div>
+          </div>
+          
+          <div class="timeline-node food">
+            <div class="node-dot">
+              <svg viewBox="0 0 24 24"><path d="M11,9H9V2H7V9H5V2H3V9C3,11.12 4.66,12.84 6.75,12.97V22H8.25V12.97C10.34,12.84 12,11.12 12,9V2H11V9M16,6V14H18.5V22H20V2H16V6Z"/></svg>
+            </div>
+            <div class="node-time">18:30 - 20:00 <span class="duration">1小時30分</span></div>
+            <div class="node-card">
+              <div class="node-title-row">
+                <span class="node-title">晚餐：上野 黑船亭 (洋食名店，預算約：¥3,500 - ¥4,500/人)</span><span class="tag booking-tag" style="background-color: rgba(245, 158, 11, 0.1); color: var(--accent-orange); border: 1px solid rgba(245, 158, 11, 0.2); font-size: 0.75rem; padding: 2px 6px; border-radius: 4px; font-weight: 700; margin-left: 8px; display: inline-block; vertical-align: middle;">⚠️ 建議提前預約 (註明輪椅)</span>
+                <a href="https://maps.google.com/?q=Kurofunetei,+Ueno" target="_blank" class="map-btn">
+                  <svg viewBox="0 0 24 24"><path d="M12,2C8.13,2 5,5.13 5,9c0,5.25 7,13 7,13s7,-7.75 7,-13c0,-3.87 -3.13,-7 -7,-7zM12,11.5c-1.38,0 -2.5,-1.12 -2.5,-2.5s1.12,-2.5 2.5,-2.5s2.5,1.12 2.5,2.5s-1.12,2.5 -2.5,2.5z"/></svg>地圖
+                </a>
+              </div>
+              <p class="node-desc">自飯店步行推車僅需 6-8 分鐘即可抵達。享用極具口碑、長者也熱愛的日本老字號洋食。必點招牌包含「蟹肉可樂餅」、「法式奶油焗烤大蝦」、「牛肉燴飯 (Hayashi Rice)」等，熟食安全且風味極佳。3人餐費預算約為 <b>¥11,000</b>。大樓備有大型電梯，餐廳內部寬敞平坦，輪椅進出非常便利。<i>(預約方式：建議透過官網 kurofunetei.co.jp 或撥打電話 +81-3-3837-1600 提前定位，並註明有同行輪椅使用者)</i></p>
             </div>
           </div>
 
