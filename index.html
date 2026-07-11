@@ -1,17 +1,27 @@
-﻿<!-- [DECISION LOG - 2026/07/11 修訂紀錄]
+<!-- [DECISION LOG - 2026/07/11 修訂紀錄]
   1. 行程優化與對調：
      - 將原週日下午的【丸之內/東京車站/KITTE】行程調整至週六上午，中午直接於丸之內大樓群用餐。
-     - 將原週六上午的【墨田北齋美術館】調整至週日下午的避暑熱門時段，解決正午酷熱曝曬的體力顧慮。
+     - 將原週六上午 the【墨田北齋美術館】調整至週日下午的避暑熱門時段，解決正午酷熱曝曬的體力顧慮。
      - 隨後於 7/11 中午進一步優化：將週日下午的【墨田北齋美術館】改為上野公園內的【國立科學博物館 (科博館)】，完全免除搭乘計程車往返兩國的車程，直接在公園內推車慢步前往避暑，大幅提升長者的舒適度與方便性。
+     - 隨後於 7/11 下午進一步優化：將週二下午的【日之出/秋葉原/神田明神】改為【台場海濱公園與商場避暑（搭 Hotaluna 號直達台場，回程搭百合海鷗線高空電車）】。
   2. 丸之內午餐四選一方案：
      - 新增丸之內大樓/新丸大樓內的 4 間精選餐廳方案（酢重正之、東京今井屋本店、かつ吉、天婦羅いやさか），皆直結地下通道、設有無障礙洗手間與電梯。
      - 所有方案皆符合「不吃牛肉」、「不吃生食/全熟食」及「軟嫩易咬/適合長者」的飲食偏好。
   3. 購物與行李優化：
      - 週六下午採買多慶屋後，保留 2 小時「回飯店房間大休息與私密行李打包」的核心防累時段，在此時段將多慶屋購買的免稅液體類等物品放入大行李箱中鎖好，避免最後一天混亂。
+     - 移除最後一天（週一）早上重複的多慶屋採購，調整為輕鬆的【上野車站商場（Atre/Ecute Ueno）最後巡禮】，午餐亦改為從上野車站推車 2 分鐘直達 UENO 3153，節省體力。
   4. 祭典路線調整：
      - 週六傍晚安排自御徒町搭乘【地鐵大江戶線】直達六本木站，使用 1C 無障礙電梯直結六本木之丘 Arena 參與夏日盆踊大會與享用屋台熟食晚餐。
-  5. 網頁版面修復：
-     - 清除先前編輯不慎殘留的重複 CSS、多餘 Day 4 容器，以及破損的裸露地圖釘 SVG 標記，完全回復精緻的無障礙配色與時間軸版面。
+  5. 福德神社參拜優化：
+     - 於週六下午 15:30 - 17:30 飯店休息時段，為使用者規劃「單獨前往日本橋福德神社參拜與收集御朱印」的交通與指南。
+     - 同時保留全家推輪椅同行的無障礙交通方案，提供高度彈性。
+  6. 網頁版面與閉合標籤修復：
+     - 修復先前因為取代範圍過大導致的卡片閉合標籤誤刪，將實用旅遊日語會話卡片與預約與聯絡指南卡片分開並留出 20px 美麗間距。
+  7. 地鐵 72 小時券效期註記與追蹤：
+     - 在「實用旅遊工具箱」中新增「東京地鐵 72 小時券效期註記」互動卡片，可輸入首次進站刷卡時間，自動推算到期時間並每分鐘倒數剩餘有效時數，提供過期紅色警告。
+  8. 交通套票與優惠券提醒：
+     - 新增「Skyliner + Tokyo Subway Ticket 72小時聯票」與「Welcome Suica 實體卡」購買指南、餘額出清小提醒。
+     - 新增 LikeJapan 購物優惠券網站連結至實用旅遊工具箱。
 -->
 
 <!DOCTYPE html>
@@ -299,6 +309,8 @@
       overflow: hidden;
       transition: var(--transition);
       position: relative;
+      display: flex;
+      flex-direction: column;
     }
     
     .card:hover {
@@ -1514,60 +1526,67 @@
         <div class="card-header" style="background-color: rgba(245, 158, 11, 0.08); border-bottom: 1px solid rgba(245, 158, 11, 0.15);">
           <div class="card-title" style="color: var(--accent-orange); font-weight: 700;">
             <svg viewBox="0 0 24 24" style="fill: var(--accent-orange); width: 20px; height: 20px; vertical-align: middle; margin-right: 6px;"><path d="M19,19H5V8H19M19,3H18V1H16V3H8V1H6V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3Z"/></svg>
-            📅 預約與聯絡指南 (12項)
+            📅 預約與聯絡指南 (14項)
           </div>
           <div class="tag" style="background-color: rgba(245, 158, 11, 0.12); color: var(--accent-orange); border: none; font-weight: 700;">出發前必辦清單</div>
         </div>
-        <div class="hotel-info" style="gap: 10px; max-height: 400px; overflow-y: auto; padding: 16px;">
+        <div class="hotel-info" style="gap: 10px; flex: 1; overflow-y: auto; padding: 16px;">
           <div style="font-size: 0.8rem; color: var(--text-secondary); line-height: 1.55;">
-            <strong>1. 京成 Skyliner 機場特急</strong><br>
-            - 預約：於 Klook 或 <a href="https://www.keisei.co.jp/keisei/tetudou/skyliner/tc/" target="_blank" style="color: var(--secondary); text-decoration: underline;">京成電鐵官網</a> 購票。<br>
-            - 聯絡：撥打 <b>03-3831-0131</b> (京成上野站)。<br>
-            - ♿ 輪椅席：當天持 QR Code 於櫃檯兌換 5 號無障礙車廂座席。<br>
+            <strong>1. 京成 Skyliner + 東京地鐵 72 小時券 (Tokyo Subway Ticket) 聯票</strong><br>
+            - 預約：推薦於 Klook 或 KKday 購買「Skyliner 來回票 + Tokyo Subway Ticket 72小時券」超值聯票，比單獨購買現省約 ¥620/人。<br>
+            - ♿ 兌換與席次：抵達成田機場時至櫃檯兌換，Skyliner 劃位時請指定 5 號無障礙車廂座席。<br>
             <hr style="border: none; border-top: 1px solid var(--border-color); margin: 6px 0;">
-            <strong>2. 東京晴空塔展望台 (350M)</strong><br>
+            <strong>2. 交通 IC 卡 (Welcome Suica)</strong><br>
+            - 購買：於成田機場 JR 東日本旅行服務中心或專用紅色售票機購買實體 Welcome Suica 卡（免收 ¥500 押金，有效期限 28 天）。<br>
+            - ♿ 餘額提醒：卡內餘額不可退還。建議每次加值 ¥1,000–¥2,000，最後一天可在機場免稅店或超商消費出清餘額，不足額補現金即可。<br>
+            <hr style="border: none; border-top: 1px solid var(--border-color); margin: 6px 0;">
+            <strong>3. 東京晴空塔展望台 (350M)</strong><br>
             - 預約：於 <a href="https://www.tokyo-skytree.jp/cn_t/" target="_blank" style="color: var(--secondary); text-decoration: underline;">晴空塔官網</a> 或 Klook 預訂時間門票。<br>
             - 聯絡：客服中心 <b>0570-55-0634</b> (導航專線，日本國內直撥)。<br>
             <hr style="border: none; border-top: 1px solid var(--border-color); margin: 6px 0;">
-            <strong>3. Hotaluna 號觀光船 (14:15 淺草➔日之出)</strong><br>
-            - 預約：於 <a href="https://www.suijobus.co.jp/" target="_blank" style="color: var(--secondary); text-decoration: underline;">東京都觀光汽船官網</a> 線上訂位。<br>
+            <strong>4. Hotaluna 號觀光船 (14:15 淺草➔直達台場)</strong><br>
+            - 預約：於 <a href="https://www.suijobus.co.jp/" target="_blank" style="color: var(--secondary); text-decoration: underline;">東京都觀光汽船官網</a> 線上預定「淺草往台場海濱公園」班次。<br>
             - 聯絡：撥打 <b>03-3841-9922</b> (淺草營業所)。<br>
             <hr style="border: none; border-top: 1px solid var(--border-color); margin: 6px 0;">
-            <strong>4. 兔屋銅鑼燒 (うさぎや)</strong><br>
+            <strong>5. 兔屋銅鑼燒 (うさぎや)</strong><br>
             - 預約：當天早上或前一天撥打電話預留。<br>
             - 聯絡：撥打 <b>03-3831-6195</b> | 官網：<a href="http://www.ueno-usagiya.jp/" target="_blank" style="color: var(--secondary); text-decoration: underline;">ueno-usagiya.jp</a>。<br>
             <hr style="border: none; border-top: 1px solid var(--border-color); margin: 6px 0;">
-            <strong>5. 上野 伊豆榮 本店 (鰻魚)</strong><br>
+            <strong>6. 上野 伊豆榮 本店 (鰻魚)</strong><br>
             - 預約：致電預訂，並備註電梯及輪椅座席。<br>
             - 聯絡：撥打 <b>03-3831-0954</b> | 官網：<a href="https://www.izuei.co.jp/" target="_blank" style="color: var(--secondary); text-decoration: underline;">izuei.co.jp</a>。<br>
             <hr style="border: none; border-top: 1px solid var(--border-color); margin: 6px 0;">
-            <strong>6. 上野公園 韻松亭 (懷石)</strong><br>
+            <strong>7. 上野公園 韻松亭 (懷石)</strong><br>
             - 預約：於 <a href="https://www.unsoutei.jp/" target="_blank" style="color: var(--secondary); text-decoration: underline;">官網</a> 線上預約，或致電訂位。♿ <b>務必指定 1 樓餐桌席</b>。<br>
             - 聯絡：撥打 <b>03-3821-2010</b>。<br>
             <hr style="border: none; border-top: 1px solid var(--border-color); margin: 6px 0;">
-            <strong>7. LA COCORICO Ueno (烤雞)</strong><br>
+            <strong>8. LA COCORICO Ueno (烤雞)</strong><br>
             - 預約：透過 Hot Pepper / Tabelog 或 <a href="https://la-cocorico.jp/" target="_blank" style="color: var(--secondary); text-decoration: underline;">LA COCORICO官網</a> 線上訂位。<br>
             - 聯絡：撥打 <b>03-5826-3571</b> (上野本店，位於三井花園飯店)。<br>
             <hr style="border: none; border-top: 1px solid var(--border-color); margin: 6px 0;">
-            <strong>8. 淺草 駒形前川 (鰻魚)</strong><br>
+            <strong>9. 淺草 駒形前川 (鰻魚)</strong><br>
             - 預約：致電或至 <a href="https://www.unagi-maekawa.co.jp/" target="_blank" style="color: var(--secondary); text-decoration: underline;">駒形前川官網</a> 預訂窗邊輪椅席。<br>
             - 聯絡：撥打 <b>03-3841-6314</b>。<br>
             <hr style="border: none; border-top: 1px solid var(--border-color); margin: 6px 0;">
-            <strong>9. 梨花和服 淺草店 (浴衣)</strong><br>
+            <strong>10. 梨花和服 淺草店 (浴衣)</strong><br>
             - 預約：於 <a href="https://ewha-yifu.com/" target="_blank" style="color: var(--secondary); text-decoration: underline;">梨花和服官網</a> 預訂 <b>3人早上 09:00 時段</b> (含鍾阿嬤)。♿ <b>務必備註輪椅長者同行與腰帶綁寬鬆防暑</b>。<br>
             - 聯絡：撥打 <b>050-3204-4859</b>。<br>
             <hr style="border: none; border-top: 1px solid var(--border-color); margin: 6px 0;">
-            <strong>10. 淺草今半 雷門店 (壽喜燒)</strong><br>
-            - 預約：致電或至 <a href="https://www.asakusaimahan.co.jp/" target="_blank" style="color: var(--secondary); text-decoration: underline;">淺草今半官網</a> 預定 <b>12:00 時段</b>。♿ 備註需要平地桌席。<br>
+            <strong>11. 淺草今半 雷門店 (壽喜燒)</strong><br>
+            - 預約：致電或至 <a href="https://www.asakusaimahan.co.jp/" target="_blank" style="color: var(--secondary); text-decoration: underline;">淺草今半官網</a> 預定 <b>12:00 時段</b>. ♿ 備註需要平地桌席。<br>
             - 聯絡：撥打 <b>03-3841-1114</b>。<br>
             <hr style="border: none; border-top: 1px solid var(--border-color); margin: 6px 0;">
-            <strong>11. 上野 黑船亭 (洋食)</strong><br>
+            <strong>12. 上野 黑船亭 (洋食)</strong><br>
             - 預約：致電或至 <a href="https://www.kurofunetei.co.jp/" target="_blank" style="color: var(--secondary); text-decoration: underline;">黑船亭官網</a> 預訂。♿ 備註需電梯與輪椅座席。<br>
             - 聯絡：撥打 <b>03-3837-1600</b>。<br>
             <hr style="border: none; border-top: 1px solid var(--border-color); margin: 6px 0;">
-            <strong>12. まるごと北海道 UENO 3153 店</strong><br>
+            <strong>13. まるごと北海道 UENO 3153 店</strong><br>
             - 預約：透過 <a href="https://www.hotpepper.jp/strJ001017409/" target="_blank" style="color: var(--secondary); text-decoration: underline;">Hot Pepper 專屬頁面</a> 線上預約，或致電訂位。<br>
-            - 聯絡：撥打 <b>03-5834-3123</b>。
+            - 聯絡：撥打 <b>03-5834-3123</b>。<br>
+            <hr style="border: none; border-top: 1px solid var(--border-color); margin: 6px 0;">
+            <strong>14. 日本橋 福德神社 (芽吹神社)</strong><br>
+            - 參拜：自由參拜，無需門票。御朱印受理時間為 10:00 - 17:00。<br>
+            - 聯絡：撥打 <b>03-3276-3566</b>。
           </div>
         </div>
       </div>
@@ -1581,7 +1600,7 @@
             </div>
             <div class="tag" style="background-color: rgba(59, 130, 246, 0.12); color: var(--secondary); border: none; font-weight: 700;">日語助手</div>
           </div>
-          <div class="hotel-info" style="gap: 12px; max-height: 400px; overflow-y: auto; padding: 16px;">
+          <div class="hotel-info" style="gap: 12px; flex: 1; overflow-y: auto; padding: 16px;">
             
             <div style="margin-bottom: 12px;">
               <span class="tag" style="background-color: rgba(59, 130, 246, 0.1); color: var(--secondary); border: none; font-weight: 700; font-size: 0.7rem; margin-bottom: 6px; display: inline-block;">🚕 搭計程車溝通 (タクシーにのる)</span>
@@ -1833,10 +1852,9 @@
         <div class="day-banner">
           <div class="day-banner-title">
             <h2>東京晴空塔 ➔ 押上雙神社參拜 (高木/飛木稻荷) ➔ 隅田川觀光船 (直達台場) ➔ 台場海濱公園與商場避暑 ➔ 搭百合海鷗線 ➔ 上野鰻魚晚餐</h2>
-
-            <p>2026年8月20日 (星期防)</p>
+            <p>2026年8月20日 (星期四)</p>
           </div>
-          <div class="day-summary-badge">極致天際線與江戶古社</div>
+          <div class="day-summary-badge">港灣漫步與璀璨高空</div>
         </div>
         <div class="day-timeline">
           
@@ -1844,13 +1862,13 @@
             <div class="node-dot">
               <svg viewBox="0 0 24 24"><path d="M12,2c-4.4,0-8,3.6-8,8v9h16v-9C20,5.6,16.4,2,12,2z M7.5,16c-0.8,0-1.5-0.7-1.5-1.5S6.7,13,7.5,13S9,13.7,9,14.5S8.3,16,7.5,16z M16.5,16c-0.8,0-1.5-0.7-1.5-1.5s0.7-1.5,1.5-1.5s1.5,0.7,1.5,1.5S17.3,16,16.5,16z"/></svg>
             </div>
-            <div class="node-time">09:00 - 09:40 <span class="duration">40分鐘</span></div>
+            <div class="node-time">08:30 - 09:10 <span class="duration">40分鐘</span></div>
             <div class="node-card">
               <div class="node-title-row">
-                <span class="node-title">地鐵無障礙路線：前往晴空塔</span>
+                <span class="node-title">地鐵無障礙直達：前往押上晴空塔</span>
               </div>
               <p class="node-desc"><strong>乘車月台與無障礙指引：</strong><br>
-              1. **搭車位置**：自飯店推行輪椅至 **【京成上野站】B2F 剪票口**，前往 **1 或 2 號月台** 搭乘京成本線（往成田機場/印旛日本醫大方向）。<br>
+              1. **搭車位置**：自 APA 飯店推車 8 分鐘至 **【地鐵京成上野站/上野御徒町站】**，搭乘 **【地鐵大江戶線】** 往兩國/大門方向，於 **【藏前站】** 轉乘 **【地鐵淺草線】** 往押上方向，直達 **【押上站】**。車程約 12 分鐘，3 人車資共 <b>¥660</b>（可用 72小時地鐵券）。<br>
               2. **同月台輕鬆轉乘**：於 **【青砥站 (Aoto)】** 下車，直接在 **同月台對側 (1 號月台)** 轉乘往押上/羽田機場方向的列車，直達 **【押上站】**。此轉乘為無障礙同月台平面移動，不需換樓層或上下電梯！<br>
               3. **出站位置**：抵達 **【押上站】B3F 剪票口** 後，沿無障礙標示前往 **東庭園 (East Yard) 直通大電梯** 直達晴空塔地面或天望甲板售票處。</p>
             </div>
@@ -1858,7 +1876,7 @@
           
           <div class="timeline-node">
             <div class="node-dot">
-              <svg viewBox="0 0 24 24"><path d="M12,2C6.48,2 2,6.48 2,12C2,17.52 6.48,22 12,22C17.52,22 22,17.52 22,12C22,6.48 17.52,2 12,2M11,16H13V18H11V16M11,6H13V14H11V6Z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12,2C6.48,2 2,6.48 2,12C2,17.52 6.48,22 12,22C17.52,22 22,17.52 22,12C22,6.48 17.52,2 12,2M11,16H13V18H11V16M11,6H13V14H11V6z"/></svg>
             </div>
             <div class="node-time">09:40 - 11:20 <span class="duration">1小時40分鐘</span></div>
             <div class="node-card">
@@ -1874,7 +1892,7 @@
           
           <div class="timeline-node food">
             <div class="node-dot">
-              <svg viewBox="0 0 24 24"><path d="M11,9H9V2H7V9H5V2H3V9C3,11.12 4.66,12.84 6.75,12.97V22H8.25V12.97C10.34,12.84 12,11.12 12,9V2H11V9M16,6V14H18.5V22H20V2H16V6Z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M11,9H9V2H7V9H5V2H3V9C3,11.12 4.66,12.84 6.75,12.97V22H8.25V12.97C10.34,12.84 12,11.12 12,9V2H11V9M16,6V14H18.5V22H20V2H16V6z"/></svg>
             </div>
             <div class="node-time">11:20 - 12:30 <span class="duration">1小時10分鐘</span></div>
             <div class="node-card">
@@ -1897,7 +1915,7 @@
                   <svg viewBox="0 0 24 24"><path d="M12,2C8.13,2 5,5.13 5,9c0,5.25 7,13 7,13s7,-7.75 7,-13c0,-3.87 -3.13,-7 -7,-7zM12,11.5c-1.38,0 -2.5,-1.12 -2.5,-2.5s1.12,-2.5 2.5,-2.5s2.5,1.12 2.5,2.5s-1.12,2.5 -2.5,2.5z"/></svg>地圖
                 </a>
               </div>
-              <p class="node-desc">自晴空塔 Solamachi 一樓專用計程車搭乘處，搭乘寬敞的 JPN Taxi 直達鄰近的 **【高木神社】**（車程約 3 分鐘，車資約 <b>¥700</b>），省去正午在大太陽下推輪椅曝曬的體力流失。在此參拜以「飯糰」聞名的緣結神，收集全日本最獨特的飯糰造型御朱印與拍照（初穂料 <b>¥500</b>）。隨後推車步行 1 分鐘（80 公尺）至相鄰的 **【飛木稻荷神社】**，觀賞在戰火中奇蹟生存的千年大銀杏神木，並收集神使狐狸與神木的奇蹟御朱印（初穂料 <b>¥500</b>）。兩社路面平坦無階梯，非常適合推輪椅慢行。</p>
+              <p class="node-desc">自晴空塔 Solamachi 一樓專用計程車搭乘處，搭乘寬敞的 JPN Taxi 直達鄰近的 **【高木神社】**（車程約 3 分鐘，車資約 <b>¥700</b>），省去正午在大太陽下推輪椅曝曬的體力流失。在此參拜以「飯糰」聞名的緣結神，收集全日本最獨特的飯糰造型御朱印與拍照（初穂料 <b>¥500</b>）。隨後推車步行 1 分鐘（80 公尺）至相鄰的 **【飛木稻荷神社】**，觀賞在戰火中奇蹟生存的千年大銀杏神木，並收集神使狐狸與神木的奇蹟御朱印（初穗料 <b>¥500</b>）。兩社路面平坦無階梯，非常適合推輪椅慢行。</p>
             </div>
           </div>
           
@@ -1926,7 +1944,7 @@
                   <svg viewBox="0 0 24 24"><path d="M12,2C6.48,2 2,6.48 2,12C2,17.52 6.48,22 12,22C17.52,22 22,17.52 22,12C22,6.48 17.52,2 12,2M11,6H13V10H17V12H13V16H11V12H7V10H11V6z"/></svg>官網預約
                 </a>
               </div>
-              <p class="node-desc">搭乘 14:15 航班的 Hotaluna 號科技感觀光船（船票約 <b>¥2,200/人</b>，3人共 <b>¥6,600</b>），體驗 60 分鐘的隅田川與東京灣跨海巡航。沿途欣賞兩岸高樓與多座跨河大橋，並穿過宏偉的彩虹大橋，於 15:20 抵達終點站【台場海濱公園】。船艙設有無障礙通道與座椅，能在強冷氣船艙中坐著觀賞港灣美景。<i>(預約方式：出發前一個月於東京都觀光汽船官網線上購買 Asakusa to Odaiba Seaside Park 班次船票)</i></p>
+              <p class="node-desc">搭乘 14:15 航班 of Hotaluna 號科技感觀光船（船票約 <b>¥2,200/人</b>，3人共 <b>¥6,600</b>），體驗 60 分鐘 of 隅田川與東京灣跨海巡航。沿途欣賞兩岸高樓與多座跨河大橋，並穿過宏偉的彩虹大橋，於 15:20 抵達終點站【台場海濱公園】。船艙設有無障礙通道與座椅，能在強冷氣船艙中坐著觀賞港灣美景。<i>(預約方式：出發前一個月於東京都觀光汽船官網線上購買 Asakusa to Odaiba Seaside Park 班次船票)</i></p>
             </div>
           </div>
 
@@ -1965,7 +1983,7 @@
             <div class="node-dot">
               <svg viewBox="0 0 24 24"><path d="M12,2C11.38,2 10.88,2.5 10.88,3.13V4.38C7.5,4.78 5,7.63 5,11V17L3,19V20H21V19L19,17V11C19,7.63 16.5,4.78 13.13,4.38V3.13C13.13,2.5 12.63,2 12,2M12,6A5,5 0 0,1 17,11V17H7V11A5,5 0 0,1 12,6Z"/></svg>
             </div>
-            <div class="node-time">17:00 - 18:00 <span class="duration">1小時</span></div>
+            <div class="node-time">17:40 - 18:30 <span class="duration">1小時</span></div>
             <div class="node-card">
               <div class="node-title-row">
                 <span class="node-title">返上野 ➔ 購買外帶兔屋銅鑼燒 (預算：¥240/個)</span><span class="tag booking-tag" style="background-color: rgba(245, 158, 11, 0.1); color: var(--accent-orange); border: 1px solid rgba(245, 158, 11, 0.2); font-size: 0.75rem; padding: 2px 6px; border-radius: 4px; font-weight: 700; margin-left: 8px; display: inline-block; vertical-align: middle;">⚠️ 務必提前預約</span>
@@ -1983,7 +2001,7 @@
           
           <div class="timeline-node food">
             <div class="node-dot">
-              <svg viewBox="0 0 24 24"><path d="M11,9H9V2H7V9H5V2H3V9C3,11.12 4.66,12.84 6.75,12.97V22H8.25V12.97C10.34,12.84 12,11.12 12,9V2H11V9M16,6V14H18.5V22H20V2H16V6Z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M11,9H9V2H7V9H5V2H3V9C3,11.12 4.66,12.84 6.75,12.97V22H8.25V12.97C10.34,12.84 12,11.12 12,9V2H11V9M16,6V14H18.5V22H20V2H16V6z"/></svg>
             </div>
             <div class="node-time">18:30 - 20:00 <span class="duration">1小時30分</span></div>
             <div class="node-card">
@@ -1993,7 +2011,7 @@
                   <svg viewBox="0 0 24 24"><path d="M12,2C8.13,2 5,5.13 5,9c0,5.25 7,13 7,13s7,-7.75 7,-13c0,-3.87 -3.13,-7 -7,-7zM12,11.5c-1.38,0 -2.5,-1.12 -2.5,-2.5s1.12,-2.5 2.5,-2.5s2.5,1.12 2.5,2.5s-1.12,2.5 -2.5,2.5z"/></svg>地圖
                 </a>
               </div>
-              <p class="node-desc">自飯店步行推車僅需 6-8 分鐘（全平坦人行道）。晚餐享用入口即化、深受長者喜愛的百年蒲燒鰻魚重。鰻魚重價格為 松（<b>¥3,960</b>）、竹（<b>¥5,060</b>）、梅（<b>¥6,160</b>），3 人均點「竹」套餐預算約為 <b>¥15,180</b>。買好銅鑼燒回飯店稍微躺下歇息、洗把臉後再悠閒出門，完全不需反覆搭地鐵奔波！本店設有大型無障礙電梯與輪椅席位，全店無任何牛肉料理，熟食安全。<i>(預約方式：建議透過電話 +81-3-3831-0954 提前定位並註明需電梯與輪椅席)</i></p>
+              <p class="node-desc">自飯店步行推車僅需 6-8 分鐘（全平坦人行道）。晚餐享用入口即化、深受長者喜愛的百年蒲燒鰻魚重。鰻魚重價格為 松（<b>¥3,960</b>）、竹（<b>¥5,060</b>）、梅（<b>¥6,160</b>）， 3 人均點「竹」套餐預算約為 <b>¥15,180</b>。買好銅鑼燒回飯店稍微躺下歇息、洗把臉後再悠閒出門，完全不需反覆搭地鐵奔波！本店設有大型無障礙電梯與輪椅席位，全店無任何牛肉料理，熟食安全。<i>(預約方式：建議透過電話 +81-3-3831-0954 提前定位並註明需電梯與輪椅席)</i></p>
             </div>
           </div>
 
@@ -2005,19 +2023,19 @@
             </div>
             <div class="node-time">☀️ 盛夏避暑與無障礙客休建議</div>
             <div class="node-card cafe-card">
-            <div class="node-title-row">
-              <span class="node-title" style="color: #0284c7;">晴空街道 4F/6F 休息區 & AQUA CITY ODAIBA 海景客休</span>
-            </div>
-            <p class="node-desc">
-              <strong>押上與台場附近：</strong><br>
-              1. **晴空塔 (Solamachi)**：4 樓與 6 樓設有大片室內冷氣休息座位區。推薦前往 4 樓的 **nana's green tea** 享用日式抹茶刨冰或冷飲，有平坦寬敞的輪椅席位。<br>
-              2. **台場**：商場如 **AQUA CITY ODAIBA** 或是 **Decks Tokyo Beach** 內部空間極為挑高開闊，設有大容量升降梯與極為寬敞的多功能無障礙廁所。多間臨海餐廳與咖啡廳設有平坦無段差的海景窗邊雅座，是長者吹冷氣、看海、眺望彩虹大橋的絕佳避暑客休選擇。
-            </p>
-
+              <div class="node-title-row">
+                <span class="node-title" style="color: #0284c7;">晴空街道 4F/6F 休息區 & AQUA CITY ODAIBA 海景客休</span>
+              </div>
+              <p class="node-desc">
+                <strong>押上與台場附近：</strong><br>
+                1. **晴空塔 (Solamachi)**：4 樓與 6 樓設有大片室內冷氣休息座位區。推薦前往 4 樓的 **nana's green tea** 享用日式抹茶刨冰或冷飲，有平坦寬敞的輪椅席位。<br>
+                2. **台場**：商場如 **AQUA CITY ODAIBA** 或是 **Decks Tokyo Beach** 內部空間極為港灣開闊，設有大容量升降梯與極為寬敞的多功能無障礙廁所。多間臨海餐廳與咖啡廳設有平坦無段差的海景窗邊雅座，是長者吹冷氣、看海、眺望彩虹大橋的絕佳避暑客休選擇。
+              </p>
             </div>
           </div>
 
       </div>
+
       <!-- Day 3 -->
       <div id="day3" class="day-content">
         <div class="day-banner">
@@ -2145,7 +2163,7 @@
                   <svg viewBox="0 0 24 24"><path d="M12,2C8.13,2 5,5.13 5,9c0,5.25 7,13 7,13s7,-7.75 7,-13c0,-3.87 -3.13,-7 -7,-7zM12,11.5c-1.38,0 -2.5,-1.12 -2.5,-2.5s1.12,-2.5 2.5,-2.5s2.5,1.12 2.5,2.5s-1.12,2.5 -2.5,2.5z"/></svg>地圖
                 </a>
               </div>
-              <p class="node-desc">自飯店推車步行 6-8 分鐘（全平坦人行道）。晚餐享用深受在地人喜愛的百年老牌洋食。招牌推薦：軟嫩細緻的「蟹肉可樂餅」、「蝦仁焗烤飯 (Doria)」及大正風情洋食燉肉 (全熟食無牛)。店內設有無障礙大電梯與輪椅席位。<i>(預約方式：致電 +81-3-3837-1600 預約)</i></p>
+              <p class="node-desc">自飯店推車步行 6-8 分鐘（全平坦人行道）。晚餐享用深受在地人喜愛的百年老牌洋食. 招牌推薦：軟嫩細緻的「蟹肉可樂餅」、「蝦仁焗烤飯 (Doria)」及大正風情洋食燉肉 (全熟食無牛)。店內設有無障礙大電梯與輪椅席位。<i>(預約方式：致電 +81-3-3837-1600 預約)</i></p>
             </div>
           </div>
 
@@ -2245,7 +2263,7 @@
                   </h4>
                   <p style="margin: 0; font-size: 0.8rem; line-height: 1.5; color: var(--text-secondary);">
                     <strong>● 體驗</strong>：秋田比內地雞專賣店，招牌為「極致地雞親子丼」與「烤雞串定食」。
-                    <br><strong>● 適合度</strong>：親子丼半熟滑嫩、雞肉香軟，完全無牛肉，對長者咀嚼極度友善。
+                    <br><strong>● 適合度</strong>：親子丼半熟滑嫩、雞肉香軟，完全無牛肉，對長者陣咀嚼極度友善。
                     <br><strong>● 預估預算</strong>：約 ¥2,000 - ¥3,000/人 (3人共約 ¥7,000)。
                   </p>
                 </div>
@@ -2323,6 +2341,21 @@
               <br>1. **液體類直接裝箱**：在安靜且私密的房間內，將多慶屋買的**免稅密封包裝液體類**（如化妝水、乳液、果凍等）直接放入大行李箱中整理並鎖好。
               <br>2. **客房優雅整理**：有充足的時間與平坦路面，用最舒服的姿勢分裝行李、秤重，完全不需要在大廳眾人矚目下蹲地開箱，體驗極佳。
               <br>3. **充電小憩**：打包完成後，在舒適的客房內躺下大休息，補充水分與電力，為晚上的六本木祭典做好最完美的準備。</p>
+              
+              <!-- Fukutoku Shrine Detour Option -->
+              <div style="margin-top: 12px; padding: 12px; background: rgba(16, 185, 129, 0.04); border: 1px dashed rgba(16, 185, 129, 0.25); border-radius: 6px;">
+                <h4 style="color: #10b981; margin: 0 0 6px 0; font-size: 0.85rem; display: flex; align-items: center; justify-content: space-between;">
+                  <span>🚶‍♂️ 選擇性單獨行動：福德神社 (芽吹神社) 參拜</span>
+                  <a href="https://maps.google.com/?q=Fukutoku+Shrine,+Tokyo" target="_blank" class="map-btn" style="padding: 2px 6px; font-size: 0.7rem; background-color: #10b981; border-color: #10b981; line-height: 1;">地圖</a>
+                </h4>
+                <p style="margin: 0; font-size: 0.8rem; line-height: 1.55; color: var(--text-secondary);">
+                  當阿嬤與媽媽在飯店房間吹冷氣大休息時，您可以利用這段空檔單獨前往參拜（以求中籤/演唱會與獨特的「芽吹守」聞名）。
+                  <br><strong>● 單獨去程交通</strong>：自飯店步行 5 分鐘至 <b>【地鐵銀座線・上野站】</b>，搭乘銀座線往澀谷方向，僅 3 站（5分鐘）直達 <b>【三越前站】</b>。從 <b>A6 出口</b>（設有 Coredo 室町直通手扶梯與電梯）出站即抵達。車資 <b>¥180</b>（可使用地鐵 72H 券）。
+                  <br><strong>● 參拜與御朱印</strong>：神社隱身於現代大樓中，木造鳥居與小廣場設計精美。可在社務所收集印有芽吹印的御朱印（初穗料 <b>¥500</b>，受理至 17:00）。
+                  <br><strong>● 單獨回程交通</strong>：原路折返三越前站，搭乘銀座線往淺草方向， 3 站（5分鐘）回到 <b>【上野站】</b> 步行回飯店。全程含參拜僅需 45 - 60 分鐘，完美利用休息空檔！
+                  <br><strong>♿ 備用方案 (全家輪椅同行)</strong>：神社位於 Coredo 室町百貨旁，全區為寬敞平坦的無障礙石板路，參殿旁設有平緩無障礙斜坡。若全家同行，可在中午用完餐後，自東京車站步行 10 分鐘或搭計程車 3 分鐘（車資約 <b>¥700</b>）前往，隨後再搭銀座線回上野，動線非常順暢。
+                </p>
+              </div>
             </div>
           </div>
 
@@ -2374,6 +2407,8 @@
             </div>
           </div>
 
+        </div> <!-- Closed day-timeline! -->
+
           <!-- Heat Escape & Wheelchair Rest Area -->
           <div class="timeline-node cafe">
             <div class="node-dot">
@@ -2387,12 +2422,10 @@
               <p class="node-desc">
                 <strong>淺草與六本木附近：</strong><br>
                 1. **淺草**：鰻魚午餐後若街上炎熱，可前往淺草站直通的 **Ekimise 百貨 (7F 餐廳與客休區)**，冷氣強勁且電梯直達，適合上野神社遊覽前的歇息。<br>
-                2. **六本木**：傍晚盆踊大會人潮眾多。強烈建議在祭典開始前，推車至 **Roppongi Hills West Walk (2F/4F)** 的星巴克或君悅酒店大堂茶座 (Lobby Lounge) 休息。這裡空間極其挑高開闊、空調清涼，能為長者提供最舒適的體力緩衝。
+                2. **六本木**：傍晚盆踊大會人潮眾多。強烈建議在祭典開始前，推車至 **Roppongi Hills West Walk (2F/4F)** 的星巴克或君悅酒店大堂茶座 (Lobby Lounge) 休息。這裡空間極其挑高開緩、空調清涼，能為長者提供最舒適的體力緩衝。
               </p>
             </div>
           </div>
-
-      </div>
 
       </div>
 
@@ -2491,7 +2524,6 @@
                 <br>1. **地球館 (Global Gallery)**：觀賞極具震撼力的恐龍化石骨架與各類哺乳類動物標本，視覺張力極強。
                 <br>2. **日本館 (Japan Gallery)**：欣賞以精緻彩繪玻璃著稱的穹頂歷史建築，了解日本列島的誕生與自然生態。
                 <br>3. **Theater 360**：體驗全球首創的 360 度球體無縫立體影院（<b>免額外預約，憑常設展門票現場排隊進場即可，每場播放約 10 分鐘，設有無障礙電梯與輪椅專屬觀賞位置</b>，非常貼心）。
-
               </p>
             </div>
           </div>
@@ -2538,6 +2570,7 @@
             </div>
           </div>
 
+        </div>
         <!-- Heat Escape & Wheelchair Rest Area -->
         <div class="timeline-node cafe">
           <div class="node-dot">
@@ -2550,13 +2583,11 @@
             </div>
             <p class="node-desc">
               <strong>上野公園附近：</strong><br>
-              1. **上野公園**：上午參拜東照宮或下午行程中，公園內部的 **Park Side Cafe** 為全平坦無障礙設計，有林蔭和強冷氣，是極佳的避暑點。<br>
+              1. **上野公園**：上午參拜東照宮或下午行程中，公園內部的 **Park Side Cafe** 為全平坦無障礙設計，有林蔭 and 強冷氣，是極佳 of 避暑點。<br>
               2. **科博館館內**：國立科學博物館地球館 2 樓設有舒適的「Mousse」咖啡廳與餐飲區，各樓層大廳皆設有沙發休憩座與冷熱飲自動販賣機。館內無障礙化妝室極為寬敞，參觀過程中隨時可以停下喝水休息。
             </p>
           </div>
         </div>
-
-      </div>
 
       </div>
 
@@ -2565,8 +2596,7 @@
         <div class="day-banner">
           <div class="day-banner-title">
             <h2>下谷神社花手水 ➔ 上野車站商場最後巡禮 (Atre/Ecute Ueno) ➔ 松葉蟹熟食午餐 ➔ 搭 Skyliner 返台</h2>
-
-            <p>2026年8月24日 (星期一)</p>
+            <p>2026年8月24日 (星期防)</p>
           </div>
           <div class="day-summary-badge">最後採購與歸途</div>
         </div>
@@ -2597,7 +2627,7 @@
                   <svg viewBox="0 0 24 24"><path d="M12,2C8.13,2 5,5.13 5,9c0,5.25 7,13 7,13s7,-7.75 7,-13c0,-3.87 -3.13,-7 -7,-7zM12,11.5c-1.38,0 -2.5,-1.12 -2.5,-2.5s1.12,-2.5 2.5,-2.5s2.5,1.12 2.5,2.5s-1.12,2.5 -2.5,2.5z"/></svg>地圖
                 </a>
               </div>
-              <p class="node-desc">步行 12 分鐘至鄰近的【下谷神社】參拜。觀賞社內精美清透的定期花手水，並在朱印所書寫此行最後一份珍貴的御朱印（Goshuin 開放時間為 09:00 起）。</p>
+              <p class="node-desc">步行 12 分鐘至鄰近的【下谷神社】參拜。觀賞社內精美清透的定期花手水，並在朱印所書寫此行最後一份珍極的御朱印（Goshuin 開放時間為 09:00 起）。</p>
               <div class="node-tips wheelchair-tips">
                 <svg viewBox="0 0 24 24"><path d="M12,2C6.5,2 2,6.5 2,12s4.5,10 10,10s10,-4.5 10,-10S17.5,2 12,2m4.5,15.5c-0.3,0.5 -1,0.7 -1.5,0.4l-3,-1.9l-1.8,3.5C10,19.9 9.2,20.3 8.4,20L4.4,18.7C3.7,18.4 3.3,17.6 3.6,16.9l1.4,-3.7C5.3,12.5 6.1,12.1 6.9,12.4l4,1.3l2.4,-4.8c0.5,-0.9 1.6,-1.4 2.6,-0.8l3,1.7C20.4,11.1 20.6,11.8 20.3,12.3l-1.4,1.6L16.5,15.5M16.5,9A1.5,1.5 0 0,1 15,7.5A1.5,1.5 0 0,1 16.5,6A1.5,1.5 0 0,1 18,7.5A1.5,1.5 0 0,1 16.5,9Z"/></svg>
                 無障礙提醒：下谷神社位於平地，人行道與鳥居入口平整，輪椅參拜非常容易。
@@ -2618,7 +2648,6 @@
             </div>
           </div>
 
-          
           <div class="timeline-node food">
             <div class="node-dot">
               <svg viewBox="0 0 24 24"><path d="M11,9H9V2H7V9H5V2H3V9C3,11.12 4.66,12.84 6.75,12.97V22H8.25V12.97C10.34,12.84 12,11.12 12,9V2H11V9M16,6V14H18.5V22H20V2H16V6z"/></svg>
@@ -2634,7 +2663,6 @@
               <p class="node-desc">自上野車站大樓推車 2-3 分鐘抵達相鄰的 UENO 3153。享用清蒸松葉蟹、熟蟹肉炒飯及鹽烤真花魚。點餐時向服務生告知「全熟食需求」，店家將提供全熟烹調。沙發席座位寬敞平整。3 人餐費預算約 <b>¥9,000</b>。</p>
             </div>
           </div>
-
           
           <div class="timeline-node transit">
             <div class="node-dot">
@@ -2666,7 +2694,7 @@
             <div class="node-dot">
               <svg viewBox="0 0 24 24"><path d="M21,16V14L13,9V3.5A1.5,1.5 0 0,0 11.5,2A1.5,1.5 0 0,0 10,3.5V9L2,14V16L10,13.5V19L8,20.5V22L11.5,21L15,22V20.5L13,19V13.5L21,16Z" transform="rotate(180 12 12)"/></svg>
             </div>
-            <div class="node-time">14:41 - 16:55 <span class="duration">2小時14分</span></div>
+            <div class="node-time">14:41 - 16:55 <span class="duration">2小時20分</span></div>
             <div class="node-card">
               <div class="node-title-row">
                 <span class="node-title">成田機場第一航廈報到與搭機返台</span>
@@ -2695,9 +2723,7 @@
           </div>
 
       </div>
-      
-    </section>
-    
+
     <!-- Toolkit & Interactive Area -->
     <div class="toolkit-grid">
       
@@ -2748,6 +2774,21 @@
             </div>
             <span>填寫 Visit Japan Web (註記隨身輪椅並截圖QR)</span>
           </label>
+          <label class="checklist-item">
+            <input type="checkbox" class="todo-item" data-id="doc-tst">
+            <div class="checkmark">
+              <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+            </div>
+            <span>線上購買 Skyliner + 東京地鐵 72 小時聯票</span>
+          </label>
+          <label class="checklist-item">
+            <input type="checkbox" class="todo-item" data-id="doc-suica">
+            <div class="checkmark">
+              <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+            </div>
+            <span>成田機場購買實體 Welcome Suica 並進行加值</span>
+          </label>
+
         </div>
         
         <div class="checklist-group">
@@ -2824,7 +2865,35 @@
           </div>
         </div>
         
+        <!-- Tokyo Subway 72H Ticket Validity Tracker -->
+        <div class="input-grp" style="margin-bottom: 20px; padding: 12px; background: rgba(59, 130, 246, 0.04); border: 1px solid rgba(59, 130, 246, 0.15); border-radius: 8px;">
+          <label style="font-weight: 700; color: var(--secondary); display: flex; align-items: center; margin-bottom: 6px;">
+            <svg viewBox="0 0 24 24" style="fill: var(--secondary); width: 18px; height: 18px; margin-right: 6px;"><path d="M12,2c-4.97,0-9,4.03-9,9c0,5.25 9,13 9,13s9,-7.75 9,-13c0,-4.97 -4.03,-9 -9,-9zM12,11.5c-1.38,0 -2.5,-1.12 -2.5,-2.5s1.12,-2.5 2.5,-2.5s2.5,1.12 2.5,2.5s-1.12,2.5 -2.5,2.5z" transform="scale(0.8) translate(3, 3)"/><path fill="var(--secondary)" d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z"/></svg>
+            東京地鐵 72 小時券效期註記
+          </label>
+          <div style="display: grid; grid-template-columns: 1fr; gap: 8px; margin-top: 8px;">
+            <div class="input-grp" style="margin-bottom: 0;">
+              <label for="subway-start" style="font-size: 0.75rem; color: var(--text-secondary); margin-bottom: 4px; display: block;">請輸入首次刷卡進站時間：</label>
+              <input type="datetime-local" id="subway-start" style="width: 100%; padding: 6px 10px; border-radius: 6px; border: 1px solid var(--border-color); background-color: var(--bg-secondary); color: var(--text-primary); font-size: 0.8rem; box-sizing: border-box; outline: none;">
+            </div>
+            <div style="font-size: 0.8rem; line-height: 1.5; padding: 8px; background: rgba(16, 185, 129, 0.06); border-radius: 6px; border: 1px solid rgba(16, 185, 129, 0.15); color: var(--text-primary); margin-top: 4px;">
+              ⏰ <b>預估到期時間 (加 72 小時)：</b>
+              <br><span id="subway-end-display" style="font-weight: 700; color: var(--accent-green); font-size: 0.9rem;">尚未設定</span>
+              <br><span id="subway-time-left" style="font-size: 0.75rem; color: var(--text-secondary);">（輸入後將顯示剩餘時間與狀態）</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="checklist-group-title" style="margin-top: 15px;">實用購物優惠券</div>
+        <div class="info-list" style="margin-bottom: 20px;">
+          <div class="info-row">
+            <span class="info-lbl" style="font-weight: bold; color: var(--secondary);">LikeJapan 購物優惠券</span>
+            <span class="info-val"><a href="https://app.likejapan.com/" target="_blank" style="color: var(--primary); text-decoration: underline; font-weight: bold;">app.likejapan.com</a></span>
+          </div>
+        </div>
+        
         <div class="checklist-group-title">重要緊急資訊</div>
+
         <div class="info-list">
           <div class="info-row">
             <span class="info-lbl">飯店電話 (APA上野站南)</span>
@@ -2962,10 +3031,81 @@
     
     jpyInput.addEventListener('blur', recalculateRate);
     twdInput.addEventListener('blur', recalculateRate);
+
+    // Tokyo Subway 72H Validity Tracker Logic
+    const subwayStartInput = document.getElementById('subway-start');
+    const subwayEndDisplay = document.getElementById('subway-end-display');
+    const subwayTimeLeft = document.getElementById('subway-time-left');
+
+    function updateSubwayExpiry(startTimeStr) {
+      if (!startTimeStr) {
+        subwayEndDisplay.textContent = '尚未設定';
+        subwayTimeLeft.textContent = '（輸入後將顯示剩餘時間與狀態）';
+        subwayTimeLeft.style.color = 'var(--text-secondary)';
+        return;
+      }
+      const startDate = new Date(startTimeStr);
+      if (isNaN(startDate.getTime())) return;
+
+      const endDate = new Date(startDate.getTime() + 72 * 60 * 60 * 1000);
+      
+      const yyyy = endDate.getFullYear();
+      const mm = String(endDate.getMonth() + 1).padStart(2, '0');
+      const dd = String(endDate.getDate()).padStart(2, '0');
+      const hh = String(endDate.getHours()).padStart(2, '0');
+      const min = String(endDate.getMinutes()).padStart(2, '0');
+      const dayNames = ['日', '一', '二', '三', '四', '五', '六'];
+      const dayName = dayNames[endDate.getDay()];
+      
+      subwayEndDisplay.textContent = `${yyyy}/${mm}/${dd} (${dayName}) ${hh}:${min}`;
+
+      function refreshTimeLeft() {
+        const now = new Date();
+        const diffMs = endDate.getTime() - now.getTime();
+        if (diffMs <= 0) {
+          subwayTimeLeft.textContent = '🔴 已過期！請另行購買 Welcome Suica / 單程票。';
+          subwayTimeLeft.style.color = '#ef4444';
+        } else {
+          const totalMin = Math.floor(diffMs / (60 * 1000));
+          const hrs = Math.floor(totalMin / 60);
+          const mins = totalMin % 60;
+          subwayTimeLeft.textContent = `🟢 剩餘有效時間：${hrs} 小時 ${mins} 分鐘`;
+          subwayTimeLeft.style.color = 'var(--text-secondary)';
+        }
+      }
+      refreshTimeLeft();
+    }
+
+    if (subwayStartInput) {
+      const savedStartTime = localStorage.getItem('subway_72h_start');
+      if (savedStartTime) {
+        subwayStartInput.value = savedStartTime;
+        updateSubwayExpiry(savedStartTime);
+      }
+
+      subwayStartInput.addEventListener('change', (e) => {
+        const startTimeVal = e.target.value;
+        if (startTimeVal) {
+          localStorage.setItem('subway_72h_start', startTimeVal);
+          updateSubwayExpiry(startTimeVal);
+        } else {
+          localStorage.removeItem('subway_72h_start');
+          updateSubwayExpiry('');
+        }
+      });
+      
+      // Auto refresh time-left text every minute
+      setInterval(() => {
+        if (subwayStartInput.value) {
+          updateSubwayExpiry(subwayStartInput.value);
+        }
+      }, 60000);
+    }
     
     window.addEventListener('DOMContentLoaded', () => {
       loadChecklistState();
     });
+
   </script>
 </body>
 </html>
