@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>東京必買伴手禮指南 | 東京 6 天 5 夜自由行</title>
+  <meta name="description" content="專為同行長者孝親行設計的東京伴手禮採購指南。包含辦公室分送高CP值、親友長輩質感送禮，以及上野與機場在地限定好物，附詳細賞味期限與行程購買點對照。">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      /* Light Mode Palette */
+      --bg-primary: #f8fafc;
+      --bg-secondary: #ffffff;
+      --bg-accent: #f1f5f9;
+      --text-primary: #0f172a;
+      --text-secondary: #475569;
+      --text-muted: #94a3b8;
+      
+      --primary: #ff5e7e; /* Sakura Pink */
+      --primary-gradient: linear-gradient(135deg, #ff5e7e 0%, #ff8e53 100%);
+      --secondary: #3b82f6; /* Fuji Blue */
+      --secondary-gradient: linear-gradient(135deg, #3b82f6 0%, #2bd2ff 100%);
+      --accent-green: #10b981;
+      --accent-orange: #f59e0b;
+      --accent-purple: #8b5cf6;
+      
+      --card-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.05), 0 8px 10px -6px rgba(15, 23, 42, 0.05);
+      --hover-shadow: 0 20px 25px -5px rgba(15, 23, 42, 0.1), 0 10px 10px -5px rgba(15, 23, 42, 0.04);
+      --border-color: #e2e8f0;
+      --glass-bg: rgba(255, 255, 255, 0.7);
+      --glass-border: rgba(255, 255, 255, 0.5);
+      
+      --radius-sm: 8px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
+      --radius-full: 9999px;
+      
+      --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    [data-theme="dark"] {
+      /* Dark Mode Palette */
+      --bg-primary: #0b1329;
+      --bg-secondary: #1c2541;
+      --bg-accent: #232c4d;
+      --text-primary: #f8fafc;
+      --text-secondary: #cbd5e1;
+      --text-muted: #64748b;
+      
+      --primary: #ff7e9f;
+      --primary-gradient: linear-gradient(135deg, #ff7e9f 0%, #ffa47d 100%);
+      --secondary: #60a5fa;
+      --secondary-gradient: linear-gradient(135deg, #60a5fa 0%, #7ee7ff 100%);
+      
+      --card-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3), 0 8px 10px -6px rgba(0, 0, 0, 0.3);
+      --hover-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+      --border-color: #3a506b;
+      --glass-bg: rgba(28, 37, 65, 0.7);
+      --glass-border: rgba(28, 37, 65, 0.4);
+    }
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+    
+    body {
+      font-family: 'Outfit', 'Noto Sans TC', sans-serif;
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      transition: var(--transition);
+      line-height: 1.6;
+      padding-bottom: 60px;
+    }
+    
+    a {
+      color: var(--secondary);
+      text-decoration: none;
+      transition: var(--transition);
+    }
+    
+    /* Layout Container */
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    /* Top Navigation */
+    .nav-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+      border-bottom: 1px solid var(--border-color);
+    }
+    
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background-color: var(--bg-secondary);
+      color: var(--text-secondary);
+      border: 1px solid var(--border-color);
+      padding: 10px 20px;
+      border-radius: var(--radius-full);
+      font-weight: 700;
+      font-size: 0.9rem;
+      cursor: pointer;
+      box-shadow: var(--card-shadow);
+      transition: var(--transition);
+    }
+    
+    .back-btn:hover {
+      color: var(--primary);
+      border-color: var(--primary);
+      transform: translateX(-4px);
+      box-shadow: var(--hover-shadow);
+    }
+    
+    .back-btn svg {
+      width: 18px;
+      height: 18px;
+      fill: currentColor;
+    }
+    
+    /* Theme Toggle */
+    .theme-switch {
+      position: relative;
+      display: inline-block;
+      width: 60px;
+      height: 32px;
+    }
+    
+    .theme-switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #cbd5e1;
+      transition: .4s;
+      border-radius: 34px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 6px;
+    }
+    
+    .slider svg {
+      width: 16px;
+      height: 16px;
+      fill: #f1f5f9;
+      z-index: 1;
+    }
+    
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 24px;
+      width: 24px;
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      transition: .4s;
+      border-radius: 50%;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+      z-index: 2;
+    }
+    
+    input:checked + .slider {
+      background-color: #38bdf8;
+    }
+    
+    input:checked + .slider:before {
+      transform: translateX(28px);
+    }
+    
+    /* Hero Banner Section */
+    .hero-banner {
+      position: relative;
+      margin-top: 30px;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--card-shadow);
+      background-color: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+    
+    @media (min-width: 768px) {
+      .hero-banner {
+        grid-template-columns: 1.2fr 1fr;
+      }
+    }
+    
+    .hero-content {
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      z-index: 2;
+    }
+    
+    .hero-content h1 {
+      font-size: 2.2rem;
+      font-weight: 900;
+      letter-spacing: -0.5px;
+      background: var(--primary-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 12px;
+    }
+    
+    .hero-content p {
+      font-size: 1.1rem;
+      color: var(--text-secondary);
+      font-weight: 500;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+    
+    .hero-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    
+    .hero-image-container {
+      position: relative;
+      min-height: 250px;
+      background: #fff;
+    }
+    
+    .hero-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    
+    /* Filter & Search Bar */
+    .filter-section {
+      margin-top: 40px;
+      background-color: var(--bg-secondary);
+      border-radius: var(--radius-md);
+      padding: 24px;
+      box-shadow: var(--card-shadow);
+      border: 1px solid var(--border-color);
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    
+    @media (min-width: 992px) {
+      .filter-section {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+    
+    .search-wrapper {
+      position: relative;
+      flex: 1;
+      max-width: 500px;
+    }
+    
+    .search-input {
+      width: 100%;
+      padding: 14px 20px 14px 50px;
+      border-radius: var(--radius-full);
+      border: 1px solid var(--border-color);
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      font-family: inherit;
+      font-size: 0.95rem;
+      outline: none;
+      transition: var(--transition);
+    }
+    
+    .search-input:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(255, 94, 126, 0.15);
+    }
+    
+    .search-icon {
+      position: absolute;
+      left: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 20px;
+      height: 20px;
+      fill: var(--text-muted);
+      pointer-events: none;
+    }
+    
+    .filter-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    
+    .filter-chip {
+      background-color: var(--bg-accent);
+      color: var(--text-secondary);
+      border: 1px solid var(--border-color);
+      padding: 10px 18px;
+      border-radius: var(--radius-full);
+      font-size: 0.9rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+    
+    .filter-chip:hover {
+      background-color: var(--bg-primary);
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+    
+    .filter-chip.active {
+      background: var(--primary-gradient);
+      color: white;
+      border-color: transparent;
+      box-shadow: 0 4px 10px rgba(255, 94, 126, 0.2);
+    }
+    
+    /* Souvenirs Grid */
+    .souvenirs-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
+    }
+    
+    /* Souvenir Card */
+    .souvenir-card {
+      background-color: var(--bg-secondary);
+      border-radius: var(--radius-md);
+      box-shadow: var(--card-shadow);
+      border: 1px solid var(--border-color);
+      overflow: hidden;
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+    
+    .souvenir-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--hover-shadow);
+    }
+    
+    .card-banner {
+      height: 140px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      color: white;
+    }
+    
+    .card-banner::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(15, 23, 42, 0.1) 0%, rgba(15, 23, 42, 0.4) 100%);
+      z-index: 1;
+    }
+    
+    .banner-icon {
+      font-size: 4rem;
+      z-index: 2;
+      filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+      animation: float 4s ease-in-out infinite;
+    }
+    
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+    }
+    
+    .card-badge {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      background-color: rgba(15, 23, 42, 0.7);
+      color: white;
+      backdrop-filter: blur(8px);
+      padding: 4px 10px;
+      border-radius: var(--radius-full);
+      font-size: 0.75rem;
+      font-weight: 700;
+      z-index: 3;
+    }
+    
+    .card-price-badge {
+      position: absolute;
+      bottom: 15px;
+      right: 15px;
+      background: var(--primary-gradient);
+      color: white;
+      padding: 6px 12px;
+      border-radius: var(--radius-sm);
+      font-size: 0.9rem;
+      font-weight: 800;
+      z-index: 3;
+      box-shadow: 0 4px 10px rgba(255, 94, 126, 0.3);
+      font-family: 'Outfit', sans-serif;
+    }
+    
+    .card-body {
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+    
+    .card-title-row {
+      margin-bottom: 8px;
+    }
+    
+    .card-zh-name {
+      font-size: 1.2rem;
+      font-weight: 800;
+      color: var(--text-primary);
+    }
+    
+    .card-jp-name {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      font-weight: 500;
+      font-style: italic;
+    }
+    
+    .card-desc {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      margin-bottom: 20px;
+      flex: 1;
+      line-height: 1.5;
+    }
+    
+    .meta-list {
+      border-top: 1px solid var(--border-color);
+      padding-top: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      font-size: 0.85rem;
+    }
+    
+    .meta-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    
+    .meta-label {
+      color: var(--text-muted);
+      font-weight: 600;
+      min-width: 80px;
+    }
+    
+    .meta-value {
+      color: var(--text-primary);
+      font-weight: 700;
+      text-align: right;
+    }
+    
+    .meta-value.highlight-green {
+      color: var(--accent-green);
+    }
+    
+    .meta-value.highlight-orange {
+      color: var(--accent-orange);
+    }
+    
+    .meta-value.highlight-blue {
+      color: var(--secondary);
+    }
+    
+    /* Footer Section */
+    footer {
+      margin-top: 60px;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.8rem;
+      border-top: 1px solid var(--border-color);
+      padding-top: 30px;
+    }
+    
+    /* No results state */
+    .no-results {
+      grid-column: 1 / -1;
+      text-align: center;
+      padding: 60px 20px;
+      background-color: var(--bg-secondary);
+      border-radius: var(--radius-md);
+      border: 1px dashed var(--border-color);
+      color: var(--text-secondary);
+    }
+    
+    .no-results-icon {
+      font-size: 3rem;
+      margin-bottom: 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <!-- Top Navigation Bar -->
+    <div class="nav-bar">
+      <a href="index.html" class="back-btn">
+        <svg viewBox="0 0 24 24">
+          <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"/>
+        </svg>
+        返回行程表
+      </a>
+      
+      <!-- Theme Switcher -->
+      <label class="theme-switch">
+        <input type="checkbox" id="theme-toggle">
+        <span class="slider">
+          <!-- Sun Icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,6.5A5.5,5.5 0 0,1 17.5,12A5.5,5.5 0 0,1 12,17.5A5.5,5.5 0 0,1 6.5,12A5.5,5.5 0 0,1 12,6.5M12,2A1,1 0 0,1 13,3V4.06C16.89,4.56 19.94,7.61 20.44,11.5H21.5A1,1 0 0,1 22.5,12.5A1,1 0 0,1 21.5,13.5H20.44C19.94,17.39 16.89,20.44 13,20.94V22A1,1 0 0,1 12,23A1,1 0 0,1 11,22V20.94C7.11,20.44 4.06,17.39 3.56,13.5H2.5A1,1 0 0,1 1.5,12.5A1,1 0 0,1 2.5,11.5H3.56C4.06,7.61 7.11,4.06 11,4.06V3A1,1 0 0,1 12,2M12,5.5A6.5,6.5 0 0,0 5.5,12A6.5,6.5 0 0,0 12,18.5A6.5,6.5 0 0,0 18.5,12A6.5,6.5 0 0,0 12,5.5Z"/></svg>
+          <!-- Moon Icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.75,4.09L15.22,6.03L16.13,9.09L13.5,7.28L10.87,9.09L11.78,6.03L9.25,4.09L12.44,4L13.5,1L14.56,4L17.75,4.09M21.25,11L19.61,12.25L20.2,14.23L18.5,13.06L16.8,14.23L17.39,12.25L15.75,11L17.81,10.95L18.5,9L19.19,10.95L21.25,11M18.97,15.95C17.14,16.7 15.07,17 13,17C7.47,17 3,12.53 3,7C3,4.93 3.3,2.86 4.05,1.03C1.07,2.29 0,5.58 0,8C0,14.08 4.92,19 11,19C13.42,19 16.71,17.93 17.97,14.95C18.3,15.28 18.63,15.62 18.97,15.95Z"/></svg>
+        </span>
+      </label>
+    </div>
+    
+    <!-- Hero Banner -->
+    <div class="hero-banner">
+      <div class="hero-content">
+        <h1>東京必買伴手禮指南</h1>
+        <p>為張小姐一家量身打造的伴手禮採購指南！我們貼心地將品項區分為「辦公室分送」、「親友長輩質感送禮」及「上野在地特色」，並對照您行程中的採買節點，讓您推輪椅帶阿嬤出遊也能輕鬆買齊不費力！</p>
+        <div class="hero-badges">
+          <span class="tag" style="background-color: rgba(255, 94, 126, 0.1); color: var(--primary); border-color: rgba(255, 94, 126, 0.2);">🛍️ 行程對照</span>
+          <span class="tag" style="background-color: rgba(16, 185, 129, 0.1); color: var(--accent-green); border-color: rgba(16, 185, 129, 0.2);">⏳ 賞味期限明確</span>
+          <span class="tag" style="background-color: rgba(59, 130, 246, 0.1); color: var(--secondary); border-color: rgba(59, 130, 246, 0.2);">♿ 輪椅購買動線順暢</span>
+        </div>
+      </div>
+      <div class="hero-image-container">
+        <img class="hero-image" src="tokyo_omiyage_banner.png" alt="東京伴手禮精美插畫">
+      </div>
+    </div>
+
+    <!-- Wheelchair-free Shopping Strategy Banner -->
+    <div style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.08) 0%, rgba(52, 211, 153, 0.08) 100%); border: 1.5px solid rgba(16, 185, 129, 0.2); border-radius: var(--radius-md); padding: 24px; margin-top: 24px; display: flex; gap: 16px; align-items: flex-start; transition: var(--transition);">
+      <div style="flex-shrink: 0; width: 48px; height: 48px; background-color: var(--accent-green); border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 10px rgba(16, 185, 129, 0.3);">
+        <span style="font-size: 1.5rem;">💡</span>
+      </div>
+      <div style="flex: 1;">
+        <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--accent-green); margin-bottom: 8px; display: flex; align-items: center; gap: 8px;">
+          <span>💡 長者客休安頓・熱門伴手禮自由採購策略</span>
+        </h3>
+        <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.6;">
+          買伴手禮時<strong>不需推著輪椅同行</strong>！媽媽/阿嬤可以在我們行程中規劃的舒適避暑休息區休息（如：晴空塔室內大廳、淺草文化觀光中心 8F Miharashi Cafe、東京車站 KITTE 商城，或是回上野飯店客房大休息）。這時候家人可以單獨輕裝前往採購那些排隊人潮眾多、通道狹窄或推輪椅不便的排隊人氣名品（例如：<strong>東京車站的 NEWYORK PERFECT CHEESE、AUDREY 草莓花束餅乾，或是淺草的龜十銅鑼燒</strong>）。如此一來，採購自由度大幅增加，長輩也不會感到疲累！
+        </p>
+      </div>
+    </div>
+    
+    <!-- Filter & Search Bar -->
+    <div class="filter-section">
+      <div class="search-wrapper">
+        <svg class="search-icon" viewBox="0 0 24 24">
+          <path d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z"/>
+        </svg>
+        <input type="text" class="search-input" id="search-box" placeholder="搜尋伴手禮名稱、地點、或特色...">
+      </div>
+      <div class="filter-chips">
+        <button class="filter-chip active" data-filter="all">全部</button>
+        <button class="filter-chip" data-filter="office">辦公室分送</button>
+        <button class="filter-chip" data-filter="premium">親友長輩送禮</button>
+        <button class="filter-chip" data-filter="ueno">上野在地特色</button>
+        <button class="filter-chip" data-filter="airport">成田機場補貨</button>
+      </div>
+    </div>
+    
+    <!-- Souvenirs Container Grid -->
+    <div class="souvenirs-grid" id="souvenirs-container">
+      
+      <!-- Card 1 -->
+      <div class="souvenir-card" data-categories="office ueno airport">
+        <div class="card-banner" style="background: linear-gradient(135deg, #ffe3e3 0%, #ffd0d0 100%);">
+          <span class="banner-icon">🐼</span>
+          <span class="card-badge">辦公室分送 / 上野限定</span>
+          <span class="card-price-badge">約 ¥1,100 / 10入</span>
+        </div>
+        <div class="card-body">
+          <div class="card-title-row">
+            <h2 class="card-zh-name">砂糖奶油樹 (熊貓版/經典版)</h2>
+            <div class="card-jp-name">シュガーバターの木</div>
+          </div>
+          <p class="card-desc">以七種穀物烘烤而成的酥脆餅皮，外層灑上砂糖，夾入濃郁白巧克力餡。上野車站特有可愛的「熊貓圖案」限定版，各個獨立包裝，價格親民，是分送辦公室同事的最高CP值首選！</p>
+          <div class="meta-list">
+            <div class="meta-row">
+              <span class="meta-label">賞味期限</span>
+              <span class="meta-value highlight-green">約 30 天 (常溫保存)</span>
+            </div>
+            <div class="meta-row">
+              <span class="meta-label">建議採購點</span>
+              <span class="meta-value">JR上野車站 Ecute (改札內 3F)</span>
+            </div>
+            <div class="meta-row">
+              <span class="meta-label">行程搭配</span>
+              <span class="meta-value highlight-blue">Day 6 上野車站巡禮購入，直接進大行李箱</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Card 2 -->
+      <div class="souvenir-card" data-categories="premium">
+        <div class="card-banner" style="background: linear-gradient(135deg, #fef08a 0%, #facc15 100%);">
+          <span class="banner-icon">🧀</span>
+          <span class="card-badge">親友送禮首選</span>
+          <span class="card-price-badge">約 ¥1,500 / 8入</span>
+        </div>
+        <div class="card-body">
+          <div class="card-title-row">
+            <h2 class="card-zh-name">NEWYORK PERFECT CHEESE</h2>
+            <div class="card-jp-name">ニューヨークパーフェクトチーズ</div>
+          </div>
+          <p class="card-desc">東京近年最火紅的秒殺排隊冠軍！酥脆細緻的貓舌頭餅乾，包覆著鹹香的切達起司條、白巧克力以及滑順牛奶鮮奶油。鹹甜相間，外盒是極具奢華感的黑金配色包裝，送禮非常體面大氣。</p>
+          <div class="meta-list">
+            <div class="meta-row">
+              <span class="meta-label">賞味期限</span>
+              <span class="meta-value highlight-green">約 30 天 (常溫保存)</span>
+            </div>
+            <div class="meta-row">
+              <span class="meta-label">建議採購點</span>
+              <span class="meta-value">東京車站 JR改札內南通路 (排隊熱門)</span>
+            </div>
+            <div class="meta-row">
+              <span class="meta-label">行程搭配</span>
+              <span class="meta-value highlight-blue">Day 4 上午東京車站/KITTE行程中順路購入，排隊時可讓長輩在 KITTE 舒適休息</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Card 3 -->
+      <div class="souvenir-card" data-categories="premium airport">
+        <div class="card-banner" style="background: linear-gradient(135deg, #e2e8f0 0%, #94a3b8 100%);">
+          <span class="banner-icon"> waffle </span>
+          <span class="card-badge">親友送禮 / 機場補貨</span>
+          <span class="card-price-badge">約 ¥1,100 / 5入</span>
+        </div>
+        <div class="card-body">
+          <div class="card-title-row">
+            <h2 class="card-zh-name">PRESS BUTTER SAND 焦糖夾心餅</h2>
+            <div class="card-jp-name">プレスバターサンド</div>
+          </div>
+          <p class="card-desc">採用獨特熱壓烤法製成的紮實雙層餅皮，咬下時內部濃郁的生焦糖與北海道鮮奶油會爆漿而出。鐵灰色帶有工業設計風的包裝極具現代質感。口味多元（經典原味、宇治抹茶等），甜度偏高但搭配茶飲或咖啡堪稱完美。</p>
+          <div class="meta-list">
+            <div class="meta-row">
+              <span class="meta-label">賞味期限</span>
+              <span class="meta-value highlight-orange">約 10 - 14 天 (較短)</span>
+            </div>
+            <div class="meta-row">
+              <span class="meta-label">建議採購點</span>
+              <span class="meta-value">JR上野車站中央改札外 / 成田機場免稅店</span>
+            </div>
+            <div class="meta-row">
+              <span class="meta-label">行程搭配</span>
+              <span class="meta-value highlight-blue">可在上野改札旁輕鬆買，或成田機場出境免稅店補貨</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Card 4 -->
+      <div class="souvenir-card" data-categories="premium">
+        <div class="card-banner" style="background: linear-gradient(135deg, #fed7aa 0%, #f97316 100%); font-size: 3.5rem;">
+          <span class="banner-icon">🌹</span>
+          <span class="card-badge">精緻送禮 (女性最愛)</span>
+          <span class="card-price-badge">約 ¥1,250 / 4入</span>
+        </div>
+        <div class="card-body">
+          <div class="card-title-row">
+            <h2 class="card-zh-name">TOKYO TULIP ROSE 鬱金香玫瑰</h2>
+            <div class="card-jp-name">TOKYOチューリップローズ</div>
+          </div>
+          <p class="card-desc">宛如藝術品般令人驚嘆的甜點！外層是精緻酥脆的鬱金香花瓣貓舌餅乾，內側則是由入口即化的巧克力熔岩慕斯擠出的多重玫瑰花瓣。無論是視覺效果還是精細度都極高，非常適合送給女性好友或家人。</p>
+          <div class="meta-list">
+            <div class="meta-row">
+              <span class="meta-label">賞味期限</span>
+              <span class="meta-value highlight-green">約 20 - 30 天</span>
+            </div>
+            <div class="meta-row">
+              <span class="meta-label">建議採購點</span>
+              <span class="meta-value">東京車站 JR改札內「八重洲中央口」附近</span>
+            </div>
+            <div class="meta-row">
+              <span class="meta-label">行程搭配</span>
+              <span class="meta-value highlight-blue">Day 4 上午東京車站/KITTE 行程中購入</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Card 5 -->
+      <div class="souvenir-card" data-categories="ueno premium">
+        <div class="card-banner" style="background: linear-gradient(135deg, #ffedd5 0%, #fdba74 100%);">
+          <span class="banner-icon">🐤</span>
+          <span class="card-badge">上野特色 / 長輩最愛</span>
+          <span class="card-price-badge">約 ¥1,200 / 7入</span>
+        </div>
+        <div class="card-body">
+          <div class="card-title-row">
+            <h2 class="card-zh-name">吉野堂名菓ひよ子 (小雞饅頭)</h2>
+            <div class="card-jp-name">名菓ひよ子</div>
+          </div>
+          <p class="card-desc">擁有百年歷史的東京經典和菓子！萌度爆表的小雞形狀，外皮是薄軟適口的黃金小麥餅皮，裡面包裹著細緻綿密、香甜飽滿的特製黃味豆沙餡。口感鬆軟適中，沒有堅硬外皮，極度適合牙口不好的長輩或小朋友配熱茶享用。</p>
+          <div class="meta-list">
+            <div class="meta-row">
+              <span class="meta-label">賞味期限</span>
+              <span class="meta-value highlight-orange">約 15 - 20 天</span>
+            </div>
+            <div class="meta-row">
+              <span class="meta-label">建議採購點</span>
+              <span class="meta-value">上野車站 Atre / Ecute 商店區</span>
+            </div>
+            <div class="meta-row">
+              <span class="meta-label">行程搭配</span>
+              <span class="meta-value highlight-blue">Day 6 上野車站最後巡禮時購入</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Card 6 -->
+      <div class="souvenir-card" data-categories="ueno premium">
+        <div class="card-banner" style="background: linear-gradient(135deg, #fef3c7 0%, #f59e0b 100%);">
+          <span class="banner-icon">🥞</span>
+          <span class="card-badge">上野名產 / 當天享用</span>
+          <span class="card-price-badge">約 ¥240 / 個</span>
+        </div>
+        <div class="card-body">
+          <div class="card-title-row">
+            <h2 class="card-zh-name">上野兔屋 (Usagiya) 銅鑼燒</h2>
+            <div class="card-jp-name">うさぎや どら焼き</div>
+          </div>
+          <p class="card-desc">被譽為「東京三大銅鑼燒之首」，是上野當地最出名的傳統點心。使用優質蜂蜜製成的外皮金黃蓬鬆且香氣濃郁，紅豆內餡極為濕潤、顆粒飽滿而不甜膩。因為是新鮮現做，強烈建議當天直接食用，或回飯店當下午茶享用！</p>
+          <div class="meta-list">
+            <div class="meta-row">
+              <span class="meta-label">賞味期限</span>
+              <span class="meta-value highlight-orange" style="color: #ef4444; font-weight: 900;">限 2 天 (建議現買現吃)</span>
+            </div>
+            <div class="meta-row">
+              <span class="meta-label">建議採購點</span>
+              <span class="meta-value">上野 兔屋 店面 (上野1-10-10)</span>
+            </div>
+            <div class="meta-row">
+              <span class="meta-label">行程搭配</span>
+              <span class="meta-value highlight-blue">Day 2 傍晚回上野時提領（建議提前電話預訂以防完售）</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Card 7 -->
+      <div class="souvenir-card" data-categories="office airport">
+        <div class="card-banner" style="background: linear-gradient(135deg, #fed7aa 0%, #ffedd5 100%);">
+          <span class="banner-icon">👦</span>
+          <span class="card-badge">辦公室分送 / 機場補貨</span>
+          <span class="card-price-badge">約 ¥1,080 / 9入</span>
+        </div>
+        <div class="card-body">
+          <div class="card-title-row">
+            <h2 class="card-zh-name">The Maple Mania 楓糖奶油夾心餅</h2>
+            <div class="card-jp-name">メープルマニア</div>
+          </div>
+          <p class="card-desc">包裝以復古美式小男孩為設計，打開包裝即能聞到非常濃郁芬芳的楓糖與香草奶油香。脆餅夾著香滑的奶油起司夾心，口感香脆輕快。保存期限非常長，單個包裝設計精美，極受年輕人和辦公室同事歡迎。</p>
+          <div class="meta-list">
+            <div class="meta-row">
+              <span class="meta-label">賞味期限</span>
+              <span class="meta-value highlight-green">約 240 天 (極長，超省心)</span>
+            </div>
+            <div class="meta-row">
+              <span class="meta-label">建議採購點</span>
+              <span class="meta-value">東京車站 Gransta 地下街 / 成田機場</span>
+            </div>
+            <div class="meta-row">
+              <span class="meta-label">行程搭配</span>
+              <span class="meta-value highlight-blue">成田機場第一航廈免稅店（出境後購買），或 Day 4 東京車站 Gransta 購入</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Card 8 -->
+      <div class="souvenir-card" data-categories="office airport">
+        <div class="card-banner" style="background: linear-gradient(135deg, #fef9c3 0%, #fef08a 100%);">
+          <span class="banner-icon">🍌</span>
+          <span class="card-badge">辦公室分送 / 機場經典</span>
+          <span class="card-price-badge">約 ¥1,200 / 8入</span>
+        </div>
+        <div class="card-body">
+          <div class="card-title-row">
+            <h2 class="card-zh-name">東京芭娜娜 (經典或寶可夢版)</h2>
+            <div class="card-jp-name">東京ばな奈</div>
+          </div>
+          <p class="card-desc">東京最具象徵性的伴手禮！綿密柔軟的海綿蛋糕，裡面填滿著香滑可口的香蕉卡士達奶油餡。近期與寶可夢、迪士尼等聯名推出限定浮雕花紋（如皮卡丘、伊布圖案），視覺滿分，絕對是帶回國分享最不易出錯的經典！</p>
+          <div class="meta-list">
+            <div class="meta-row">
+              <span class="meta-label">賞味期限</span>
+              <span class="meta-value highlight-orange">約 7 天 (較短)</span>
+            </div>
+            <div class="meta-row">
+              <span class="meta-label">建議採購點</span>
+              <span class="meta-value">上野車站 / 東京車站 / 成田機場第一航廈</span>
+            </div>
+            <div class="meta-row">
+              <span class="meta-label">行程搭配</span>
+              <span class="meta-value highlight-blue">Day 6 上野車站，或成田機場登機前最後免稅店採買</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 9 -->
+      <div class="souvenir-card" data-categories="office premium">
+        <div class="card-banner" style="background: linear-gradient(135deg, #fee2e2 0%, #fca5a5 100%);">
+          <span class="banner-icon">🍓</span>
+          <span class="card-badge">辦公室分送 / 顏值擔當</span>
+          <span class="card-price-badge">約 ¥1,200 / 8入</span>
+        </div>
+        <div class="card-body">
+          <div class="card-title-row">
+            <h2 class="card-zh-name">AUDREY 草莓花束餅乾 (Glacia)</h2>
+            <div class="card-jp-name">オードリー グレイシア</div>
+          </div>
+          <p class="card-desc">東京車站排隊狂潮的草莓花束餅乾！香脆的貓舌餅乾捲成精緻迷你花束，內餡是甜而不膩的鮮奶油，頂部綴有一整顆酸甜脆口的乾燥草莓，顏值極高。因櫃位常大排長龍，利用長輩在 KITTE 避暑時，由家人單獨前往排隊購買最合適！</p>
+          <div class="meta-list">
+            <div class="meta-row">
+              <span class="meta-label">賞味期限</span>
+              <span class="meta-value highlight-green">約 30 - 40 天</span>
+            </div>
+            <div class="meta-row">
+              <span class="meta-label">建議採購點</span>
+              <span class="meta-value">JR東京車站剪票口內 Gransta B1 (排隊熱門)</span>
+            </div>
+            <div class="meta-row">
+              <span class="meta-label">行程搭配</span>
+              <span class="meta-value highlight-blue">Day 4 上午東京車站/KITTE行程，家人單獨進站或在站內排隊購買</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 10 -->
+      <div class="souvenir-card" data-categories="ueno premium">
+        <div class="card-banner" style="background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);">
+          <span class="banner-icon">🥞</span>
+          <span class="card-badge">老店名物 / 現金支付</span>
+          <span class="card-price-badge">約 ¥430 / 個</span>
+        </div>
+        <div class="card-body">
+          <div class="card-title-row">
+            <h2 class="card-zh-name">淺草龜十銅鑼燒</h2>
+            <div class="card-jp-name">亀十 どら焼き</div>
+          </div>
+          <p class="card-desc">名列「東京三大銅鑼燒」之首！外皮如鬆餅般蓬鬆富含空氣感，帶有手作特有的不規則焦香，內餡分為經典紅豆（黑餡）與白豇豆（白餡），細緻而不死甜。每日排隊通常需 30 - 60 分鐘，且僅收現金。利用長輩在觀光中心大休息時，由家人前往排隊購回。</p>
+          <div class="meta-list">
+            <div class="meta-row">
+              <span class="meta-label">賞味期限</span>
+              <span class="meta-value highlight-orange" style="color: #ef4444; font-weight: 900;">限 3 天 (建議現買現吃)</span>
+            </div>
+            <div class="meta-row">
+              <span class="meta-label">建議採購點</span>
+              <span class="meta-value">淺草 雷門斜對面 龜十總店</span>
+            </div>
+            <div class="meta-row">
+              <span class="meta-label">行程搭配</span>
+              <span class="meta-value highlight-blue">Day 3 淺草雷門行程，家人排隊，長者在觀光中心 8F 休息</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 11 -->
+      <div class="souvenir-card" data-categories="premium">
+        <div class="card-banner" style="background: linear-gradient(135deg, #dbeafe 0%, #93c5fd 100%);">
+          <span class="banner-icon">⛩️</span>
+          <span class="card-badge">幸運御守 / 寶袋</span>
+          <span class="card-price-badge">約 ¥500 - ¥1,500</span>
+        </div>
+        <div class="card-body">
+          <div class="card-title-row">
+            <h2 class="card-zh-name">福德神社 芽吹守 & 寶袋</h2>
+            <div class="card-jp-name">福徳神社 芽吹守・宝袋</div>
+          </div>
+          <p class="card-desc">祈求好運與中籤運（如演唱會、彩券抽籤）全日本最出名的福德神社！綠色「芽吹守」保佑事業或學業如新芽般蓬勃發展；獨特的金黃「寶袋」更是信眾用來放置彩券、重要票券的開運聖物。非常適合贈送給有抽票或理財需求的親友。</p>
+          <div class="meta-list">
+            <div class="meta-row">
+              <span class="meta-label">賞味期限</span>
+              <span class="meta-value highlight-green">永久紀念</span>
+            </div>
+            <div class="meta-row">
+              <span class="meta-label">建議採購點</span>
+              <span class="meta-value">日本橋 福德神社 授与所</span>
+            </div>
+            <div class="meta-row">
+              <span class="meta-label">行程搭配</span>
+              <span class="meta-value highlight-blue">Day 4 下午，家屬在長者回房休息的空檔，單獨搭銀座線前往購入</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 12 -->
+      <div class="souvenir-card" data-categories="ueno premium">
+        <div class="card-banner" style="background: linear-gradient(135deg, #ffedd5 0%, #fdba74 100%);">
+          <span class="banner-icon">🍙</span>
+          <span class="card-badge">超萌造型 / 緣結御守</span>
+          <span class="card-price-badge">約 ¥800 - ¥1,000</span>
+        </div>
+        <div class="card-body">
+          <div class="card-title-row">
+            <h2 class="card-zh-name">高木神社 飯糰造型御守 (おむすび守)</h2>
+            <div class="card-jp-name">高木神社 おむすびお守り</div>
+          </div>
+          <p class="card-desc">全日本最可愛的飯糰主題神社！因為日文中的「飯糰 (おむすび)」與「緣結 (結び)」讀音相通，這裡供奉著保佑人緣與良緣的緣結神。三角形飯糰造型的「おむすび守」外型療癒、做工精巧，無論是自用收藏或送給同學好友都極具特色與趣味。</p>
+          <div class="meta-list">
+            <div class="meta-row">
+              <span class="meta-label">賞味期限</span>
+              <span class="meta-value highlight-green">永久紀念</span>
+            </div>
+            <div class="meta-row">
+              <span class="meta-label">建議採購點</span>
+              <span class="meta-value">押上 高木神社 社務所</span>
+            </div>
+            <div class="meta-row">
+              <span class="meta-label">行程搭配</span>
+              <span class="meta-value highlight-blue">Day 2 中午，搭乘計程車前往押上雙神社參拜時順手購入</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 13 -->
+      <div class="souvenir-card" data-categories="ueno premium">
+        <div class="card-banner" style="background: linear-gradient(135deg, #fef3c7 0%, #fdba74 100%);">
+          <span class="banner-icon">🐗</span>
+          <span class="card-badge">上野特色 / 開運勝利</span>
+          <span class="card-price-badge">約 ¥500 - ¥1,000</span>
+        </div>
+        <div class="card-body">
+          <div class="card-title-row">
+            <h2 class="card-zh-name">摩利支天 德大寺 野豬開運御守</h2>
+            <div class="card-jp-name">摩利支天 徳大寺 亥の日御守・御朱印</div>
+          </div>
+          <p class="card-desc">隱身於阿美橫町繁華商店街二樓的百年寺院「德大寺」，主祀開運、勝利與健康護法神摩利支天。由於野豬（亥）為其神使，寺內以各類精美的野豬石雕與豬年開運御守著稱，親手書寫的御朱印亦極其莊重。因入殿需爬陡峭石階，極適合在阿嬤回房大休息時由家人單獨前往參拜購買！</p>
+          <div class="meta-list">
+            <div class="meta-row">
+              <span class="meta-label">賞味期限</span>
+              <span class="meta-value highlight-green">永久紀念</span>
+            </div>
+            <div class="meta-row">
+              <span class="meta-label">建議採購點</span>
+              <span class="meta-value">上野阿美橫町 德大寺本堂社務所 (二木の菓子旁二樓)</span>
+            </div>
+            <div class="meta-row">
+              <span class="meta-label">行程搭配</span>
+              <span class="meta-value highlight-blue">Day 4 下午，趁長者回房休息的 2 小時空檔，家人花 5 分鐘步行前往參拜購入</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+      <p>祝您與長者在東京買得開心、玩得舒適！🎁✈️♿</p>
+      <p style="margin-top: 8px; font-size: 0.7rem; opacity: 0.6;">© 2026 Tokyo Souvenir Premium Guide. Designed with Love and Accessibility in Mind.</p>
+    </footer>
+    
+  </div>
+
+  <script>
+    // Theme Management and Synchronization
+    const themeToggle = document.getElementById('theme-toggle');
+    const body = document.body;
+    
+    // Sync theme with localStorage
+    function applyTheme() {
+      const savedTheme = localStorage.getItem('theme') || 'light';
+      body.setAttribute('data-theme', savedTheme);
+      themeToggle.checked = savedTheme === 'dark';
+    }
+    
+    applyTheme();
+    
+    themeToggle.addEventListener('change', () => {
+      const newTheme = themeToggle.checked ? 'dark' : 'light';
+      body.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+    });
+    
+    // Listen for storage changes in other tabs (so toggling theme in index.html updates this page too)
+    window.addEventListener('storage', (e) => {
+      if (e.key === 'theme') {
+        applyTheme();
+      }
+    });
+
+    // Filtering & Search Functionality
+    const searchBox = document.getElementById('search-box');
+    const filterChips = document.querySelectorAll('.filter-chip');
+    const cards = document.querySelectorAll('.souvenir-card');
+    const container = document.getElementById('souvenirs-container');
+    
+    let activeFilter = 'all';
+    let searchQuery = '';
+    
+    function filterCards() {
+      let visibleCount = 0;
+      
+      // Remove no-results message if exists
+      const existingNoResults = document.querySelector('.no-results');
+      if (existingNoResults) {
+        existingNoResults.remove();
+      }
+      
+      cards.forEach(card => {
+        const cardCategories = card.getAttribute('data-categories').split(' ');
+        const cardTitleZh = card.querySelector('.card-zh-name').textContent.toLowerCase();
+        const cardTitleJp = card.querySelector('.card-jp-name').textContent.toLowerCase();
+        const cardDesc = card.querySelector('.card-desc').textContent.toLowerCase();
+        const cardLocation = card.querySelector('.meta-value').textContent.toLowerCase();
+        
+        const matchesFilter = (activeFilter === 'all') || cardCategories.includes(activeFilter);
+        const matchesSearch = cardTitleZh.includes(searchQuery) || 
+                              cardTitleJp.includes(searchQuery) || 
+                              cardDesc.includes(searchQuery) ||
+                              cardLocation.includes(searchQuery);
+        
+        if (matchesFilter && matchesSearch) {
+          card.style.display = 'flex';
+          visibleCount++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+      
+      // If no cards match, display a friendly message
+      if (visibleCount === 0) {
+        const noResultsDiv = document.createElement('div');
+        noResultsDiv.className = 'no-results';
+        noResultsDiv.innerHTML = `
+          <div class="no-results-icon">🔍</div>
+          <h3>沒有找到符合條件的伴手禮</h3>
+          <p>請嘗試換個搜尋關鍵字，或者點選其他篩選分類！</p>
+        `;
+        container.appendChild(noResultsDiv);
+      }
+    }
+    
+    // Filter chip click handler
+    filterChips.forEach(chip => {
+      chip.addEventListener('click', () => {
+        filterChips.forEach(c => c.classList.remove('active'));
+        chip.classList.add('active');
+        activeFilter = chip.getAttribute('data-filter');
+        filterCards();
+      });
+    });
+    
+    // Search box input handler (with input event for instantaneous responsiveness)
+    searchBox.addEventListener('input', (e) => {
+      searchQuery = e.target.value.toLowerCase().trim();
+      filterCards();
+    });
+  </script>
+</body>
+</html>
